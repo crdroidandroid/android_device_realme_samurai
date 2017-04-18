@@ -192,4 +192,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/realme/samurai/BoardConfigVendor.mk
+include vendor/realme/samurai/BoardConfigVendor.mk
