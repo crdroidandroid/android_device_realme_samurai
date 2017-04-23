@@ -46,6 +46,7 @@ BOARD_KERNEL_CMDLINE := \
     loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 \
+    pm.sleep_mode=1 \
     service_locator.enable=1 \
     swiotlb=2048 \
     cgroup_disable=pressure
