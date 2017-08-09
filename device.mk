@@ -28,6 +28,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
