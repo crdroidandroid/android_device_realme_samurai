@@ -46,7 +46,7 @@ TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/realme/sm8150
 
 # Platform
-#TARGET_BOARD_PLATFORM := msmnile
+TARGET_BOARD_PLATFORM := msmnile
 BOARD_USES_QCOM_HARDWARE := true
 
 # APEX image
