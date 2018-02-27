@@ -12,6 +12,20 @@ on init
     chown system system /proc/touchpanel/oppo_tp_limit_area
     chown system system /proc/touchpanel/tp_fw_update
 
+    # Boot time FS tune
+    write /sys/block/sda/queue/iostats 0
+    write /sys/block/sda/queue/scheduler cfq
+    write /sys/block/sda/queue/iosched/slice_idle 0
+    write /sys/block/sda/queue/read_ahead_kb 2048
+    write /sys/block/sda/queue/nr_requests 256
+    write /sys/block/sdf/queue/iostats 0
+    write /sys/block/sdf/queue/scheduler cfq
+    write /sys/block/sdf/queue/iosched/slice_idle 0
+    write /sys/block/sdf/queue/read_ahead_kb 2048
+    write /sys/block/sdf/queue/nr_requests 256
+    write /sys/block/dm-0/queue/read_ahead_kb 2048
+    write /sys/block/dm-1/queue/read_ahead_kb 2048
+
 on boot
     # OTG
     write /sys/class/power_supply/usb/otg_switch 1
@@ -79,6 +93,18 @@ on boot
 
 #Xuefeng.Peng@PSW.AD.Usb.1410703, 2018/06/19, Add for support NDIS 5.0
     write /config/usb_gadget/g1/functions/gsi.rndis/rndis_class_id 1
+
+    # Run time FS tune
+    write /sys/block/sda/queue/read_ahead_kb 1024
+    write /sys/block/sda/queue/nr_requests 128
+    write /sys/block/sda/queue/iostats 1
+    write /sys/block/sdf/queue/read_ahead_kb 1024
+    write /sys/block/sdf/queue/nr_requests 128
+    write /sys/block/sdf/queue/iostats 1
+    write /sys/block/dm-0/queue/read_ahead_kb 512
+    write /sys/block/dm-1/queue/read_ahead_kb 512
+    write /sys/block/sda/queue/scheduler deadline
+    write /sys/block/sdf/queue/scheduler deadline
 
 on post-fs-data
     mkdir /data/system/audio 0775 media media
