@@ -6,6 +6,7 @@
 
 BOARD_VENDOR := realme
 
+BUILD_BROKEN_DUP_RULES := true
 DEVICE_PATH := device/realme/RMX1931
 
 # Architecture
