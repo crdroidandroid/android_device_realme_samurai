@@ -166,10 +166,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lineage.touch@1.0-service.RMX1931
 
-# VNDK
-PRODUCT_PACKAGES += \
-    vndk_package
-
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
