@@ -163,7 +163,6 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Treble
 BOARD_VNDK_VERSION := current
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
