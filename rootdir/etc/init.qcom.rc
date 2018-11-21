@@ -3,6 +3,9 @@ on post-fs
     mount none /dev/null /vendor/lib/hw/power.default.so bind
 
 on init
+    # Drop write bit from cpu_min_freq so that libqti-perfd can't set it
+    chmod 0444 /sys/module/msm_performance/parameters/cpu_min_freq
+
     #Qicai.Gu@PSW.BSP.TP.Function 2019-06-14 add for limit_enable
     chown system system /proc/touchpanel/oppo_tp_limit_enable
     chown system system /proc/touchpanel/oppo_tp_limit_area
