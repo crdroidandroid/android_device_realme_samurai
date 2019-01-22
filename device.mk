@@ -138,6 +138,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# Touch
+PRODUCT_PACKAGES += \
+    lineage.touch@1.0-service.RMX1931
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
