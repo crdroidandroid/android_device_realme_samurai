@@ -202,10 +202,11 @@ PRODUCT_COPY_FILES += \
 
 # fingerprint (IFAA)
 PRODUCT_PACKAGES += \
+    IFAAService \
     ifaamanager
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ifaamanager/etc/permissions/org.ifaa.android.manager.permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.ifaa.android.manager.permissions.xml
+PRODUCT_BOOT_JARS += \
+    ifaamanager
 
 # Framework Detect
 PRODUCT_PACKAGES += \
