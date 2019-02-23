@@ -111,7 +111,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.RMX1931 \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.RMX1931
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.RMX1931
 
 PRODUCT_PACKAGES += \
     ifaamanager
@@ -191,14 +191,14 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service-qti
+
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-qti.xml
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.RMX1931
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -232,7 +232,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.RMX1931
+    vendor.lineage.touch@1.0-service.RMX1931
 
 # Trust
 PRODUCT_PACKAGES += \

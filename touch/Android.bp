@@ -14,11 +14,12 @@
 // limitations under the License.
 
 cc_binary {
-    name: "lineage.touch@1.0-service.RMX1931",
-    init_rc: ["lineage.touch@1.0-service.RMX1931.rc"],
+    name: "vendor.lineage.touch@1.0-service.RMX1931",
+    init_rc: ["vendor.lineage.touch@1.0-service.RMX1931.rc"],
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: ["service.cpp", "TouchscreenGesture.cpp"],
+    vendor: true,
     shared_libs: [
         "libbase",
         "libbinder",

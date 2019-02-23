@@ -25,7 +25,7 @@ on boot
     chown system system /proc/touchpanel/letter_o_enable
     chown system system /proc/touchpanel/letter_w_enable
 
-service touch-hal-1-0 /system/bin/hw/lineage.touch@1.0-service.RMX1931
+service vendor.touch-hal-1-0 /vendor/bin/hw/vendor.lineage.touch@1.0-service.RMX1931
     class hal
     user system
     group system
