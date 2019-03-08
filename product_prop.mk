@@ -13,6 +13,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.heapminfree=8m \
     dalvik.vm.heapmaxfree=64m
 
+# Graphics
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+
 # gsi
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.gsi.build.flavor=none
