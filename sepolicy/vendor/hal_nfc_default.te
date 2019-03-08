@@ -2,4 +2,7 @@ allow hal_nfc_default nfc_vendor_data_file:dir { search read write };
 allow hal_nfc_default oppo_ver_proc:dir search;
 allow hal_nfc_default oppo_ver_proc:file { read open getattr };
 
+# Allow hal_nfc_default to add and find hal_nxpnfc_hwservice
+allow hal_nfc_default hal_nxpnfc_hwservice:hwservice_manager { find add };
+
 set_prop(hal_nfc_default, vendor_nfc_nq_prop)

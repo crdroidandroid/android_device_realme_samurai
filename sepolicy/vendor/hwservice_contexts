@@ -1,3 +1,4 @@
+vendor.nxp.nxpnfc::INxpNfc                                                   u:object_r:hal_nxpnfc_hwservice:s0
 vendor.oppo.hardware.biometrics.fingerprint::IBiometricsFingerprint          u:object_r:hal_fingerprint_hwservice:s0
 vendor.oppo.hardware.camera.oppopostproc::ICameraPostProc                    u:object_r:hal_camera_hwservice:s0
 vendor.oppo.hardware.camera.oppoHalAssist::IOppoHalAssist                    u:object_r:hal_camera_hwservice:s0
