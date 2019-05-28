@@ -153,7 +153,7 @@ VENDOR_SECURITY_PATCH := 2020-12-05
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
