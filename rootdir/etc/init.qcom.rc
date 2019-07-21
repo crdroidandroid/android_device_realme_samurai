@@ -4,6 +4,8 @@ on post-fs
     mount none /dev/null /vendor/lib64/hw/power.default.so bind
     mount none /dev/null /vendor/lib/hw/power.default.so bind
 
+    mount none /dev/null /vendor/overlay/BluetoothResCommon.apk
+
 on boot
     # OTG
     write /sys/class/power_supply/usb/otg_switch 1
