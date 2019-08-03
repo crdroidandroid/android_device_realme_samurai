@@ -1792,11 +1792,6 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 
 # Vibrator
-vendor/bin/hw/vendor.oppo.hardware.lmvibrator@1.0-service
-vendor/bin/hw/vendor.oppo.hardware.vibrator@1.0-service
-vendor/etc/init/vendor.oppo.hardware.lmvibrator@1.0-service.rc
-vendor/etc/init/vendor.oppo.hardware.vibrator@1.0-service.rc
-vendor/lib64/vendor.oppo.hardware.lmvibrator@1.0.so
 vendor/lib/hw/awinic.haptic.effect.so
 
 # Vibrator firmware

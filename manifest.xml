@@ -283,7 +283,7 @@
     <hal format="hidl">
         <name>android.hardware.vibrator</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
             <name>IVibrator</name>
             <instance>default</instance>
@@ -430,15 +430,6 @@
         <version>1.0</version>
         <interface>
             <name>IKtv</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oppo.hardware.lmvibrator</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILinearMotorVibrator</name>
             <instance>default</instance>
         </interface>
     </hal>

@@ -1,0 +1,32 @@
+on post-fs
+    chown system system /sys/class/leds/vibrator/vmax_mv
+    chmod 660 /sys/class/leds/vibrator/vmax_mv
+    chmod 660 /sys/class/leds/vibrator/rtp
+    chmod 660 /sys/class/leds/vibrator/haptic_audio_tp_time
+    chmod 644 /sys/class/leds/vibrator/haptic_osc_data
+    chmod 660 /sys/class/leds/vibrator/ram_test
+    chmod 644 /sys/class/leds/vibrator/ram_update
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/brightness
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/state
+    chown system system /sys/class/leds/vibrator/rf_hz
+    chown system system /sys/class/leds/vibrator/lra_resistance
+    chown system system /sys/class/leds/vibrator/gain
+    chown system system /sys/class/leds/vibrator/vmax
+    chown system system /sys/class/leds/vibrator/index
+    chown system system /sys/class/leds/vibrator/activate_mode
+    chown system system /sys/class/leds/vibrator/seq
+    chown system audio /sys/class/leds/vibrator/rtp
+    chown system audio /sys/class/leds/vibrator/haptic_audio_tp_time
+    chown system system /sys/class/leds/vibrator/loop
+    chown system system /sys/class/leds/vibrator/ignore_store
+    chown system system /sys/class/leds/vibrator/osc_cali
+    chown system system /sys/class/leds/vibrator/haptic_osc_data
+    chown system system /sys/class/leds/vibrator/ram_test
+    chown system system /sys/class/leds/vibrator/ram_update
+
+service vendor.vibrator-1-2 /vendor/bin/hw/android.hardware.vibrator@1.2-service.RMX1931
+    class hal
+    user system
+    group system
