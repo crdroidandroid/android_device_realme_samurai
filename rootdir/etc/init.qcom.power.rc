@@ -22,6 +22,9 @@ on init
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/hibern8_on_idle_enable 0
 
+    # Disable powersaving
+    write /sys/module/lpm_levels/parameters/sleep_disabled 1
+
 on boot
     # Disable performance profile by default
     setprop perf_profile 0
@@ -257,6 +260,9 @@ on charger
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkscale_enable 1
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/hibern8_on_idle_enable 1
+
+    # Turn on sleep modes
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
 on enable-low-power
     # Enable UFS powersaving
