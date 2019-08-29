@@ -103,6 +103,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext

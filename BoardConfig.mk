@@ -137,6 +137,9 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
+# Power
+TARGET_USES_INTERACTION_BOOST := true
+
 # Treble
 BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true

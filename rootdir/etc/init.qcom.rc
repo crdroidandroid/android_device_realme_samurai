@@ -1,1 +1,5 @@
 on init
+
+    mount none /system/bin/hw/android.hardware.power@1.2-service /vendor/bin/hw/android.hardware.power@1.2-service bind
+    mount none /dev/null /vendor/lib64/hw/power.default.so bind
+    mount none /dev/null /vendor/lib/hw/power.default.so bind
