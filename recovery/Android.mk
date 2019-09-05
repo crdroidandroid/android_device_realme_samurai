@@ -12,5 +12,4 @@ endif
 
 LOCAL_SRC_FILES := recovery_updater.cpp
 LOCAL_MODULE := librecovery_updater_qcom
-LOCAL_MODULE_TAGS := eng
 include $(BUILD_STATIC_LIBRARY)
