@@ -15,6 +15,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/realme//RMX1931/RMX1931-vendor.mk)
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
@@ -47,8 +50,8 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio/audio_policy_configuration.xml
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio/audio_policy_configuration.xml
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -120,7 +123,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service
+    android.hardware.power@1.2-service.RMX1931
 
 # RCS
 PRODUCT_PACKAGES += \

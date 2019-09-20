@@ -1,17 +1,3 @@
-on post-fs
-
-    mount none /system/bin/hw/android.hardware.power@1.2-service /vendor/bin/hw/android.hardware.power@1.2-service bind
-    mount none /dev/null /vendor/lib64/hw/power.default.so bind
-    mount none /dev/null /vendor/lib/hw/power.default.so bind
-
-    mount none /dev/null /vendor/overlay/BluetoothResCommon.apk bind
-    mount none /dev/null /vendor/etc/19071/audio_policy_configuration.xml bind
-    mount none /dev/null /vendor/etc/19071/audio_policy_volumes.xml bind
-    mount none /dev/null /vendor/etc/19071/default_volume_tables.xml bind
-    mount none /dev/null /vendor/etc/audio_policy.conf bind
-    mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
-    mount none /system/etc/audio/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
-
 on init
     #Qicai.Gu@PSW.BSP.TP.Function 2019-06-14 add for limit_enable
     chown system system /proc/touchpanel/oppo_tp_limit_enable
