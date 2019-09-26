@@ -791,7 +791,6 @@ vendor/lib/libsdmextension.so
 vendor/lib/libtinyxml2_1.so
 
 # Display (Hardware)
-vendor/bin/hw/android.hardware.graphics.composer@2.3-service
 vendor/lib64/hw/hwcomposer.msmnile.so
 vendor/lib/hw/hwcomposer.msmnile.so
 
