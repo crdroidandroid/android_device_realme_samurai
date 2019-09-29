@@ -82,6 +82,7 @@ TARGET_ENABLE_MEDIADRM_64 := true
 
 # Hidl
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
