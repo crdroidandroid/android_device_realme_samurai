@@ -123,7 +123,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    vendor/nxp/opensource/sn100x
 
 # Telephony
 PRODUCT_PACKAGES += \
