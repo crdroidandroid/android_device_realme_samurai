@@ -127,3 +127,11 @@ on property:ro.boot.vbmeta.device_state=unlocked
 
 on property:ro.boot.vbmeta.device_state=locked
     setprop vendor.boot.verifiedbootstate 0
+
+service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
+    override
+    class main
+    user radio
+    socket ims_datad stream 0660 system radio
+    group radio wifi inet vendor_qti_diag log
+    disabled
