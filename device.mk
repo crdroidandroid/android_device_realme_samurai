@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# Ril
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
