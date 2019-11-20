@@ -20,6 +20,7 @@
 #include <hidl/HidlTransportSupport.h>
 #include <android-base/logging.h>
 #include <fstream>
+#include <unistd.h>
 #include <cmath>
 
 
@@ -78,18 +79,19 @@ Return<int32_t> FingerprintInscreen::getSize() {
 }
 
 Return<void> FingerprintInscreen::onStartEnroll() {
+    set(HBM_PATH, FP_BEGIN);
     set(DIMLAYER_PATH, FP_BEGIN);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onFinishEnroll() {
+    set(HBM_PATH, FP_ENDIT);
     set(DIMLAYER_PATH, FP_ENDIT);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    set(DIMLAYER_PATH, FP_BEGIN);
-    set(HBM_PATH, FP_BEGIN);
+//    set(HBM_PATH, FP_BEGIN);
     set(FP_PRESS_PATH, FP_BEGIN);
     return Void();
 }
@@ -104,6 +106,8 @@ Return<void> FingerprintInscreen::onRelease() {
 Return<void> FingerprintInscreen::onShowFODView() {
     this->mOppoBiometricsFingerprint->setScreenState(
 	vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_ON);
+    set(DIMLAYER_PATH, FP_BEGIN);
+    set(HBM_PATH, FP_BEGIN);
     return Void();
 }
 
@@ -130,8 +134,16 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
     return Void();
 }
 
-Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
-    return 0;
+Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
+    float alpha;
+
+    if (brightness > 62) {
+        alpha = 1.0 - pow(brightness / 255.0 * 430.0 / 600.0, 0.45);
+    } else {
+        alpha = 1.0 - pow(brightness / 200.0, 0.45);
+    }
+
+    return 255 * alpha;
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
