@@ -131,6 +131,9 @@ ro.qti.sensors.wu=false
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# Time
+persist.vendor.delta_time.enable=true
+
 # IWLAN
 persist.data.iwlan.enable=true
 persist.data.iwlan.rekey=4294967295
