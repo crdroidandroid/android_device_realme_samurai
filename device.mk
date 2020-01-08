@@ -16,6 +16,9 @@ $(call inherit-product-if-exists, vendor/realme//RMX1931/RMX1931-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Properties
+-include $(LOCAL_PATH)/system_prop.mk
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
