@@ -1,0 +1,12 @@
+dontaudit vendor_qti_init_shell default_prop:file r_file_perms;
+dontaudit vendor_qti_init_shell self:capability dac_override;
+
+allow vendor_qti_init_shell configfs:dir w_dir_perms;
+allow vendor_qti_init_shell configfs:file create_file_perms;
+allow vendor_qti_init_shell configfs:dir create_dir_perms;
+allow vendor_qti_init_shell configfs:lnk_file create_file_perms;
+allow vendor_qti_init_shell proc_devinfo:dir search;
+allow vendor_qti_init_shell proc_devinfo:file { getattr read open };
+allow vendor_qti_init_shell self:capability kill;
+allow vendor_qti_init_shell sysfs:file setattr;
+allow vendor_qti_init_shell sysfs_leds:file setattr;
