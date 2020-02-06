@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/realme//RMX1931/RMX1931-vendor.mk)
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
@@ -118,7 +121,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service
+    android.hardware.power@1.2-service.RMX1931
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
