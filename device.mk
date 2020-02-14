@@ -16,6 +16,11 @@ $(call inherit-product-if-exists, vendor/realme//RMX1931/RMX1931-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
+
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
