@@ -56,6 +56,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# NFC
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:system/etc/permissions/android.hardware.nfc.hcef.xml \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+    $(LOCAL_PATH)/configs/nfc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    $(LOCAL_PATH)/configs/nfc/nqnfcee_access.xml:system/etc/nqnfcee_access.xml \
+    $(LOCAL_PATH)/configs/nfc/nqnfcse_access.xml:system/etc/nqnfcse_access.xml
+
+PRODUCT_PACKAGES += \
+    NfcNci \
+    SecureElement \
+    Tag
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
