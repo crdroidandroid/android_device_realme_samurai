@@ -59,6 +59,8 @@ private:
 
     std::mutex mCallbackLock;
     sp<IFingerprintInscreenCallback> mCallback;
+
+    bool mFingerPressed;
 };
 
 }  // namespace implementation
