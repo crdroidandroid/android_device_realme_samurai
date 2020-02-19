@@ -161,9 +161,6 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
-# Treble
-BOARD_VNDK_VERSION := current
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
