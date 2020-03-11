@@ -62,6 +62,7 @@ namespace V1_0 {
 namespace implementation {
 
 FingerprintInscreen::FingerprintInscreen() {
+    this->mOppoBiometricsFingerprint = IBiometricsFingerprint::getService();
 }
 
 Return<int32_t> FingerprintInscreen::getPositionX() {
@@ -77,10 +78,12 @@ Return<int32_t> FingerprintInscreen::getSize() {
 }
 
 Return<void> FingerprintInscreen::onStartEnroll() {
+    set(DIMLAYER_PATH, FP_BEGIN);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onFinishEnroll() {
+    set(DIMLAYER_PATH, FP_ENDIT);
     return Void();
 }
 
@@ -99,10 +102,14 @@ Return<void> FingerprintInscreen::onRelease() {
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+    this->mOppoBiometricsFingerprint->setScreenState(
+	vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_ON);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
+    this->mOppoBiometricsFingerprint->setScreenState(
+	vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_OFF);
     set(HBM_PATH, FP_ENDIT);
     set(DIMLAYER_PATH, FP_ENDIT);
     set(FP_PRESS_PATH, FP_ENDIT);
