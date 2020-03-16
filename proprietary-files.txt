@@ -2,18 +2,18 @@
 lib64/vendor.oppo.hardware.ktv@1.0.so
 lib/vendor.oppo.hardware.ktv@1.0.so
 
-# CNE
-etc/permissions/cneapiclient.xml
-etc/permissions/com.quicinc.cne.xml
-framework/cneapiclient.jar
-framework/com.quicinc.cne.jar
-lib64/com.quicinc.cne.server@1.0.so
-lib64/vendor.qti.hardware.data.latency@1.0.so
-lib64/vendor.qti.latency@2.0.so
-lib/com.quicinc.cne.server@1.0.so
-lib/vendor.qti.hardware.data.latency@1.0.so
-lib/vendor.qti.latency@2.0.so
--priv-app/CNEService/CNEService.apk
+# CNE - from raphael - PKQ1.181121.001-V10.3.12.0.PFKCNXM
+etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
+etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
+framework/cneapiclient.jar|af7db889362e562a4c5073bb6aae32947218abf0
+framework/com.quicinc.cne.jar|9f67d8a8a0aaed03f12af292a142c4460a9e9ced
+lib64/com.quicinc.cne.server@1.0.so|829cd62fd7a54a465ec613d19a7312e218468ede
+lib64/vendor.qti.hardware.data.latency@1.0.so|688d0f6b6e5a06f1c64bfe0834bc43174f2dddce
+lib64/vendor.qti.latency@2.0.so|128104f878d8120a84bafa3e6114cb27253aefe3
+lib/com.quicinc.cne.server@1.0.so|54f36ad0892113da77357b10a24b435e1d1db60a
+lib/vendor.qti.hardware.data.latency@1.0.so|5aeaea6161bc2004e27127b29bdf450561c9f7b7
+lib/vendor.qti.latency@2.0.so|1ba8465e81bb1132811c437c1d075af52b5589e4
+-priv-app/CNEService/CNEService.apk|754036a2278bc0104ac230cfc3d31c1d7cd2fe39
 
 # Display postprocessing
 lib64/vendor.display.color@1.0.so
