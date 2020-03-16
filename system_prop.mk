@@ -43,6 +43,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg \
     ro.vendor.display.sensortype=2
 
+# Fingerprint scanner
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.fingerprint.optical.iconlocation=244 \
+    persist.vendor.fingerprint.optical.iconsize=190
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
