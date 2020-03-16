@@ -15,37 +15,8 @@ lib/vendor.qti.hardware.data.latency@1.0.so
 lib/vendor.qti.latency@2.0.so
 -priv-app/CNEService/CNEService.apk
 
-# DPM
-bin/dpmd
-etc/dpm/dpm.conf
-etc/init/dpmd.rc
-etc/permissions/com.qti.dpmframework.xml
-etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
-lib64/com.qualcomm.qti.dpm.api@1.0.so
-lib64/libdpmctmgr.so
-lib64/libdpmfdmgr.so
-lib64/libdpmframework.so
-lib64/libdpmtcm.so
-lib/com.qualcomm.qti.dpm.api@1.0.so
-lib/libdpmctmgr.so
-lib/libdpmfdmgr.so
-lib/libdpmframework.so
-lib/libdpmtcm.so
--priv-app/dpmserviceapp/dpmserviceapp.apk
-
 # Display postprocessing
 lib64/vendor.display.color@1.0.so
-
-# FM
-lib/fm_helium.so
-lib/libfm-hci.so
--lib/vendor.qti.hardware.fm@1.0.so
-lib64/fm_helium.so
-lib64/libfm-hci.so
--lib64/vendor.qti.hardware.fm@1.0.so
 
 # IMS - from raphael - PKQ1.181121.001-V10.3.12.0.PFKCNXM
 -app/uceShimService/uceShimService.apk|c2c64a4351245b25aa9b0b1c3aa7a84afe8e8e39
