@@ -88,7 +88,7 @@ etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
 framework/qcrilhook.jar|9079656662ecc6777484d4c18c2d205293faa4e2
 framework/qti-telephony-common.jar|ab8e545dbcf593a8bcc42e9f68718fc38fa31785
 framework/QtiTelephonyServicelibrary.jar|a427d118f7c15ca4eb3e4667bf43d35f5d3b80cb
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|f4654bec9eaba20175dd130ed0186b14e54357bb
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|956a4017d0ba7f68e6d225e57b40d3b2bcbb4837
 
 # WiFi Display
 bin/wfdservice
