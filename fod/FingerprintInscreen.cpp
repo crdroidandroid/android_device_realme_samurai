@@ -28,7 +28,7 @@
 #define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
 #define HBM_PATH "/sys/kernel/oppo_display/hbm"
 #define X_POS 445
-#define Y_POS 1988
+#define Y_POS 2061
 #define FP_SIZE 190
 #define FP_BEGIN 1
 #define FP_ENDIT 0
