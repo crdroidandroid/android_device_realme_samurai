@@ -7,4 +7,4 @@
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.power@1\.2-service                    u:object_r:hal_power_default_exec:s0
 /system/bin/hw/lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.RMX1931                                 u:object_r:hal_fod_RMX1931_exec:s0
 /system/bin/hw/lineage\.touch@1\.0-service\.RMX1931                                                             u:object_r:hal_touch_RMX1931_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service.RMX1931                  u:object_r:hal_fingerprint_default_exec:s0
+/system/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service.RMX1931                                  u:object_r:hal_fingerprint_RMX1931_exec:s0

@@ -140,6 +140,8 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
     device/qcom/sepolicy/qva/public
 
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 

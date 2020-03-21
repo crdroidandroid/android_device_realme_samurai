@@ -1,0 +1,2 @@
+type hal_fingerprint_oppo;
+permissive  hal_fingerprint_oppo;

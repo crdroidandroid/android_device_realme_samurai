@@ -1,2 +1,12 @@
 # Ignore all logging requests
 dontaudit hal_fingerprint storage_file:dir search;
+
+type hal_fingerprint_RMX1931, coredomain, domain;
+
+hal_client_domain(hal_fingerprint_RMX1931, hal_fingerprint)
+hal_server_domain(hal_fingerprint_RMX1931, hal_fingerprint)
+
+type hal_fingerprint_RMX1931_exec, system_file_type, exec_type, file_type;
+init_daemon_domain(hal_fingerprint_RMX1931)
+
+typeattribute hal_fingerprint_RMX1931 data_between_core_and_vendor_violators;

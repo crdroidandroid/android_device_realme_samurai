@@ -1,3 +1,1 @@
 genfscon proc  /touchpanel u:object_r:proc_touchpanel:s0
-genfscon sysfs /sys/kernel/oppo_display/notify_fppress u:object_r:sysfs_fod:s0
-genfscon sysfs /sys/kernel/oppo_display/dimlayer_hbm u:object_r:sysfs_fod:s0
