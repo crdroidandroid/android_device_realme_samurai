@@ -11,6 +11,10 @@ on init
     chown system system /proc/touchpanel/oppo_tp_limit_enable
     chown system system /proc/touchpanel/oppo_tp_limit_area
     chown system system /proc/touchpanel/tp_fw_update
+    write /proc/touchpanel/oppo_tp_limit_enable 0
+
+    chown system system /proc/touchpanel/oppo_tp_direction
+    write /proc/touchpanel/oppo_tp_direction 1
 
     # Boot time FS tune
     write /sys/block/sda/queue/iostats 0

@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# devicesettings
+PRODUCT_PACKAGES += \
+    devicesettings
+
 # Display
 PRODUCT_PACKAGES += \
     libvulkan
