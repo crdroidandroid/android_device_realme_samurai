@@ -46,7 +46,6 @@ ro.vendor.use_data_netmgrd=true
 ro.boot.realme.lockstate=0
 
 # Graphics
-debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.early.sf.duration=16000000
 debug.sf.early.app.duration=33500000
