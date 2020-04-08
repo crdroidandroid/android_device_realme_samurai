@@ -85,7 +85,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl:32 \
     android.hardware.audio.effect@6.0-impl:32 \
-    android.hardware.audio@2.0-service \
+    android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.0-impl:64 \
     android.hardware.soundtrigger@2.1-impl:32 \
     audio.a2dp.default \
