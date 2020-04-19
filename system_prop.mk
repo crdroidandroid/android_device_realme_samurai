@@ -97,7 +97,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
-    gsm.lte.ca.support \
+    gsm.lte.ca.support=1 \
     persist.radio.custom_exp_ecc=1 \
     persist.radio.hvolte.enable=1 \
     persist.vendor.radio.atfwd.start=true \
