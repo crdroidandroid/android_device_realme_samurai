@@ -29,3 +29,5 @@ libancbase_rt_bokeh.so
 libAncHumBokeh.so
 libsnpe_loader.so
 libhta.so
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so
