@@ -144,6 +144,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
     init.msm.usb.configfs.rc \
+    init.oppo.rc \
+    init.oppo.sensor.rc \
+    init.oppo.vendor.fingerprint.rc \
+    init.oppo.vendor.touchpress.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \

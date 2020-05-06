@@ -302,6 +302,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/nfc-nci              0660    nfc         nfc
 /dev/nq-nci               0660    nfc         nfc
 /dev/assd                 0660    nfc         nfc
+/dev/p73                  0660    secure_element         secure_element
+/dev/pn544                0660    nfc         nfc
 
 # UIO devices
 /dev/uio0                 0660   system     system
@@ -396,3 +398,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb0     modes                    0664    system  graphics
 /sys/class/graphics/fb0     mode                     0664    system  graphics
 /sys/class/graphics/fb0     msm_cmd_autorefresh_en   0664    system  graphics
+
+#ifdef VENDOR_EDIT
+#liangkun@Swdp.shanghai 2017.05.18, change default owner for /dev/kneuron node
+/dev/kneuron              0660   system     system
+#endif /* VENDOR_EDIT */
