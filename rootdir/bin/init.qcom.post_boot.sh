@@ -354,32 +354,16 @@ function configure_zram_parameters() {
     fi
 
     if [ -f /sys/block/zram0/disksize ]; then
-
-#ifdef VENDOR_EDIT //Huacai.Zhou@PSW.Kernel.mm,config zramsize according to ramsize
-        echo lz4 > /sys/block/zram0/comp_algorithm
+        if [ -f /sys/block/zram0/use_dedup ]; then
+            echo 1 > /sys/block/zram0/use_dedup
+        fi
         if [ $MemTotal -le 524288 ]; then
             echo 402653184 > /sys/block/zram0/disksize
         elif [ $MemTotal -le 1048576 ]; then
             echo 805306368 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 2097152 ]; then
-            #config 1GB+256M zram size with memory 2 GB
-            echo 1342177280 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 3145728 ]; then
-            #config 1GB +512M+256M zram size with memory 3 GB
-            echo 1879048192 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 4194304 ]; then
-            #config 2GB zram size with memory 4 GB
-            echo 2147483648 > /sys/block/zram0/disksize
-        elif [ $MemTotal -le 6291456 ]; then
-            #config 2GB+512M zram size with memory 6 GB
-            echo 2684354560 > /sys/block/zram0/disksize
         else
-            #config 2GB+256M zram size with memory greater than 6GB
-            echo 2415919104 > /sys/block/zram0/disksize
+            echo $zRamSizeBytes > /sys/block/zram0/disksize
         fi
-        echo 160 > /proc/sys/vm/swappiness
-        echo 60 > /proc/sys/vm/direct_swappiness
-#endif /*VENDOR_EDIT*/
         mkswap /dev/block/zram0
         swapon /dev/block/zram0 -p 32758
     fi
@@ -513,13 +497,6 @@ else
 
             vmpres_file_min=$((minfree_5 + (minfree_5 - rem_minfree_4)))
             echo $vmpres_file_min > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
-
-#ifdef VENDOR_EDIT //Huacai.Zhou@PSW.Kernel.BSP.Memory, 2018/07/25, increase lmk minfree
-	        rem_minfree_0="${minfree_series%%,*}"
-	        rem_minfree_4=$((rem_minfree_4*3/2))
-	        rem_minfree_5=$((minfree_5*3/2))
-	        echo "$rem_minfree_0,$rem_minfree_1,$rem_minfree_2,$rem_minfree_3,$rem_minfree_4,$rem_minfree_5" > /sys/module/lowmemorykiller/parameters/minfree
-#endif
         else
             # Set LMK series, vmpressure_file_min for 32 bit non-go targets.
             # Disable Core Control, enable KLMK for non-go 8909.
@@ -602,13 +579,10 @@ function enable_memory_features()
 function start_hbtp()
 {
         # Start the Host based Touch processing but not in the power off mode.
-#ifndef VENDOR_EDIT
-#Cong.Dai@PSW.BSP.TP 2018/03/12 del for closing hbtp
-#        bootmode=`getprop ro.bootmode`
-#        if [ "charger" != $bootmode ]; then
-#                start vendor.hbtp
-#        fi
-#endif /*VENDOR_EDIT*/
+        bootmode=`getprop ro.bootmode`
+        if [ "charger" != $bootmode ]; then
+                start vendor.hbtp
+        fi
 }
 
 case "$target" in
@@ -4429,11 +4403,7 @@ case "$target" in
 
 	# Setting b.L scheduler parameters
 	echo 100 > /proc/sys/kernel/sched_group_upmigrate
-#ifdef VENDOR_EDIT //SunFaliang@BSP.Power.Basic,Standardize the submission of Hypnus.
-	echo 95 > /proc/sys/kernel/sched_group_downmigrate
-#else
-#	echo 10 > /proc/sys/kernel/sched_group_downmigrate
-#endif
+	echo 10 > /proc/sys/kernel/sched_group_downmigrate
 	echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
 	# cpuset parameters
