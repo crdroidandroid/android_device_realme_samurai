@@ -8,6 +8,12 @@
 # CryptoEng
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.cryptoeng@1\.0-service                                u:object_r:hal_cryptoeng_default_exec:s0
 
+# DSP
+# Hexagon DSP-side executable needed for Halide operation
+# This is labeled as public_adsprpcd_file as it needs to be read by apps
+# (e.g. Google Camera App)
+/mnt/vendor/dsp/fastrpc_shell_3                                                                         u:object_r:public_adsprpcd_file:s0
+
 # Fingerprint
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.RMX1931                         u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.RMX1931                  u:object_r:hal_lineage_fod_RMX1931_exec:s0

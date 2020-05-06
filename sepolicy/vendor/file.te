@@ -5,6 +5,7 @@ type oppo_ver_proc, proc_type, fs_type;
 type persist_camera_file, file_type;
 type proc_devinfo, proc_type, fs_type;
 type proc_touchpanel, proc_type, fs_type;
+type public_adsprpcd_file, file_type;
 type sysfs_fps, sysfs_type, fs_type;
 type sysfs_oppo_display, sysfs_type, fs_type;
 type sysfs_vl53l1, sysfs_type, fs_type;

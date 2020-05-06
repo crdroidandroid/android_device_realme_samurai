@@ -11,6 +11,7 @@ allow hal_camera_default oppo_ver_proc:file r_file_perms;
 allow hal_camera_default persist_camera_file:dir { search write add_name };
 allow hal_camera_default persist_camera_file:file { create read write open getattr setattr };
 allow hal_camera_default proc_meminfo:file { read open getattr };
+allow hal_camera_default public_adsprpcd_file:file r_file_perms;
 allow hal_camera_default sysfs:file { read open };
 allow hal_camera_default sysfs_net:dir search;
 allow hal_camera_default sysfs_net:file { read open };

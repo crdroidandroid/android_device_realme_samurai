@@ -1,1 +1,2 @@
 hal_client_domain(vendor_vppservice, vendor_hal_capabilityconfigstore_qti)
+r_dir_file(vendor_vppservice, public_adsprpcd_file)
