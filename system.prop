@@ -24,6 +24,7 @@ vendor.bluetooth.soc=cherokee
 ro.camera.hfr.enable=1
 ro.camera.relight.enable=0
 ro.camera.attr.detect.enable=1
+ro.camera.notify_nfc=1
 ro.camera.temperature.limit=470
 persist.vendor.camera.light_ae.enable=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
@@ -78,6 +79,7 @@ ro.netflix.bsp_rev=Q855-16947-1
 persist.sys.nfc.aid_overflow=true
 persist.sys.nfc.antenna_area=bottom
 persist.sys.nfc.default=on
+persist.sys.nfc.disPowerSave=1
 ro.nfc.port=I2C
 ro.product.cuptsm=OPPO|ESE|01|02
 

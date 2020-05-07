@@ -12,9 +12,3 @@ ro.opa.eligible_device=true
 # Graphics
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
-
-# gsi
-ro.vendor.gsi.build.flavor=none
-
-# Media
-debug.stagefright.omx_default_rank.sw-audio=16
