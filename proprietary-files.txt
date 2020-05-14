@@ -96,10 +96,6 @@ product/lib64/vendor.qti.ims.rcsconfig@1.0.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Media
--vendor/lib/libplatformconfig.so
--vendor/lib64/libplatformconfig.so
-
 # OMX
 lib/libstagefright_softomx.so
 
