@@ -6,7 +6,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
+    persist.vendor.bt.a2dp.aac_whitelist=false \
     persist.vendor.btstack.enable.splita2dp=true \
+    persist.vendor.btstack.enable.twsplus=true \
+    persist.vendor.btstack.enable.twsplussho=true \
+    ro.bluetooth.a2dp_offload.supported=true \
+    ro.bluetooth.library_name=libbluetooth_qti.so \
     qcom.bluetooth.soc=cherokee \
     vendor.bluetooth.soc=cherokee
 
