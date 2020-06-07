@@ -27,7 +27,6 @@
 /* Hardcoded stuffs */
 #define FP_PRESS_PATH "/sys/kernel/oppo_display/notify_fppress"
 #define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
-#define HBM_PATH "/sys/kernel/oppo_display/hbm"
 #define X_POS 445
 #define Y_POS 2061
 #define FP_SIZE 190
@@ -80,20 +79,17 @@ Return<int32_t> FingerprintInscreen::getSize() {
 }
 
 Return<void> FingerprintInscreen::onStartEnroll() {
-    set(HBM_PATH, FP_BEGIN);
     set(DIMLAYER_PATH, FP_BEGIN);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onFinishEnroll() {
-    set(HBM_PATH, FP_ENDIT);
     set(DIMLAYER_PATH, FP_ENDIT);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onPress() {
     mFingerPressed = true;
-    //set(HBM_PATH, FP_BEGIN);
     std::thread([this]() {
         std::this_thread::sleep_for(std::chrono::milliseconds(60));
         if (mFingerPressed) {
@@ -107,7 +103,6 @@ Return<void> FingerprintInscreen::onRelease() {
     mFingerPressed = false;
     set(FP_PRESS_PATH, FP_ENDIT);
     set(DIMLAYER_PATH, FP_ENDIT);
-    set(HBM_PATH, FP_ENDIT);
     return Void();
 }
 
@@ -115,14 +110,12 @@ Return<void> FingerprintInscreen::onShowFODView() {
     this->mOppoBiometricsFingerprint->setScreenState(
 	vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_ON);
     set(DIMLAYER_PATH, FP_BEGIN);
-    set(HBM_PATH, FP_BEGIN);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
     this->mOppoBiometricsFingerprint->setScreenState(
 	vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_OFF);
-    set(HBM_PATH, FP_ENDIT);
     set(DIMLAYER_PATH, FP_ENDIT);
     set(FP_PRESS_PATH, FP_ENDIT);
     return Void();
@@ -142,16 +135,8 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
     return Void();
 }
 
-Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
-    float alpha;
-
-    if (brightness > 62) {
-        alpha = 1.0 - pow(brightness / 255.0 * 430.0 / 600.0, 0.45);
-    } else {
-        alpha = 1.0 - pow(brightness / 200.0, 0.45);
-    }
-
-    return 255 * alpha;
+Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
+    return 0;
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {

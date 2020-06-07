@@ -34,3 +34,11 @@ cc_binary {
         "vendor.oppo.hardware.biometrics.fingerprint@2.1",
     ],
 }
+
+cc_library_static {
+    name: "libfod_extension.RMX1931",
+    srcs: ["FodExtension.cpp"],
+    include_dirs: [
+        "frameworks/native/services/surfaceflinger/CompositionEngine/include"
+    ],
+}
