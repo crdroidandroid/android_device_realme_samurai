@@ -112,22 +112,6 @@ on late-fs
 on post-fs-data
     mkdir /data/system/audio 0775 media media
 
-    mkdir /data/gf_data 0700 system system
-    mkdir /data/system/gf_data 0700 system system
-
-    mkdir /data/vendor/fingerprint 0770 system system
-    chown system system /sys/kernel/oppo_display/hbm
-
-on property:sys.boot_completed=1
-    setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
-
-#Shengwang.Luo@BSP.Fingerprint.Basic, 2019/11/12, add unlock prop
-on property:ro.boot.vbmeta.device_state=unlocked
-    setprop vendor.boot.verifiedbootstate 1
-
-on property:ro.boot.vbmeta.device_state=locked
-    setprop vendor.boot.verifiedbootstate 0
-
 service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
     override
     class main
