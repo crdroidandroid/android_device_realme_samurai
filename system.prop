@@ -53,6 +53,7 @@ vendor.flash.locked=0
 persist.sys.fuse.passthrough.enable=true
 
 # Graphics
+debug.sf.disable_client_composition_cache=1
 debug.sf.enable_hwc_vds=1
 debug.sf.early.sf.duration=16000000
 debug.sf.early.app.duration=16500000
