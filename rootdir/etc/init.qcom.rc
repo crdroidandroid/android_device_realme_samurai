@@ -1,3 +1,7 @@
+on post-fs
+    mount none /dev/null /vendor/lib64/hw/power.default.so bind
+    mount none /dev/null /vendor/lib/hw/power.default.so bind
+
 on init
     #Qicai.Gu@PSW.BSP.TP.Function 2019-06-14 add for limit_enable
     chown system system /proc/touchpanel/oppo_tp_limit_enable
