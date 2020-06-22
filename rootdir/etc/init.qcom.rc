@@ -1,6 +1,21 @@
 on post-fs
     mount none /dev/null /vendor/lib64/hw/power.default.so bind
     mount none /dev/null /vendor/lib/hw/power.default.so bind
+    mount none /dev/null /vendor/overlay/OptInAppOverlay/OptInAppOverlay.apk bind
+    mount none /dev/null /vendor/overlay/OverlayUserCenter/OverlayUserCenter.apk bind
+    mount none /dev/null /vendor/overlay/BlackListAppResCommon.apk bind
+    mount none /dev/null /vendor/overlay/BreenoResCommon.apk bind
+    mount none /dev/null /vendor/overlay/CellBroadcastReceiverResCommon.apk bind
+    mount none /dev/null /vendor/overlay/ColorDirectServiceResCommon.apk bind
+    mount none /dev/null /vendor/overlay/FrameworksResCommon.apk bind
+    mount none /dev/null /vendor/overlay/FrameworksResTarget.apk bind
+    mount none /dev/null /vendor/overlay/OppoGmailOverlay.apk bind
+    mount none /dev/null /vendor/overlay/OppoPhoneActivationResCommon.apk bind
+    mount none /dev/null /vendor/overlay/PromeResCommon.apk bind
+    mount none /dev/null /vendor/overlay/SceneServiceResCommon.apk bind
+    mount none /dev/null /vendor/overlay/SystemUIResCommon.apk bind
+    mount none /dev/null /vendor/overlay/TelecommResCommon.apk bind
+    mount none /dev/null /vendor/overlay/TelephonyResCommon.apk bind
 
 on init
     # Drop write bit from cpu_min_freq so that libqti-perfd can't set it
