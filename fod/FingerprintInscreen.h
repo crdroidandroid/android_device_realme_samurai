@@ -60,8 +60,6 @@ private:
     std::mutex mCallbackLock;
     sp<IFingerprintInscreenCallback> mCallback;
 
-    bool mFodCircleVisible;
-    bool mIsEnrolling;
     bool mFingerPressed;
 };
 

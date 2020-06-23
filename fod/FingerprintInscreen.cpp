@@ -33,8 +33,6 @@
 #define FP_BEGIN 1
 #define FP_ENDIT 0
 
-#define FINGERPRINT_ACQUIRED_VENDOR 6
-
 namespace {
 
 template <typename T>
@@ -65,7 +63,6 @@ namespace implementation {
 
 FingerprintInscreen::FingerprintInscreen()
     : mFingerPressed{false} {
-    this->mFodCircleVisible = false;
     this->mOppoBiometricsFingerprint = IBiometricsFingerprint::getService();
 }
 
@@ -82,21 +79,16 @@ Return<int32_t> FingerprintInscreen::getSize() {
 }
 
 Return<void> FingerprintInscreen::onStartEnroll() {
-    this->mIsEnrolling = true;
     set(DIMLAYER_PATH, FP_BEGIN);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onFinishEnroll() {
-    this->mIsEnrolling = false;
     set(DIMLAYER_PATH, FP_ENDIT);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    if (mIsEnrolling) {
-    set(DIMLAYER_PATH, FP_BEGIN);
-    }
     mFingerPressed = true;
     std::thread([this]() {
         std::this_thread::sleep_for(std::chrono::milliseconds(60));
@@ -115,7 +107,6 @@ Return<void> FingerprintInscreen::onRelease() {
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
-    this->mFodCircleVisible = true;
     this->mOppoBiometricsFingerprint->setScreenState(
 	vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_ON);
     set(DIMLAYER_PATH, FP_BEGIN);
@@ -123,7 +114,6 @@ Return<void> FingerprintInscreen::onShowFODView() {
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
-    this->mFodCircleVisible = false;
     this->mOppoBiometricsFingerprint->setScreenState(
 	vendor::oppo::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_OFF);
     set(DIMLAYER_PATH, FP_ENDIT);
@@ -133,29 +123,6 @@ Return<void> FingerprintInscreen::onHideFODView() {
 
 Return<bool> FingerprintInscreen::handleAcquired(int32_t acquiredInfo, int32_t vendorCode) {
     LOG(ERROR) << "acquiredInfo: " << acquiredInfo << ", vendorCode: " << vendorCode << "\n";
-    std::lock_guard<std::mutex> _lock(mCallbackLock);
-    if (mCallback == nullptr) {
-        return false;
-    }
-
-    if (acquiredInfo == FINGERPRINT_ACQUIRED_VENDOR) {
-        if (mFodCircleVisible && vendorCode == 0) {
-            Return<void> ret = mCallback->onFingerDown();
-            if (!ret.isOk()) {
-                LOG(ERROR) << "FingerDown() error: " << ret.description();
-            }
-            return true;
-        }
-
-        if (mFodCircleVisible && vendorCode == 1) {
-            Return<void> ret = mCallback->onFingerUp();
-            if (!ret.isOk()) {
-                LOG(ERROR) << "FingerUp() error: " << ret.description();
-            }
-            return true;
-        }
-    }
-
     return false;
 }
 
