@@ -113,9 +113,12 @@ on boot
 #Xuefeng.Peng@PSW.AD.Usb.1410703, 2018/06/19, Add for support NDIS 5.0
     write /config/usb_gadget/g1/functions/gsi.rndis/rndis_class_id 1
 
+    chown system system /sys/kernel/oppo_display/notify_panel_blank
+    chmod 0666 /sys/kernel/oppo_display/notify_panel_blank
+
 on late-fs
     # Boot time FS tune
-    write /sys/block/dm-3/queue/read_ahead_kb 2048þ
+    write /sys/block/dm-3/queue/read_ahead_kb 2048
 
     # Runtime FS tuning: as we have init boottime setting and kernel patch setting
     # default readahead to 2048KB. We should adjust the setting upon boot_complete
