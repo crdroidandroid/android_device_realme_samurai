@@ -16,6 +16,7 @@ on post-fs
     mount none /dev/null /vendor/overlay/SystemUIResCommon.apk bind
     mount none /dev/null /vendor/overlay/TelecommResCommon.apk bind
     mount none /dev/null /vendor/overlay/TelephonyResCommon.apk bind
+    mount none /system/etc/WCNSS_qcom_cfg.ini /mnt/vendor/persist/WCNSS_qcom_cfg.ini bind
 
 on init
     # Drop write bit from cpu_min_freq so that libqti-perfd can't set it

@@ -189,5 +189,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnl
 
+# WiFi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/WCNSS_qcom_cfg.ini
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
