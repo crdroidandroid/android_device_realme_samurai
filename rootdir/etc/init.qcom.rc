@@ -30,6 +30,9 @@ on init
     chown system system /proc/touchpanel/oppo_tp_direction
     write /proc/touchpanel/oppo_tp_direction 1
 
+    chown system system /proc/touchpanel/DOZE_STATUS
+    chmod 0444 /proc/touchpanel/DOZE_STATUS
+
     # Boot time FS tune
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
