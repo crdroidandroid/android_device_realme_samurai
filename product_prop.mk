@@ -13,6 +13,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.heapminfree=8m \
     dalvik.vm.heapmaxfree=64m
 
+# gsi
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.gsi.build.flavor=none
+
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.stagefright.omx_default_rank.sw-audio=16
