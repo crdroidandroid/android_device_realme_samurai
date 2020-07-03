@@ -11,6 +11,7 @@ persist.bluetooth.bqr.choppy_threshold=9,6
 persist.bluetooth.disableabsvol=false
 persist.bluetooth.disableinbandringing=false
 persist.bluetooth.specificatcmdsenable=true
+persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true
