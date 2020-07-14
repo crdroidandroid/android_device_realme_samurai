@@ -2,23 +2,28 @@
 lib64/vendor.oppo.hardware.ktv@1.0.so
 lib/vendor.oppo.hardware.ktv@1.0.so
 
-# Audio (DOlby) - from chef_sprout - QPTS30.61-18-10-530d8
--app/DaxUI/DaxUI.apk|5e34086cd8652afdc0a332a56e87a40dfec09543
--app/daxService/daxService.apk|a42beb93232a3726b77cd0e802fd1c8d28e23c0f
-etc/permissions/com.dolby.dax2appUI.xml|5337f5d226423abb7fbe380f5bea6b1f6a004566
-etc/sysconfig/hiddenapi-whitelist-com.dolby.dax2appUI.xml|0979abf99befaad3d7f97a2c6aeb36d26761b7ab
+# Audio (Dolby) - from chef_sprout - QPTS30.61-18-12-65302
+-app/MotoDolbyV3/MotoDolbyV3.apk|90f479b3604bbf735f685209f47f3e51a83a9943
+etc/permissions/com.dolby.daxservice.xml|38eb347890c0140fd6ff329dff5ba94cdabba08b
+etc/permissions/com.motorola.dolby.dolbyui.features.xml|7eafc481b604505f057931a6f83c507e357886b3
+etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml|ab4600814879c626a410e607107829faceec9d2c
 framework/dolby_dax.jar|e8af26b86251989c40cbb30271cf04076264dce0
+-priv-app/daxService/daxService.apk|65636285cbe8deccc2372957073831b7138b9e43
 vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service:product/vendor_overlay/29/bin/hw/vendor.dolby.hardware.dms@1.0-service|7b03cdd0de7fac18f2c8546087b4b398da795808
 vendor/etc/dolby/dax-default.xml:product/vendor_overlay/29/etc/dolby/dax-default.xml|f3bc8cfcbee0f273756ddf6f805aa2d569898629
 vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc:product/vendor_overlay/29/etc/init/vendor.dolby.hardware.dms@1.0-service.rc|0cf43314fc44e5de25841590c948a0dee3da7b84
 vendor/lib/libdapparamstorage.so:product/vendor_overlay/29/lib/libdapparamstorage.so|d84246abcd38b74106e5ed40004824572c07ad6e
-vendor/lib/libstagefrightdolby.so:product/vendor_overlay/29/lib/libstagefrightdolby.so|fcc369f274b9a7fc8ce81a7176bae922239c4a06
+vendor/lib/libdapparamstorage_ds1se.so:product/vendor_overlay/29/lib/libdapparamstorage_ds1se.so|b9f9e921948bbc631e967a133f0bf9f55b153293
+vendor/lib/libstagefrightdolby.so:product/vendor_overlay/29/lib/libstagefrightdolby.so|21ad7a8abe576395f3d1e0845b1f73954de7f743
 vendor/lib/soundfx/libswdap.so:product/vendor_overlay/29/lib/soundfx/libswdap.so|751bdc73b4d2222272a92cc13c9059d2c4a74ae1
+vendor/lib/soundfx/libswdap_ds1se.so:product/vendor_overlay/29/lib/soundfx/libswdap_ds1se.so|fc0caa1be15b6f36288e9cd3d9105a5ef49319e4
 vendor/lib/vendor.dolby.hardware.dms@1.0.so:product/vendor_overlay/29/lib/vendor.dolby.hardware.dms@1.0.so|f899a2bd007c6aa82f7b6d305f8ebb44d1206eeb
 vendor/lib64/libdapparamstorage.so:product/vendor_overlay/29/lib64/libdapparamstorage.so|c7c273ed549f3b74163e6bf7e28cddf224402ad2
+vendor/lib64/libdapparamstorage_ds1se.so:product/vendor_overlay/29/lib64/libdapparamstorage_ds1se.so|dcb869b94e23b862b0a048af1794432e5e01b92e
 vendor/lib64/libdlbdsservice.so:product/vendor_overlay/29/lib64/libdlbdsservice.so|3086beab2d974c9ab56eb1521525a72ab3f3d4be
-vendor/lib64/libstagefrightdolby.so:product/vendor_overlay/29/lib64/libstagefrightdolby.so|b727f59555ee698b0ee9414e70d5e3fdde704f07
+vendor/lib64/libdlbdsservice_ds1se.so:product/vendor_overlay/29/lib64/libdlbdsservice_ds1se.so|18d40bdb3fce1cdad6264ae32eaab3b9dd61f3d3
 vendor/lib64/soundfx/libswdap.so:product/vendor_overlay/29/lib64/soundfx/libswdap.so|269e59f67010635f9e3519b149a85bd86eb3c686
+vendor/lib64/soundfx/libswdap_ds1se.so:product/vendor_overlay/29/lib64/soundfx/libswdap_ds1se.so|d7ce1225290f1c23d604acecf2c5d50338070073
 vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so:product/vendor_overlay/29/lib64/vendor.dolby.hardware.dms@1.0-impl.so|6e0701c75e63555553b9a69f18af8fbafa22d9f6
 vendor/lib64/vendor.dolby.hardware.dms@1.0.so:product/vendor_overlay/29/lib64/vendor.dolby.hardware.dms@1.0.so|b45ebcc1b13b88e021ee8df4cb1cadf700fa2177
 
