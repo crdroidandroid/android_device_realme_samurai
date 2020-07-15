@@ -106,7 +106,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.post_boot.sh:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin/init.qcom.post_boot.sh
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.post_boot.sh:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin/init.qcom.post_boot.sh \
+    $(LOCAL_PATH)/rootdir/etc/init-qcril-data.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/init-qcril-data.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/fstab.qcom
