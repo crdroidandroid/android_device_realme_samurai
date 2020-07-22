@@ -1,6 +1,9 @@
 # Google Assistant
 ro.opa.eligible_device=true
 
+# Incremental FS
+ro.incremental.enable=1
+
 # LMKD
 ro.config.low_ram=false
 
