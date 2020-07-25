@@ -54,7 +54,7 @@ private:
     std::mutex mCallbackLock;
     sp<IFingerprintInscreenCallback> mCallback;
 
-    bool mFingerPressed;
+    bool isDreamState;
 };
 
 }  // namespace implementation
