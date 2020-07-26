@@ -7,6 +7,7 @@ on post-fs
     mount none /dev/null /vendor/overlay/BreenoResCommon.apk bind
     mount none /dev/null /vendor/overlay/CellBroadcastReceiverResCommon.apk bind
     mount none /dev/null /vendor/overlay/ColorDirectServiceResCommon.apk bind
+    mount none /dev/null /vendor/overlay/ColorFavoriteResCommon.apk bind
     mount none /dev/null /vendor/overlay/FrameworksResCommon.apk bind
     mount none /dev/null /vendor/overlay/FrameworksResTarget.apk bind
     mount none /dev/null /vendor/overlay/OppoGmailOverlay.apk bind
