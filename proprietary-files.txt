@@ -511,10 +511,6 @@ vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Display (Hardware)
-vendor/lib/hw/hwcomposer.msmnile.so
-vendor/lib64/hw/hwcomposer.msmnile.so
-
 # Display postrocessing
 system_ext/lib64/vendor.display.color@1.0.so
 system_ext/lib64/vendor.display.color@1.1.so
