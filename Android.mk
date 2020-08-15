@@ -7,6 +7,5 @@
 LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter RMX1931,$(TARGET_DEVICE)),)
-subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
-$(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
+include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
