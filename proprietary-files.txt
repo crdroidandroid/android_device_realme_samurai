@@ -130,6 +130,20 @@ product/lib64/vendor.qti.ims.rcsconfig@1.0.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 
+# IO Prefetcher - from raphaelin - QKQ1.190825.002-V12.0.2.0.QFKINXM
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:product/vendor_overlay/29/bin/hw/vendor.qti.hardware.iop@2.0-service|98c38e3647a6c286e5bfb8b271827328f6c04148
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:product/vendor_overlay/29/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
+vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so:product/vendor_overlay/29/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|feaee7a3969d3f711db4fa5f12d1d4cca5fc2072
+vendor/lib/libqti-iopd-client.so:product/vendor_overlay/29/lib/libqti-iopd-client.so|be2e00af81ea63b6f37fb8a884d7af7d1def566b
+vendor/lib/libqti-iopd.so:product/vendor_overlay/29/lib/libqti-iopd.so|207e42a1d561098c4eda74e08044d32b3a02362b
+vendor/lib/vendor.qti.hardware.iop@1.0.so:product/vendor_overlay/29/lib/vendor.qti.hardware.iop@1.0.so|d1cbf74e7236bfe9a977bb7f609bb68fdf4d6750
+vendor/lib/vendor.qti.hardware.iop@2.0.so:product/vendor_overlay/29/lib/vendor.qti.hardware.iop@2.0.so|f692b707076a933f865e3564e3263c3d7b7ae5a6
+vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so:product/vendor_overlay/29/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|9c5ff1a7e6bf4b88fac19f27a0cee2baecd18341
+vendor/lib64/libqti-iopd-client.so:product/vendor_overlay/29/lib64/libqti-iopd-client.so|7fddeeb59ebe01eb2e87de56fe2c2d0899806bc9
+vendor/lib64/libqti-iopd.so:product/vendor_overlay/29/lib64/libqti-iopd.so|f795759359dc7db1adc178d6f47d254eab34189f
+vendor/lib64/vendor.qti.hardware.iop@1.0.so:product/vendor_overlay/29/lib64/vendor.qti.hardware.iop@1.0.so|8ccdc1463dcb554297b0c96d768126f0ca42b83a
+vendor/lib64/vendor.qti.hardware.iop@2.0.so:product/vendor_overlay/29/lib64/vendor.qti.hardware.iop@2.0.so|d5bafc1daeb1b417bbad1160f92e330610f09b8a
+
 # OMX
 lib/libstagefright_softomx.so
 
