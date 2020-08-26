@@ -3,7 +3,6 @@ on post-fs
     mount none /dev/null /vendor/lib/hw/power.default.so bind
     mount none /system/etc/wifi/WCNSS_qcom_cfg.ini /mnt/vendor/persist/WCNSS_qcom_cfg.ini bind
     mkdir /mnt/vendor/persist/empty_dir
-    mount none /mnt/vendor/persist/empty_dir /vendor/app bind
     mount none /mnt/vendor/persist/empty_dir /vendor/overlay bind
 
 on init
