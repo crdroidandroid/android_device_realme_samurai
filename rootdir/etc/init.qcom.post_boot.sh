@@ -4244,8 +4244,6 @@ case "$target" in
 	echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
 
 	# Setting b.L scheduler parameters
-	echo 95 95 > /proc/sys/kernel/sched_upmigrate
-	echo 85 85 > /proc/sys/kernel/sched_downmigrate
 	echo 100 > /proc/sys/kernel/sched_group_upmigrate
 	echo 10 > /proc/sys/kernel/sched_group_downmigrate
 	echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
@@ -4281,10 +4279,6 @@ case "$target" in
         echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
 	echo 1612800 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
-
-	# configure input boost settings
-	echo "0:1324800" > /sys/module/cpu_boost/parameters/input_boost_freq
-	echo 120 > /sys/module/cpu_boost/parameters/input_boost_ms
 
 	# ifdef VENDOR_EDIT
 	# simon.ma@SYSTEM, 2019/5/16, add for GCE-8382 to modify the minfree value of lmk
