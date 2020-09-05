@@ -105,3 +105,6 @@ on property:init.svc.tcpdump=running
 
 on property:init.svc.vendor.ipacm-diag=running
     stop vendor.ipacm-diag
+
+on property:init.svc.face_hal=restarting
+    stop face_hal
