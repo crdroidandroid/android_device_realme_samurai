@@ -36,7 +36,7 @@ on property:perf_profile=0
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 2419200
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq 2956800
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 710400
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq 825600
 
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 300000
@@ -45,11 +45,12 @@ on property:perf_profile=0
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1036800"
     write /sys/module/cpu_boost/parameters/input_boost_ms 20
 
-    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 180000000
-    write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 499200000
+    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 257000000
+    write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 675000000
+    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 5
 
-    write /proc/sys/kernel/sched_upmigrate "96 88"
-    write /proc/sys/kernel/sched_downmigrate "55 66"
+    write /proc/sys/kernel/sched_upmigrate "95 95"
+    write /proc/sys/kernel/sched_downmigrate "85 85"
 
     write /proc/sys/vm/swappiness 100
 
@@ -58,24 +59,32 @@ on property:perf_profile=0
     write /sys/class/thermal/thermal_zone28/cdev0_upper_limit 03
     write /sys/class/thermal/thermal_zone28/cdev1_lower_limit 01
     write /sys/class/thermal/thermal_zone28/cdev1_upper_limit 01
+    write /sys/class/thermal/thermal_zone28/cdev2_lower_limit 05
+    write /sys/class/thermal/thermal_zone28/cdev2_upper_limit 05
 
     # thermalzone29
     write /sys/class/thermal/thermal_zone29/cdev0_lower_limit 03
     write /sys/class/thermal/thermal_zone29/cdev0_upper_limit 03
     write /sys/class/thermal/thermal_zone29/cdev1_lower_limit 01
     write /sys/class/thermal/thermal_zone29/cdev1_upper_limit 01
+    write /sys/class/thermal/thermal_zone29/cdev2_lower_limit 05
+    write /sys/class/thermal/thermal_zone29/cdev2_upper_limit 05
 
     # thermalzone30
     write /sys/class/thermal/thermal_zone30/cdev0_lower_limit 03
     write /sys/class/thermal/thermal_zone30/cdev0_upper_limit 03
     write /sys/class/thermal/thermal_zone30/cdev1_lower_limit 01
     write /sys/class/thermal/thermal_zone30/cdev1_upper_limit 01
+    write /sys/class/thermal/thermal_zone30/cdev2_lower_limit 05
+    write /sys/class/thermal/thermal_zone30/cdev2_upper_limit 05
 
     # thermalzone31
     write /sys/class/thermal/thermal_zone31/cdev0_lower_limit 03
     write /sys/class/thermal/thermal_zone31/cdev0_upper_limit 03
     write /sys/class/thermal/thermal_zone31/cdev1_lower_limit 01
     write /sys/class/thermal/thermal_zone31/cdev1_upper_limit 01
+    write /sys/class/thermal/thermal_zone31/cdev2_lower_limit 05
+    write /sys/class/thermal/thermal_zone31/cdev2_upper_limit 05
 
     # thermalzone56
     write /sys/class/thermal/thermal_zone56/cdev0_lower_limit 02
@@ -146,17 +155,18 @@ on property:perf_profile=1
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 2419200
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq 2956800
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 710400
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq 825600
 
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1036800"
     write /sys/module/cpu_boost/parameters/input_boost_ms 20
 
-    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 180000000
+    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 257000000
     write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 675000000
+    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 4
 
-    write /proc/sys/kernel/sched_upmigrate "60 60"
-    write /proc/sys/kernel/sched_downmigrate "40 40"
+    write /proc/sys/kernel/sched_upmigrate "96 88"
+    write /proc/sys/kernel/sched_downmigrate "55 66"
 
     write /proc/sys/vm/swappiness 1
 
@@ -165,56 +175,64 @@ on property:perf_profile=1
     write /sys/class/thermal/thermal_zone28/cdev0_upper_limit 00
     write /sys/class/thermal/thermal_zone28/cdev1_lower_limit 00
     write /sys/class/thermal/thermal_zone28/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone28/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone28/cdev2_upper_limit 00
 
     # thermalzone29
     write /sys/class/thermal/thermal_zone29/cdev0_lower_limit 00
     write /sys/class/thermal/thermal_zone29/cdev0_upper_limit 00
     write /sys/class/thermal/thermal_zone29/cdev1_lower_limit 00
     write /sys/class/thermal/thermal_zone29/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone29/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone29/cdev2_upper_limit 00
 
     # thermalzone30
     write /sys/class/thermal/thermal_zone30/cdev0_lower_limit 00
     write /sys/class/thermal/thermal_zone30/cdev0_upper_limit 00
     write /sys/class/thermal/thermal_zone30/cdev1_lower_limit 00
     write /sys/class/thermal/thermal_zone30/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone30/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone30/cdev2_upper_limit 00
 
     # thermalzone31
     write /sys/class/thermal/thermal_zone31/cdev0_lower_limit 00
     write /sys/class/thermal/thermal_zone31/cdev0_upper_limit 00
     write /sys/class/thermal/thermal_zone31/cdev1_lower_limit 00
     write /sys/class/thermal/thermal_zone31/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone31/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone31/cdev2_upper_limit 00
 
     # thermalzone56
     write /sys/class/thermal/thermal_zone56/cdev0_lower_limit 00
     write /sys/class/thermal/thermal_zone56/cdev0_upper_limit 00
-    write /sys/class/thermal/thermal_zone56/cdev1_lower_limit 06
-    write /sys/class/thermal/thermal_zone56/cdev1_upper_limit 06
-    write /sys/class/thermal/thermal_zone56/cdev2_lower_limit 06
-    write /sys/class/thermal/thermal_zone56/cdev2_upper_limit 06
+    write /sys/class/thermal/thermal_zone56/cdev1_lower_limit 00
+    write /sys/class/thermal/thermal_zone56/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone56/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone56/cdev2_upper_limit 00
 
     # thermalzone57
     write /sys/class/thermal/thermal_zone57/cdev0_lower_limit 00
     write /sys/class/thermal/thermal_zone57/cdev0_upper_limit 00
-    write /sys/class/thermal/thermal_zone57/cdev1_lower_limit 06
-    write /sys/class/thermal/thermal_zone57/cdev1_upper_limit 06
-    write /sys/class/thermal/thermal_zone57/cdev2_lower_limit 06
-    write /sys/class/thermal/thermal_zone57/cdev2_upper_limit 06
+    write /sys/class/thermal/thermal_zone57/cdev1_lower_limit 00
+    write /sys/class/thermal/thermal_zone57/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone57/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone57/cdev2_upper_limit 00
 
     # thermalzone58
     write /sys/class/thermal/thermal_zone58/cdev0_lower_limit 00
     write /sys/class/thermal/thermal_zone58/cdev0_upper_limit 00
-    write /sys/class/thermal/thermal_zone58/cdev1_lower_limit 06
-    write /sys/class/thermal/thermal_zone58/cdev1_upper_limit 06
-    write /sys/class/thermal/thermal_zone58/cdev2_lower_limit 06
-    write /sys/class/thermal/thermal_zone58/cdev2_upper_limit 06
+    write /sys/class/thermal/thermal_zone58/cdev1_lower_limit 00
+    write /sys/class/thermal/thermal_zone58/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone58/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone58/cdev2_upper_limit 00
 
     # thermalzone59
     write /sys/class/thermal/thermal_zone59/cdev0_lower_limit 00
     write /sys/class/thermal/thermal_zone59/cdev0_upper_limit 00
-    write /sys/class/thermal/thermal_zone59/cdev1_lower_limit 06
-    write /sys/class/thermal/thermal_zone59/cdev1_upper_limit 06
-    write /sys/class/thermal/thermal_zone59/cdev2_lower_limit 06
-    write /sys/class/thermal/thermal_zone59/cdev2_upper_limit 06
+    write /sys/class/thermal/thermal_zone59/cdev1_lower_limit 00
+    write /sys/class/thermal/thermal_zone59/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone59/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone59/cdev2_upper_limit 00
 
     # thermalzone60
     write /sys/class/thermal/thermal_zone60/cdev0_lower_limit 00
@@ -223,18 +241,18 @@ on property:perf_profile=1
     # thermalzone62
     write /sys/class/thermal/thermal_zone62/cdev0_lower_limit 00
     write /sys/class/thermal/thermal_zone62/cdev0_upper_limit 00
-    write /sys/class/thermal/thermal_zone62/cdev1_lower_limit 06
-    write /sys/class/thermal/thermal_zone62/cdev1_upper_limit 06
-    write /sys/class/thermal/thermal_zone62/cdev2_lower_limit 06
-    write /sys/class/thermal/thermal_zone62/cdev2_upper_limit 06
+    write /sys/class/thermal/thermal_zone62/cdev1_lower_limit 00
+    write /sys/class/thermal/thermal_zone62/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone62/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone62/cdev2_upper_limit 00
 
     # thermalzone63
     write /sys/class/thermal/thermal_zone63/cdev0_lower_limit 00
     write /sys/class/thermal/thermal_zone63/cdev0_upper_limit 00
-    write /sys/class/thermal/thermal_zone63/cdev1_lower_limit 06
-    write /sys/class/thermal/thermal_zone63/cdev1_upper_limit 06
-    write /sys/class/thermal/thermal_zone63/cdev2_lower_limit 06
-    write /sys/class/thermal/thermal_zone63/cdev2_upper_limit 06
+    write /sys/class/thermal/thermal_zone63/cdev1_lower_limit 00
+    write /sys/class/thermal/thermal_zone63/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone63/cdev2_lower_limit 00
+    write /sys/class/thermal/thermal_zone63/cdev2_upper_limit 00
 
     # thermalzone64
     write /sys/class/thermal/thermal_zone64/cdev0_lower_limit 00
@@ -242,9 +260,9 @@ on property:perf_profile=1
 
     # thermalzone67
     write /sys/class/thermal/thermal_zone67/cdev0_lower_limit 00
-    write /sys/class/thermal/thermal_zone67/cdev0_upper_limit 06
+    write /sys/class/thermal/thermal_zone67/cdev0_upper_limit 00
     write /sys/class/thermal/thermal_zone67/cdev1_lower_limit 00
-    write /sys/class/thermal/thermal_zone67/cdev1_upper_limit 06
+    write /sys/class/thermal/thermal_zone67/cdev1_upper_limit 00
 
 on charger
     # Keep one LITTLE and one big
