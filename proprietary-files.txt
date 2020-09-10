@@ -85,6 +85,10 @@ product/lib/libdpmframework.so
 product/lib/libdpmtcm.so
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# Display (HDR) - from Adreno Team - v5.5
+vendor/lib64/libhdr_tm.so:product/vendor_overlay/29/lib64/libhdr_tm.so|87b63c197fe888f3a24e0e94bb90ad77da1b888c
+vendor/lib/libhdr_tm.so:product/vendor_overlay/29/lib/libhdr_tm.so|debc2c09547c6924f18bea856b4fa9a9a86897f9
+
 # Display postprocessing
 product/lib64/libsdm-disp-apis.qti.so
 product/lib64/vendor.display.color@1.0.so
@@ -96,6 +100,50 @@ product/lib/vendor.display.color@1.0.so
 product/lib/vendor.display.color@1.1.so
 product/lib/vendor.display.color@1.2.so
 product/lib/vendor.display.color@1.3.so
+
+# Graphics (Adreno) - from Adreno Team - v5.5
+vendor/lib64/egl/eglSubDriverAndroid.so:product/vendor_overlay/29/lib64/egl/eglSubDriverAndroid.so|742f3207dd6b38464d3fb5a4fa0b5963611455ef
+vendor/lib64/egl/libEGL_adreno.so:product/vendor_overlay/29/lib64/egl/libEGL_adreno.so|7da05bcc2b18bf33311ccedec3d30cc1e4866404
+vendor/lib64/egl/libGLESv1_CM_adreno.so:product/vendor_overlay/29/lib64/egl/libGLESv1_CM_adreno.so|13b6524aa2e7c0e1ba732f3a4d8efe31f23750f3
+vendor/lib64/egl/libGLESv2_adreno.so:product/vendor_overlay/29/lib64/egl/libGLESv2_adreno.so|0ee27f29073adb87a1ade0d1aba02216c36dec99
+vendor/lib64/egl/libq3dtools_adreno.so:product/vendor_overlay/29/lib64/egl/libq3dtools_adreno.so|06cdaf8b6b6c78df1bd2e0e43f2fb25b1e86952a
+vendor/lib64/egl/libq3dtools_esx.so:product/vendor_overlay/29/lib64/egl/libq3dtools_esx.so|4dda50f92a040ff2341281dbc2821ba585656232
+vendor/lib64/egl/libQTapGLES.so:product/vendor_overlay/29/lib64/egl/libQTapGLES.so|ff578d0d51e44039c9fa3f81d3d6bde88c98adf2
+vendor/lib64/libadreno_utils.so:product/vendor_overlay/29/lib64/libadreno_utils.so|3d21414210be1adba0e699c436c53427f058a1bf
+vendor/lib64/libc2d30_bltlib.so:product/vendor_overlay/29/lib64/libc2d30_bltlib.so|7014a0f8b36969c1d1faeba8fc90012bb701d864
+vendor/lib64/libCB.so:product/vendor_overlay/29/lib64/libCB.so|94d56cb86b2d5bec4d14be7743fca9293c05366c
+vendor/lib64/libgpudataproducer.so:product/vendor_overlay/29/lib64/libgpudataproducer.so|4b6480c3f675d28cb80e863f6bdc8e7dc44f8570
+vendor/lib64/libgsl.so:product/vendor_overlay/29/lib64/libgsl.so|52ca4454afd19b9a2f192e7f4479b7bdbac0b930
+vendor/lib64/libllvm-glnext.so:product/vendor_overlay/29/lib64/libllvm-glnext.so|6b639f597421c8a847be154c3f7cd492de379f8e
+vendor/lib64/libllvm-qcom.so:product/vendor_overlay/29/lib64/libllvm-qcom.so|ee02a2f91b7a99bea58806f68e6b00233742b7f7
+vendor/lib64/libOpenCL.so:product/vendor_overlay/29/lib64/libOpenCL.so|3d9fdac44941e4e463bd6d50f077e9d69c4a64c3
+vendor/lib64/libqseed3.so:product/vendor_overlay/29/lib64/libqseed3.so|71cdbb9a042181738f0a210ddb68728771ac53b6
+vendor/lib64/libVkLayer_q3dtools.so:product/vendor_overlay/29/lib64/libVkLayer_q3dtools.so|a8a01721a72c312478f6186642b2c63198ef1689
+vendor/lib/egl/eglSubDriverAndroid.so:product/vendor_overlay/29/lib/egl/eglSubDriverAndroid.so|5959d0b6dc1025230066c33fb199b1b4bf9c0b0e
+vendor/lib/egl/libEGL_adreno.so:product/vendor_overlay/29/lib/egl/libEGL_adreno.so|556a6732d86df0ee5813f5c4c0fe7c1b74314cac
+vendor/lib/egl/libGLESv1_CM_adreno.so:product/vendor_overlay/29/lib/egl/libGLESv1_CM_adreno.so|15e39b796d284281fceda72f33a3f0a5702e0b88
+vendor/lib/egl/libGLESv2_adreno.so:product/vendor_overlay/29/lib/egl/libGLESv2_adreno.so|ebaa8018d1992eaf153fea0acd8a715a0cd9b26e
+vendor/lib/egl/libq3dtools_adreno.so:product/vendor_overlay/29/lib/egl/libq3dtools_adreno.so|86d36cce9da7c90aee0213d9c18591fb10d95fb5
+vendor/lib/egl/libq3dtools_esx.so:product/vendor_overlay/29/lib/egl/libq3dtools_esx.so|99569e94e59ff07bb486040f99e1f232c9ae7d7d
+vendor/lib/egl/libQTapGLES.so:product/vendor_overlay/29/lib/egl/libQTapGLES.so|dab06dddef19e22e471c8d56147dad20cb2cdaab
+vendor/lib/libadreno_utils.so:product/vendor_overlay/29/lib/libadreno_utils.so|70ea295597dc3e500a5f19d23ebe8d2535436f3a
+vendor/lib/libc2d30_bltlib.so:product/vendor_overlay/29/lib/libc2d30_bltlib.so|ebe8e2287ab8f4635b5748c27c88ea7b0164ba38
+vendor/lib/libCB.so:product/vendor_overlay/29/lib/libCB.so|7b906b0cdef5f816bcc04eb9a2043f41b6b4b224
+vendor/lib/libgsl.so:product/vendor_overlay/29/lib/libgsl.so|8ee04ca1b5f660a609093d6eadbcffc02a77e747
+vendor/lib/libgpudataproducer.so:product/vendor_overlay/29/lib/libgpudataproducer.so|8af384a5bf00d654d382611aa151926a7a3c9f83
+vendor/lib/libllvm-glnext.so:product/vendor_overlay/29/lib/libllvm-glnext.so|802a0c69421a3fefe8d86eb123247c2d3dc5f179
+vendor/lib/libllvm-qcom.so:product/vendor_overlay/29/lib/libllvm-qcom.so|a266eb0d94c5e039e361a453c8de2dd7217796bd
+vendor/lib/libOpenCL.so:product/vendor_overlay/29/lib/libOpenCL.so|c105d1d6cfef52faa1561d1e57d0d7dd5b4c368a
+vendor/lib/libqseed3.so:product/vendor_overlay/29/lib/libqseed3.so|6f842fdf4088dbe7dab6b5f621a8131a9ca67d26
+vendor/lib/libVkLayer_q3dtools.so:product/vendor_overlay/29/lib/libVkLayer_q3dtools.so|189432a227dbfa910cac594fcbdfbc828934882a
+
+# Graphics (Vulkan) - from Adreno Team - v5.5
+vendor/etc/permissions/android.hardware.vulkan.compute.xml:product/vendor_overlay/29/etc/permissions/android.hardware.vulkan.compute.xml|8a498209db76907ec91241458ce350cd60c142ee
+vendor/etc/permissions/android.hardware.vulkan.level.xml:product/vendor_overlay/29/etc/permissions/android.hardware.vulkan.level.xml|e12320c536bf574f3bda318d8823c9b1ed0609db
+vendor/etc/permissions/android.hardware.vulkan.version.xml:product/vendor_overlay/29/etc/permissions/android.hardware.vulkan.version.xml|fc70b06dc33428cb263b2af903bb26385180884c
+vendor/etc/permissions/android.software.vulkan.deqp.level.xml:product/vendor_overlay/29/etc/permissions/android.software.vulkan.deqp.level.xml|8355b3b6d2f57534de845cc4ac011f417994f524
+vendor/lib64/hw/vulkan.msmnile.so:product/vendor_overlay/29/lib64/hw/vulkan.msmnile.so|cdcab3567dc09555ed78c4f2d070ee9111052686
+vendor/lib/hw/vulkan.msmnile.so:product/vendor_overlay/29/lib/hw/vulkan.msmnile.so|b9e12dfa3378612683f4b3ef42f8afa019eeea49
 
 # IMS - from raphael - QKQ1.190825.002-V11.0.4.0.QFKMIXM
 -product/priv-app/ims/ims.apk|77ea72ab04c651c2a365320179cb1b7c75dcd8bb
@@ -166,6 +214,10 @@ product/etc/permissions/telephonyservice.xml
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/qcrilhook.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Snapdragon Computer Vision Engine - from Adreno Team - v5.5
+vendor/lib64/libfastcvopt.so:product/vendor_overlay/29/lib64/libfastcvopt.so|d5a240f56b8450beb326c1a05fb20c6218043edd
+vendor/lib/libfastcvopt.so:product/vendor_overlay/29/lib/libfastcvopt.so|713184f3a4b19111f8c0caff4aeba1d9d1bf7da4
 
 # Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
 product/framework/qti-telephony-common.jar|b4d187700f279cdbd40e74b4c3be4504f10d8b29
