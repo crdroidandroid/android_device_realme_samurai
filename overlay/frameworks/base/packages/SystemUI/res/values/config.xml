@@ -28,4 +28,7 @@
 
     <!-- Doze: should the significant motion sensor be used as a pulse signal?  -->
     <bool name="doze_pulse_on_significant_motion">true</bool>
+
+    <!-- Whether to dim the FOD icon -->
+    <bool name="config_fodIconDim">true</bool>
 </resources>
