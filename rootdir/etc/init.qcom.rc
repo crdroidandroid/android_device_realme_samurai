@@ -6,34 +6,28 @@ on post-fs
     mount none /mnt/vendor/persist/empty_dir /vendor/overlay bind
 
 on init
-    #Qicai.Gu@PSW.BSP.TP.Function 2019-06-14 add for limit_enable
     chown system system /proc/touchpanel/oppo_tp_limit_enable
     chown system system /proc/touchpanel/oppo_tp_limit_area
-    chown system system /proc/touchpanel/tp_fw_update
-    write /proc/touchpanel/oppo_tp_limit_enable 0
-
     chown system system /proc/touchpanel/oppo_tp_direction
-    write /proc/touchpanel/oppo_tp_direction 1
-
+    chown system system /proc/touchpanel/tp_fw_update
     chown system system /proc/touchpanel/DOZE_STATUS
+
+    write /proc/touchpanel/oppo_tp_limit_enable 0
+    write /proc/touchpanel/oppo_tp_direction 1
     chmod 0444 /proc/touchpanel/DOZE_STATUS
 
 on boot
-    #for goodix_fp.
+    # goodix_fp
     chown system system /dev/goodix_fp
 
-#Fanhong.Kong@ProDrv.CHG,add 2018/9/25 for vib aw8697
-#change ownership and premission for awinic haptic shock with music
+    # awinic haptic
     chown system audio /dev/aw8697_haptic
     chmod 0660 /dev/aw8697_haptic
     chown system audio /sys/class/leds/vibrator/haptic_audio
     chmod 0660 /sys/class/leds/vibrator/haptic_audio
     mkdir /data/awinic 0770 system audio
-
-    # enable awinic haptic sync wirh audio algo
     setprop audio.awinic.haptic.support  false
 
-#tongfeng.Huang@PSW.BSP.CHG.Basic, 2018/12/03,  Add for vibration dev file
     chown system system /sys/class/leds/vibrator/f0
     chown system system /sys/class/leds/vibrator/cali
     chown system system /sys/class/leds/vibrator/vmax
@@ -60,7 +54,7 @@ on boot
     chown system system /sys/class/leds/vibrator/state
     chown system system /sys/class/timed_output/vibrator/enable
 
-#Jianchao.Shi@PSW.BSP.CHG.Basic, 2017/09/08, sjc Add for short_c_batt
+    # short_c
     chown system system /sys/class/power_supply/battery/short_c_batt_in_idle
     chown system system /sys/class/power_supply/battery/short_c_batt_update_change
     chown system system /sys/class/power_supply/battery/short_c_hw_feature
@@ -73,18 +67,15 @@ on boot
     chmod  0666 /sys/class/power_supply/battery/call_mode
     chown system system /sys/class/power_supply/battery/call_mode
 
-    #Liangxiang.Liu@AD.Power.PowerMonitor, 2018/02/08, Add for wakeup_stastisc reset
+    # wakeup reason
     chown system system /sys/kernel/wakeup_reasons/wakeup_stastisc_reset
     chmod 0664 /sys/kernel/wakeup_reasons/wakeup_stastisc_reset
 
-#tongfeng.Huang@PSW.BSP.CHG.Basic, 2019/04/22,  Add for tbatt power off
+    # tbatt poweroff
     chown system system /proc/tbatt_pwroff
 
-#Xuefeng.Peng@PSW.AD.Usb.1410703, 2018/06/19, Add for support NDIS 5.0
+    # NDIS 5.0
     write /config/usb_gadget/g1/functions/gsi.rndis/rndis_class_id 1
-
-    chown system system /sys/kernel/oppo_display/notify_panel_blank
-    chmod 0666 /sys/kernel/oppo_display/notify_panel_blank
 
 on post-fs-data
     mkdir /data/system/audio 0775 media media
