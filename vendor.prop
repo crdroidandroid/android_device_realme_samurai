@@ -57,7 +57,6 @@ vendor.qcom.bluetooth.soc=cherokee
 camera.disable_zsl_mode=1
 
 # Crypto
-ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Dalvik
