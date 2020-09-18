@@ -34,10 +34,10 @@ cc_binary {
 }
 
 cc_binary {
-    name: "android.hardware.lights-service.qti",
+    name: "android.hardware.lights-service.RMX1931",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.lights-qti.rc"],
-    vintf_fragments: ["aidl/android.hardware.lights-qti.xml"],
+    init_rc: ["aidl/android.hardware.lights.RMX1931.rc"],
+    vintf_fragments: ["aidl/android.hardware.lights.RMX1931.xml"],
     vendor: true,
     shared_libs: [
         "libbase",

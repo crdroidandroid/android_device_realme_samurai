@@ -277,7 +277,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.RMX1931
+    android.hardware.lights-service.RMX1931
 
 # Media
 PRODUCT_COPY_FILES += \
