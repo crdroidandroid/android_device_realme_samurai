@@ -130,7 +130,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothQti \
     libbthost_if \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
