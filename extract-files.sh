@@ -54,6 +54,10 @@ function blob_fixup() {
 
     etc/permissions/qti_libpermissions.xml)
         sed -i 's|name="android.hidl.manager-V1.0-java"|name="android.hidl.manager@1.0-java"|g' "${2}"
+        ;;
+    product/lib64/libdpmframework.so)
+        patchelf --add-needed "libshim_dpmframework.so" "${2}"
+        ;;
     esac
 }
 
