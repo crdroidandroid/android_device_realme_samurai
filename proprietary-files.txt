@@ -76,10 +76,6 @@ product/lib/libdpmframework.so
 product/lib/libdpmtcm.so
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk
 
-# Display (HDR) - from Adreno Team - v5.5
-vendor/lib64/libhdr_tm.so:product/vendor_overlay/29/lib64/libhdr_tm.so|87b63c197fe888f3a24e0e94bb90ad77da1b888c
-vendor/lib/libhdr_tm.so:product/vendor_overlay/29/lib/libhdr_tm.so|debc2c09547c6924f18bea856b4fa9a9a86897f9
-
 # Display postprocessing
 product/lib64/libsdm-disp-apis.qti.so
 product/lib64/vendor.display.color@1.0.so
