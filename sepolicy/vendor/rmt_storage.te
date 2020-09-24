@@ -1,7 +1,7 @@
-allow rmt_storage mdmreason_device:chr_file r_file_perms;
-allow rmt_storage mnt_vendor_file:dir search;
-allow rmt_storage oppo_ver_proc:dir search;
-allow rmt_storage oppo_ver_proc:file r_file_perms;
-allow rmt_storage sysfs:file r_file_perms;
+allow vendor_rmt_storage mdmreason_device:chr_file r_file_perms;
+allow vendor_rmt_storage mnt_vendor_file:dir search;
+allow vendor_rmt_storage oppo_ver_proc:dir search;
+allow vendor_rmt_storage oppo_ver_proc:file r_file_perms;
+allow vendor_rmt_storage sysfs:file r_file_perms;
 
-get_prop(rmt_storage, vendor_radio_prop)
+get_prop(vendor_rmt_storage, vendor_radio_prop)

@@ -1,12 +1,12 @@
 typeattribute system_app system_writes_vendor_properties_violators;
 
 allow system_app fs_bpf:dir search;
-allow system_app sysfs_battery_supply:dir search;
-allow system_app sysfs_battery_supply:file { open read write getattr };
+allow system_app vendor_sysfs_battery_supply:dir search;
+allow system_app vendor_sysfs_battery_supply:file { open read write getattr };
 allow system_app sysfs_fps:dir search;
 allow system_app sysfs_fps:file rw_file_perms;
-allow system_app sysfs_usb_supply:dir search;
-allow system_app sysfs_usb_supply:file { open read write getattr };
+allow system_app vendor_sysfs_usb_supply:dir search;
+allow system_app vendor_sysfs_usb_supply:file { open read write getattr };
 allow system_app sysfs_oppo_display:dir search;
 allow system_app sysfs_oppo_display:file rw_file_perms;
 allow system_app proc_touchpanel:dir search;
@@ -14,3 +14,5 @@ allow system_app proc_touchpanel:file rw_file_perms;
 get_prop(system_app, vendor_bluetooth_prop)
 get_prop(system_app, vendor_default_prop)
 set_prop(system_app, vendor_perf_prop)
+
+allow system_app vendor_hal_pasrmanager_qti:binder call;

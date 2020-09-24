@@ -2,4 +2,5 @@ type adsprpc_prop, property_type;
 type camera_ro_prop, property_type;
 type cryptoeng_prop, property_type;
 type oppo_fp_prop, property_type;
+type qcom_ims_prop, property_type;
 type vendor_perf_prop, property_type;

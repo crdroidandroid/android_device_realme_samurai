@@ -1,1 +1,1 @@
-allow healthd sysfs_battery_supply:file r_file_perms;
+allow healthd vendor_sysfs_battery_supply:file r_file_perms;

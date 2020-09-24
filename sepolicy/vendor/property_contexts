@@ -42,7 +42,7 @@ ro.camera.res.fmq.size              u:object_r:camera_ro_prop:s0
 ro.camera.req.fmq.size              u:object_r:camera_ro_prop:s0
 
 # GPS
-persist.backup.ntpServer            u:object_r:location_prop:s0
+persist.backup.ntpServer            u:object_r:vendor_location_prop:s0
 
 # Keybox
 sys.oppo.bsp.drm.                   u:object_r:cryptoeng_prop:s0
