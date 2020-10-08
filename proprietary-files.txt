@@ -2,22 +2,6 @@
 lib64/vendor.oppo.hardware.ktv@1.0.so
 lib/vendor.oppo.hardware.ktv@1.0.so
 
-# Audio (Waves MaxxAudio)
--app/MotoWaves/MotoWaves.apk|9e7a08abf2699e1630b71c36c37f0a1d87371848
-etc/permissions/com.motorola.motowaves.features.xml|a66ed6363d9b217e074dcac7bfff888c6b1a03a5
-etc/permissions/privapp-permissions-com.waves.maxxservice.xml|d963679134630a34686513c601cd40cb8269ca72
-etc/sysconfig/hiddenapi-whitelist-com.motorola.motowaves.xml|bb6cdeb6056a4c78ea282f9de6df9a5ce47cdb1b
--priv-app/WavesService/WavesService.apk|6b1052217e09c3400d034dbf10a0862d19772306
-vendor/etc/maxx_conf.ini:product/vendor_overlay/29/etc/maxx_conf.ini|597352286dc61533442aac912cf4b3b690e1eab4
-vendor/etc/maxx_default.mps:product/vendor_overlay/29/etc/maxx_default.mps|9bc79caf93c3a801b748476b6e5c02d3312939fa
-vendor/lib/libAndroidAlgSys.so:product/vendor_overlay/29/lib/libAndroidAlgSys.so|721b081241f97a1a4f8922d0ab4c8f4f42b0fd29
-vendor/lib/libMAM2_3-AlgFX-Coretex_A9.so:product/vendor_overlay/29/lib/libMAM2_3-AlgFX-Coretex_A9.so|b502ba19bdb8fd8183b3d3fdecc466f482d58cce
-vendor/lib/libandroidaudioeffect_Oreo.so:product/vendor_overlay/29/lib/libandroidaudioeffect_Oreo.so|3ba14d8e2f8ffb3d6c307d6330232b48d8aeaaf1
-vendor/lib/libc++_shared.so:product/vendor_overlay/29/lib/libc++_shared.so|54a61595d6fee176af9aa65ff044746ed1446233
-vendor/lib/libmaxxaudioeffectapi.so:product/vendor_overlay/29/lib/libmaxxaudioeffectapi.so|eb3425dd2f824c65c34aec0ddb21f92919a4c6b9
-vendor/lib/libmaxxeffectwrapper.so:product/vendor_overlay/29/lib/libmaxxeffectwrapper.so|1345b7dd3cd5b8ef5a8ac310df009412633fc35b
-vendor/lib/soundfx/libmaxxeffect-cembedded.so:product/vendor_overlay/29/lib/soundfx/libmaxxeffect-cembedded.so|bcdb6715a489404b93f46d9757a3fd2e1686ec82
-
 # Bluetooth
 lib64/libbtconfigstore.so
 lib/libbtconfigstore.so
