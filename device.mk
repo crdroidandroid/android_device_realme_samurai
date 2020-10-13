@@ -165,10 +165,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/nxp/opensource/sn100x
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Telephony
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
