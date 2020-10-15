@@ -29,12 +29,12 @@ import /init.oppo.face.rc
 
 #ifdef VENDOR_EDIT^M
 #chenghao@Swdp.shanghai 2018/08/08, add for joystick RUS feature
-    mkdir /data/joystick 0700 system system
+#    mkdir /data/joystick 0700 system system
 #endif
 
 #ifdef VENDOR_EDIT
 #Rongchun.zhang@PSW.MM.Display.SF.Feature.1129602, 2018/06/11, add dor rom update
-    chmod 0644 /data/oppo/multimedia/oppo_display_perf_list.xml
+#    chmod 0644 /data/oppo/multimedia/oppo_display_perf_list.xml
 #endif
 
 #ifdef VENDOR_EDIT
@@ -47,7 +47,7 @@ service bspCriticalLog /system/bin/bspCriticalLog
 
 #ifdef VENDOR_EDIT
 #Pingping.Yang@swdp 2018/11/07, add for omedia RUS feature
-    mkdir /data/oppo_lib/omedia 0700 system system
+#    mkdir /data/oppo_lib/omedia 0700 system system
 #endif
 
 #ifdef VENDOR_EDIT
@@ -240,7 +240,7 @@ on boot
     chmod 0666 /sys/kernel/oppo_display/power_status
     chmod 0666 /sys/kernel/oppo_display/sau_closebl_node
     chmod 0666 /sys/kernel/oppo_display/esd_status
-    /*Anbao.Shao@Camera.Driver 20190220 add for [aiNight]*/
+#    /*Anbao.Shao@Camera.Driver 20190220 add for [aiNight]*/
     chmod 0666 /mnt/vendor/persist/camera/megvii/cache
 #endif /* VENDOR_EDIT */
 
@@ -370,7 +370,7 @@ service wifiFwAssert /system/bin/init.oppo.wifiAutoRecovery.sh "wifiFwAssert"
 service oiface_trace /system/bin/sh /system/etc/oiface/oiface_trace.sh
     user root
     group system
-    disable
+#   disable
     oneshot
     seclabel u:r:su:s0
 
