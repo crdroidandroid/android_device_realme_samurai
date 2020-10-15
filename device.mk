@@ -243,6 +243,21 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# OMX
+PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
