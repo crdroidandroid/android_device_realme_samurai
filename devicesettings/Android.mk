@@ -44,6 +44,7 @@ package_resource_overlays := $(strip \
       $(addprefix $(dir)/, packages/apps/devicesettings/res))))
 
 LOCAL_RESOURCE_DIR := $(package_resource_overlays) $(LOCAL_RESOURCE_DIR)
+LOCAL_PROGUARD_ENABLED := obfuscation optimization
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 LOCAL_MODULE_TAGS := optional
 include frameworks/base/packages/SettingsLib/common.mk
