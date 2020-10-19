@@ -320,7 +320,12 @@ PRODUCT_PACKAGES += \
 
 # Ril
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4
+    android.hardware.radio@1.2 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
+    libjson \
+    librmnetctl \
+    libxml2
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
