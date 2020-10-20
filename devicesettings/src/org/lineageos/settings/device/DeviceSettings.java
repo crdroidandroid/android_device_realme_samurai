@@ -47,6 +47,7 @@ import androidx.preference.TwoStatePreference;
 import org.lineageos.internal.util.FileUtils;
 
 import org.lineageos.settings.device.RadioButtonPreference;
+import org.lineageos.settings.device.SeekBarPreference;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -56,6 +57,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_DC_SWITCH = "dc";
     public static final String KEY_OTG_SWITCH = "otg";
     public static final String KEY_GAME_SWITCH = "game";
+    public static final String KEY_CHARGING_SWITCH = "smart_charging";
 
     private static final String KEY_CATEGORY_REFRESH = "refresh";
 
@@ -70,12 +72,15 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mSRGBModeSwitch;
     private static TwoStatePreference mOTGModeSwitch;
     private static TwoStatePreference mGameModeSwitch;
+    private static TwoStatePreference mSmartChargingSwitch;
     public static TwoStatePreference mRefreshRate90Forced;
     private static SwitchPreference mFpsInfo;
     private static NotificationManager mNotificationManager;
 
     public static RadioButtonPreference mRefreshRate90;
     public static RadioButtonPreference mRefreshRate60;
+
+    public static SeekBarPreference mSeekBarPreference;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -102,6 +107,14 @@ public class DeviceSettings extends PreferenceFragment
         mGameModeSwitch.setEnabled(GameModeSwitch.isSupported());
         mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
         mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch(getContext()));
+
+        mSmartChargingSwitch = (TwoStatePreference) findPreference(KEY_CHARGING_SWITCH);
+        mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));
+        mSmartChargingSwitch.setOnPreferenceChangeListener(new SmartChargingSwitch(getContext()));
+
+        mSeekBarPreference = (SeekBarPreference) findPreference("seek_bar");
+        mSeekBarPreference.setEnabled(mSmartChargingSwitch.isChecked());
+        SeekBarPreference.mProgress = prefs.getInt("seek_bar", 95);
 
         mRefreshRate90Forced = (TwoStatePreference) findPreference("refresh_rate_90Forced");
         mRefreshRate90Forced.setChecked(prefs.getBoolean("refresh_rate_90Forced", false));
@@ -146,8 +159,8 @@ public class DeviceSettings extends PreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        boolean enabled = (Boolean) newValue;
         if (preference == mFpsInfo) {
-            boolean enabled = (Boolean) newValue;
             Intent fpsinfo = new Intent(this.getContext(), org.lineageos.settings.device.FPSInfoService.class);
             if (enabled) {
                 this.getContext().startService(fpsinfo);
