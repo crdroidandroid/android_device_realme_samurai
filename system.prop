@@ -104,7 +104,6 @@ persist.vendor.ims.loglevel=255
 # RIL
 persist.radio.hvolte.enable=1
 persist.radio.custom_exp_ecc=1
-persist.sys.fflag.override.settings_network_and_internet_v2=true
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.lte_vrte_ltd=1
