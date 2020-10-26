@@ -24,6 +24,7 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -41,13 +42,15 @@ public class DeviceSettingsActivity extends Activity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
         Fragment fragment = getFragmentManager().findFragmentById(android.R.id.content);
-        if (fragment == null) {
+        if (SystemProperties.get("perf_profile") != "") {
+            if (fragment == null) {
             mDeviceSettingsFragment = new DeviceSettings();
             getFragmentManager().beginTransaction()
                 .add(android.R.id.content, mDeviceSettingsFragment)
                 .commit();
-        } else {
+            } else {
             mDeviceSettingsFragment = (DeviceSettings) fragment;
+            }
         }
     }
 
