@@ -70,7 +70,7 @@ function blob_fixup() {
             sed -i 's|name="android.hidl.manager-V1.0-java"|name="android.hidl.manager@1.0-java"|g' "${2}"
             ;;
         product/lib64/libdpmframework.so)
-            patchelf --add-needed "libshim_dpmframework.so" "${2}"
+            "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
             ;;
         vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc)
             sed -i "s/\/odm\//\/vendor\//g" "${2}"
