@@ -128,6 +128,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# ContextHub
+PRODUCT_PACKAGES += \
+    android.hardware.contexthub@1.0-impl \
+    android.hardware.contexthub@1.0-impl.generic \
+    android.hardware.contexthub@1.0-service \
+
 # devicesettings
 PRODUCT_PACKAGES += \
     devicesettings
