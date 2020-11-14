@@ -1186,6 +1186,9 @@ vendor/lib/libhbtpclient.so
 vendor/lib/libhbtpdsp.so
 vendor/lib/libhbtpfrmwk.so
 
+# Health
+vendor/bin/hw/android.hardware.health@2.0-service:vendor/bin/hw/android.hardware.health@2.0-service.RMX1931
+
 # Hypnus
 vendor/bin/hw/vendor.oppo.hardware.hypnus@1.0-service
 vendor/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc

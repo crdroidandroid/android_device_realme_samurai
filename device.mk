@@ -203,10 +203,6 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \

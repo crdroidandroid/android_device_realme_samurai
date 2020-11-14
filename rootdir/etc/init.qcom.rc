@@ -1494,3 +1494,10 @@ on property:ro.vendor.oppo.radio.multisim.config=*
 on property:ro.vendor.gsi.build.flavor=*
     restorecon /dev/loop-control
 #endif
+
+service health-hal-2-0 /vendor/bin/hw/android.hardware.health@2.0-service.RMX1931
+    class hal
+    user system
+    group system
+    capabilities WAKE_ALARM
+    file /dev/kmsg w
