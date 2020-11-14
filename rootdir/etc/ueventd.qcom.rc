@@ -398,8 +398,3 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb0     modes                    0664    system  graphics
 /sys/class/graphics/fb0     mode                     0664    system  graphics
 /sys/class/graphics/fb0     msm_cmd_autorefresh_en   0664    system  graphics
-
-#ifdef VENDOR_EDIT
-#liangkun@Swdp.shanghai 2017.05.18, change default owner for /dev/kneuron node
-/dev/kneuron              0660   system     system
-#endif /* VENDOR_EDIT */

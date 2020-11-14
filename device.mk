@@ -225,9 +225,6 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.msm.usb.configfs.rc \
     init.oppo.rc \
-    init.oppo.sensor.rc \
-    init.oppo.vendor.fingerprint.rc \
-    init.oppo.vendor.touchpress.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
@@ -239,9 +236,6 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init-qcril-data.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/init-qcril-data.rc
 
 # IRQ balance
 PRODUCT_COPY_FILES += \
