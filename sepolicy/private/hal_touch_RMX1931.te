@@ -1,9 +1,0 @@
-type hal_touch_RMX1931, coredomain, domain;
-hal_server_domain(hal_touch_RMX1931, hal_lineage_touch)
-
-type hal_touch_RMX1931_exec, system_file_type, exec_type, file_type;
-init_daemon_domain(hal_touch_RMX1931)
-
-# Allow access to gesture enable nodes
-allow hal_touch_RMX1931 proc_touchpanel:dir search;
-allow hal_touch_RMX1931 proc_touchpanel:file rw_file_perms;
