@@ -1,0 +1,3 @@
+dontaudit hal_perf_default self:capability { dac_override };
+
+allow hal_perf_default proc_sched:file rw_file_perms;

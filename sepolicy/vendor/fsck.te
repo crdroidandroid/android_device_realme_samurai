@@ -1,0 +1,4 @@
+dontaudit fsck block_device:blk_file rw_file_perms;
+dontaudit fsck self:capability { dac_read_search dac_override };
+
+allow fsck modem_efs_partition_device:blk_file { read open write ioctl };

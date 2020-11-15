@@ -1,0 +1,2 @@
+dontaudit platform_app vendor_default_prop:file r_file_perms;
+dontaudit platform_app time_daemon:unix_stream_socket connectto;

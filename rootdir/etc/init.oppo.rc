@@ -154,8 +154,8 @@ on boot
     chmod 0666 /proc/oppoAls/row_coe
     chmod 0666 /proc/oppoAls/white_max_lux
 
-    # disalbe suid_dumpable if release_type=true to pass cts test
-on property:ro.build.release_type=true
+    # disalbe suid_dumpable to pass cts test
+on property:ro.vendor.build.type=user
     write /proc/sys/fs/suid_dumpable 0
 
 on property:ro.board.platform=msmnile && property:ro.baseband=msm && property:ro.vendor.qti.va_aosp.support=0

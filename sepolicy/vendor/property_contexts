@@ -1,0 +1,73 @@
+# Audio
+audio.awinic.haptic.support         u:object_r:vendor_audio_prop:s0
+audio.sys.noisy.broadcast.delay     u:object_r:vendor_audio_prop:s0
+audio.sys.offload.pstimeout.secs    u:object_r:vendor_audio_prop:s0
+persist.oppo.mm.log.hal             u:object_r:vendor_audio_prop:s0
+sys.oppo.mm.record.type             u:object_r:vendor_audio_prop:s0
+sys.oppo.mm.voice.record            u:object_r:vendor_audio_prop:s0
+
+# Bluetooth
+persist.vendor.bt.a2dp_offload_cap  u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.service.bt.iot.enablelogging u:object_r:vendor_bluetooth_prop:s0
+vendor.bluetooth.soc                u:object_r:vendor_bluetooth_prop:s0
+
+# Camera
+oppo.camera.                        u:object_r:vendor_camera_prop:s0
+oppo.switch.video.beauty            u:object_r:vendor_camera_prop:s0
+persist.bps.debug                   u:object_r:vendor_camera_prop:s0
+persist.camera.                     u:object_r:vendor_camera_prop:s0
+persist.front.skipdisplay.enable    u:object_r:vendor_camera_prop:s0
+persist.ipe.debug                   u:object_r:vendor_camera_prop:s0
+persist.oppo.camera.                u:object_r:vendor_camera_prop:s0
+persist.oppo.front.mfnr             u:object_r:vendor_camera_prop:s0
+persist.sys.assert.panic            u:object_r:vendor_camera_prop:s0
+persist.sys.oppo.region             u:object_r:vendor_camera_prop:s0
+persist.sys.log.ae                  u:object_r:vendor_camera_prop:s0
+persist.sys.log.af                  u:object_r:vendor_camera_prop:s0
+persist.sys.log.awb                 u:object_r:vendor_camera_prop:s0
+persist.watermark.dumpimg           u:object_r:vendor_camera_prop:s0
+ro.oppo.market.enname               u:object_r:vendor_camera_prop:s0
+ro.oppo.market.name                 u:object_r:vendor_camera_prop:s0
+vendor.oppo.camera.                 u:object_r:vendor_camera_prop:s0
+
+# Fingerprint
+oppo.fingerprint.                   u:object_r:oppo_fp_prop:s0
+oppo.optical.goodix.fp              u:object_r:oppo_fp_prop:s0
+persist.vendor.fingerprint.         u:object_r:oppo_fp_prop:s0
+sys.oppo_ftm_mode                   u:object_r:oppo_fp_prop:s0
+vendor.fingerprint.optical.goodix.hal.retry u:object_r:oppo_fp_prop:s0
+
+# Google camera hal read only props
+ro.camera.res.fmq.size              u:object_r:camera_ro_prop:s0
+ro.camera.req.fmq.size              u:object_r:camera_ro_prop:s0
+
+# GPS
+persist.backup.ntpServer            u:object_r:location_prop:s0
+
+# Keybox
+sys.oppo.bsp.drm.                   u:object_r:cryptoeng_prop:s0
+
+# NFC
+vendor.nfc_se.config_ready          u:object_r:vendor_nfc_nq_prop:s0
+
+# Perf
+perf_profile                        u:object_r:vendor_perf_prop:s0
+
+# RIL
+oppo.device.imeicache               u:object_r:vendor_radio_prop:s0
+oppo.eng.factory.no                 u:object_r:vendor_radio_prop:s0
+persist.oppo.network.operator       u:object_r:vendor_radio_prop:s0
+persist.oppo.nw.region.lock         u:object_r:vendor_radio_prop:s0
+persist.sys.oppo.simlockoperator    u:object_r:vendor_radio_prop:s0
+ro.build.version.ota                u:object_r:vendor_radio_prop:s0
+ro.oppo.build.exp                   u:object_r:vendor_radio_prop:s0
+ro.oppo.euex.country                u:object_r:vendor_radio_prop:s0
+ro.oppo.network.                    u:object_r:vendor_radio_prop:s0
+ro.oppo.nw.singlecard               u:object_r:vendor_radio_prop:s0
+ro.oppo.operator                    u:object_r:vendor_radio_prop:s0
+ro.oppo.regionmark                  u:object_r:vendor_radio_prop:s0
+ro.oppo.version                     u:object_r:vendor_radio_prop:s0
+ro.rf_version                       u:object_r:vendor_radio_prop:s0
+ro.sys.reserve.integrate            u:object_r:vendor_radio_prop:s0
+sys.build.display.full_id           u:object_r:vendor_radio_prop:s0
+sys.oppo.network.rffeature          u:object_r:vendor_radio_prop:s0

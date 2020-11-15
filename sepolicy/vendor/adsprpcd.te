@@ -1,0 +1,4 @@
+allow adsprpcd oppo_ver_proc:dir search;
+allow adsprpcd oppo_ver_proc:file r_file_perms;
+allow adsprpcd sysfs_oppo_display:dir search;
+allow adsprpcd sysfs_oppo_display:file r_file_perms;

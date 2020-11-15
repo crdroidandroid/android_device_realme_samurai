@@ -1,0 +1,2 @@
+type fingerprint_device, dev_type;
+type mdmreason_device, dev_type;
