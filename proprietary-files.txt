@@ -104,23 +104,6 @@ vendor/lib/libhfp.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 
-# Audio (Dolby)
-vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
-vendor/euclid/product/vendor_overlay/29/etc/dolby/dax-default.xml:vendor/etc/dolby/dax-default.xml
-vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libstagefrightdolby.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0.so
-vendor/lib/libdapparamstorage.so
-vendor/lib/libsurround_3mic_proc.so
-vendor/lib/libstagefrightdolby.so
-vendor/lib/soundfx/libswdap.so
-vendor/lib/vendor.dolby.hardware.dms@1.0.so
-
 # Audio HAL
 vendor/lib64/hw/audio.primary.msmnile.so
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
@@ -947,25 +930,6 @@ vendor/firmware/widevine.b05
 vendor/firmware/widevine.b06
 vendor/firmware/widevine.b07
 vendor/firmware/widevine.mdt
-
-# EID
-vendor/bin/hw/vendor.oppo.hardware.eid@1.0-service
-vendor/etc/init/vendor.oppo.hardware.eid@1.0-service.rc
-vendor/lib64/hw/vendor.oppo.hardware.eid@1.0-impl.so
-vendor/lib64/vendor.oppo.hardware.eid@1.0.so
-vendor/lib/hw/vendor.oppo.hardware.eid@1.0-impl.so
-vendor/lib/vendor.oppo.hardware.eid@1.0.so
-
-# EID firmware
-vendor/euclid/product/vendor/firmware/oppoeid.b00:vendor/firmware/oppoeid.b01
-vendor/euclid/product/vendor/firmware/oppoeid.b01:vendor/firmware/oppoeid.b01
-vendor/euclid/product/vendor/firmware/oppoeid.b02:vendor/firmware/oppoeid.b02
-vendor/euclid/product/vendor/firmware/oppoeid.b03:vendor/firmware/oppoeid.b03
-vendor/euclid/product/vendor/firmware/oppoeid.b04:vendor/firmware/oppoeid.b04
-vendor/euclid/product/vendor/firmware/oppoeid.b05:vendor/firmware/oppoeid.b05
-vendor/euclid/product/vendor/firmware/oppoeid.b06:vendor/firmware/oppoeid.b06
-vendor/euclid/product/vendor/firmware/oppoeid.b07:vendor/firmware/oppoeid.b07
-vendor/euclid/product/vendor/firmware/oppoeid.mdt:vendor/firmware/oppoeid.mdt
 
 # ESE
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
