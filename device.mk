@@ -273,7 +273,7 @@ PRODUCT_COPY_FILES += \
 
 # Livedisplay
 PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Native libraries whitelist
 PRODUCT_COPY_FILES += \
@@ -385,7 +385,7 @@ PRODUCT_PACKAGES += \
 
 # Trust
 PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
+    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
