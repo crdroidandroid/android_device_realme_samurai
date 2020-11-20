@@ -1296,13 +1296,8 @@ vendor/lib/vendor.qti.hardware.iop@1.0.so|64e5cc01443db44a4ba90426e7cb325130ce44
 vendor/lib/vendor.qti.hardware.iop@2.0.so|75ed66da32ba8f57c019c65107e5af11c01decfe
 
 # IPA
-vendor/bin/ipacm
-vendor/etc/IPACM_cfg.xml
-vendor/etc/init/ipacm.rc
 vendor/etc/init/ipa_fws.rc
 vendor/etc/init/ipacm-diag.rc
-vendor/lib64/libipanat.so
-vendor/lib64/liboffloadhal.so
 
 # IPA firmware
 vendor/firmware/ipa_fws.b00
