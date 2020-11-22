@@ -161,6 +161,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     gralloc.msmnile \
+    hwcomposer.msmnile \
     libdisplayconfig \
     libdisplayconfig.vendor \
     libqdMetaData \
