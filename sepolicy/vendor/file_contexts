@@ -60,7 +60,6 @@
 /sys/devices/virtual/android_usb/android0/state                                                         u:object_r:sysfs_usb_supply:s0
 
 # Vibrator
-/vendor/bin/hw/android\.hardware\.vibrator@1\.2-service\.RMX1931                                        u:object_r:hal_vibrator_default_exec:s0
 /sys/class/leds/vibrator(/.*)?                                                                          u:object_r:sysfs_vibrator:s0
 /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator(/.*)?                                   u:object_r:sysfs_vibrator:s0
 
