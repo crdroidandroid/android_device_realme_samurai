@@ -1,11 +1,3 @@
-# Dalvik
-dalvik.vm.heapstartsize=32m
-dalvik.vm.heapgrowthlimit=512m
-dalvik.vm.heapsize=768m
-dalvik.vm.heaptargetutilization=0.5
-dalvik.vm.heapminfree=8m
-dalvik.vm.heapmaxfree=64m
-
 # Google Assistant
 ro.opa.eligible_device=true
 
