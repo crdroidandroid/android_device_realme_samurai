@@ -27,9 +27,6 @@
 # Modem reason
 /dev/mdmreason                                                                                          u:object_r:mdmreason_device:s0
 
-# NFC
-/vendor/bin/hw/vendor\.oppo\.hardware\.nfc@1\.0-service                                                 u:object_r:hal_nfc_default_exec:s0
-
 # NV
 /data/opponvitems(/.*)?                                                                                 u:object_r:nv_data_file:s0
 /cache/opponvitems(/.*)?                                                                                u:object_r:nv_data_file:s0

@@ -6,4 +6,3 @@ vendor.oppo.hardware.cryptoeng::ICryptoeng                                   u:o
 vendor.oppo.hardware.hypnus::IHypnusUtil                                     u:object_r:hal_hypnus_hwservice:s0
 vendor.oppo.hardware.ktv::IKtv                                               u:object_r:hal_camera_hwservice:s0
 vendor.oppo.hardware.lmvibrator::ILinearMotorVibrator                        u:object_r:hal_vibrator_hwservice:s0
-vendor.oppo.hardware.nfc::IOppoNfc                                           u:object_r:hal_nfc_hwservice:s0

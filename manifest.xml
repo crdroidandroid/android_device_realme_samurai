@@ -508,15 +508,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.oppo.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOppoNfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.oppo.hardware.radio.opporadio</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
