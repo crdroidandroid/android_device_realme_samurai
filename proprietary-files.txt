@@ -1480,21 +1480,9 @@ vendor/lib64/libsnpe_loader.so
 vendor/lib64/libsnpeml.so
 
 # NFC
-vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
-vendor/bin/hw/vendor.qti.secure_element@1.0-service
-vendor/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc
-vendor/etc/init/vendor.qti.secure_element@1.0-service.rc
 vendor/etc/libnfc-nci.conf
 vendor/etc/nfc/libnfc-mtp-SN100.conf_19781:vendor/etc/libnfc-nxp.conf
-vendor/lib64/android.hardware.secure_element@1.0-impl.so
-vendor/lib64/jcos_nq_client.so
-vendor/lib64/ls_nq_client.so
-vendor/lib64/nfc_nci.nqx.default.hw.so
-vendor/lib64/se_nq_extn_client.so
-vendor/lib64/vendor.nxp.hardware.nfc@1.0.so
-vendor/lib/android.hardware.secure_element@1.0-impl.so
 vendor/lib/libsn100u_fw.so
-vendor/lib/nfc_nci.nqx.default.hw.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
