@@ -51,13 +51,27 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-
-    etc/permissions/qti_libpermissions.xml)
-        sed -i 's|name="android.hidl.manager-V1.0-java"|name="android.hidl.manager@1.0-java"|g' "${2}"
-        ;;
-    product/lib64/libdpmframework.so)
-        patchelf --add-needed "libshim_dpmframework.so" "${2}"
-        ;;
+        system_ext/etc/init/dpmd.rc)
+            sed -i "s/\/system\/product\/bin\//\/system\/system_ext\/bin\//g" "${2}"
+            ;;
+        system_ext/etc/permissions/com.qti.dpmframework.xml)
+            ;&
+        system_ext/etc/permissions/dpmapi.xml)
+            ;&
+        system_ext/etc/permissions/qcrilhook.xml)
+            ;&
+        system_ext/etc/permissions/telephonyservice.xml)
+            sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
+            ;;
+        system_ext/etc/permissions/qti_libpermissions.xml)
+            sed -i "s/name=\"android.hidl.manager-V1.0-java/name=\"android.hidl.manager@1.0-java/g" "${2}"
+            ;;
+        etc/permissions/qti_libpermissions.xml)
+            sed -i 's|name="android.hidl.manager-V1.0-java"|name="android.hidl.manager@1.0-java"|g' "${2}"
+            ;;
+        product/lib64/libdpmframework.so)
+            patchelf --add-needed "libshim_dpmframework.so" "${2}"
+            ;;
     esac
 }
 
