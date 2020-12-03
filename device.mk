@@ -168,6 +168,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
+    disable_configstore \
     gralloc.msmnile \
     hwcomposer.msmnile \
     libdisplayconfig.qti \
