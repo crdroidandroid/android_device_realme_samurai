@@ -48,6 +48,7 @@ import org.lineageos.internal.util.FileUtils;
 
 import org.lineageos.settings.device.RadioButtonPreference;
 import org.lineageos.settings.device.SeekBarPreference;
+import org.lineageos.settings.device.SecureSettingListPreference;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -58,6 +59,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_OTG_SWITCH = "otg";
     public static final String KEY_GAME_SWITCH = "game";
     public static final String KEY_CHARGING_SWITCH = "smart_charging";
+    public static final String KEY_CHARGING_SPEED = "charging_speed";
     public static final String KEY_RESET_STATS = "reset_stats";
 
     private static final String KEY_CATEGORY_REFRESH = "refresh";
@@ -74,6 +76,7 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mOTGModeSwitch;
     private static TwoStatePreference mGameModeSwitch;
     private static TwoStatePreference mSmartChargingSwitch;
+    public static SecureSettingListPreference mChargingSpeed;
     public static TwoStatePreference mResetStats;
     public static TwoStatePreference mRefreshRate90Forced;
     private static SwitchPreference mFpsInfo;
@@ -113,6 +116,10 @@ public class DeviceSettings extends PreferenceFragment
         mSmartChargingSwitch = (TwoStatePreference) findPreference(KEY_CHARGING_SWITCH);
         mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));
         mSmartChargingSwitch.setOnPreferenceChangeListener(new SmartChargingSwitch(getContext()));
+
+        mChargingSpeed = (SecureSettingListPreference) findPreference(KEY_CHARGING_SPEED);
+        mChargingSpeed.setEnabled(mSmartChargingSwitch.isChecked());
+        mChargingSpeed.setOnPreferenceChangeListener(this);
 
         mResetStats = (TwoStatePreference) findPreference(KEY_RESET_STATS);
         mResetStats.setChecked(prefs.getBoolean(KEY_RESET_STATS, false));
@@ -166,14 +173,19 @@ public class DeviceSettings extends PreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        boolean enabled = (Boolean) newValue;
         if (preference == mFpsInfo) {
+            boolean enabled = (Boolean) newValue;
             Intent fpsinfo = new Intent(this.getContext(), org.lineageos.settings.device.FPSInfoService.class);
             if (enabled) {
                 this.getContext().startService(fpsinfo);
             } else {
                 this.getContext().stopService(fpsinfo);
             }
+        }
+
+        if (preference == mChargingSpeed) {
+            mChargingSpeed.setValue((String) newValue);
+            mChargingSpeed.setSummary(mChargingSpeed.getEntry());
         }
         return true;
     }
