@@ -670,9 +670,18 @@ on post-fs-data
 on property:ro.vendor.gsi.build.flavor=*
     restorecon /dev/loop-control
 
-service health-hal-2-0 /vendor/bin/hw/android.hardware.health@2.0-service.RMX1931
-    class hal
+service health-hal-2-1 /vendor/bin/hw/android.hardware.health@2.1-service
+    override
+    class hal charger
     user system
     group system
-    capabilities WAKE_ALARM
+    capabilities WAKE_ALARM BLOCK_SUSPEND
+    file /dev/kmsg w
+    disabled
+
+service health-hal-2-1.RMX1931 /vendor/bin/hw/android.hardware.health@2.1-service.RMX1931
+    class hal charger
+    user system
+    group system
+    capabilities WAKE_ALARM BLOCK_SUSPEND
     file /dev/kmsg w
