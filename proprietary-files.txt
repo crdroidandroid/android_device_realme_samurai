@@ -1,3 +1,5 @@
+# All unpinned blobs below are extracted from RMX1931EX_11_OTA_1340_all_pTyjDCOSS5sD_8481ab3dee78
+
 # ACDB
 vendor/etc/acdbdata/19781/Bluetooth_cal.acdb
 vendor/etc/acdbdata/19781/Codec_cal.acdb
