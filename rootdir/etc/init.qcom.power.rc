@@ -54,10 +54,8 @@ on property:perf_profile=0
     write /proc/sys/vm/swappiness 100
 
     # skin-therm
-    write /sys/class/thermal/thermal_zone67/cdev0_lower_limit 00
-    write /sys/class/thermal/thermal_zone67/cdev0_upper_limit 12
-    write /sys/class/thermal/thermal_zone67/cdev1_lower_limit 00
-    write /sys/class/thermal/thermal_zone67/cdev1_upper_limit 15
+    write /sys/class/thermal/thermal_zone73/cdev0_upper_limit 12
+    write /sys/class/thermal/thermal_zone73/cdev1_upper_limit 15
 
 # Gaming
 on property:perf_profile=1
@@ -81,10 +79,8 @@ on property:perf_profile=1
     write /proc/sys/vm/swappiness 1
 
     # skin-therm
-    write /sys/class/thermal/thermal_zone67/cdev0_lower_limit 00
-    write /sys/class/thermal/thermal_zone67/cdev0_upper_limit 00
-    write /sys/class/thermal/thermal_zone67/cdev1_lower_limit 00
-    write /sys/class/thermal/thermal_zone67/cdev1_upper_limit 00
+    write /sys/class/thermal/thermal_zone73/cdev0_upper_limit 00
+    write /sys/class/thermal/thermal_zone73/cdev1_upper_limit 00
 
 on charger
     # Keep one LITTLE and one big
