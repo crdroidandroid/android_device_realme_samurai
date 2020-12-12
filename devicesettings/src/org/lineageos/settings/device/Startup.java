@@ -70,6 +70,7 @@ public class Startup extends BroadcastReceiver {
         if (enabled) {
             RefreshRateSwitch.setForcedRefreshRate(0);
         }
+        if (sharedPrefs.getBoolean("refresh_rate_90", false)) RefreshRateSwitch.setPeakRefresh(context, true);
     }
 
     private boolean hasRestoredTunable(Context context) {
