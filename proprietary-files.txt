@@ -755,74 +755,72 @@ vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0-halimpl.so
 
-# Display configs
-vendor/etc/OPPO_OLED_AD_calib.cfg
+# Display configs - from RMX1931EX_11_F.04
+vendor/etc/OPPO_OLED_AD_calib.cfg|07f280fb90a2a7ceb681c0b6af55d045d35dfc96
 
-# Display (DRM)
-vendor/lib64/libsdedrm.so
-vendor/lib/libsdedrm.so
+# Display (DRM) - from RMX1931EX_11_F.04
+vendor/lib64/libsdedrm.so|b942f38c2df8fac0018328e73f9c528764c4ffff
+vendor/lib/libsdedrm.so|0954306d9d8ecdb4a552e9abd198710430b01109
 
-# Display (HDR)
-vendor/lib64/libhdr_tm.so
-vendor/lib/libhdr_tm.so
+# Display (HDR) - from RMX1931EX_11_F.04
+vendor/lib64/libhdr_tm.so|e4638c3bf21685b84650c5858bafe384ab2118ff
+vendor/lib/libhdr_tm.so|e8697773d1868876f36e98dc68500919668c9acb
 
-# Display (SDM)
--product/lib64/libsdm-disp-apis.qti.so
--product/lib/libsdm-disp-apis.qti.so
-vendor/bin/qdcmss
-vendor/etc/init/qdcmss.rc
-vendor/lib64/libdpps.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
-vendor/lib/libdpps.so
-vendor/lib/libqseed3.so
-vendor/lib/libsdmcore.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-colormgr-algo.so
-vendor/lib/libsdm-diag.so
-vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmextension.so
-vendor/lib/libtinyxml2_1.so
+# Display (SDM) - from RMX1931EX_11_F.04
+-system_ext/lib64/libsdm-disp-apis.qti.so|6606e07ca39d087dff2fed998c749b29c7585cee
+-system_ext/lib/libsdm-disp-apis.qti.so|2edb0d1e1f9983b75e11b752e2d43275984caca9
+vendor/bin/qdcmss|f9ec0e758dcfddbac0a8ce5748b106b2ab091a17
+vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
+vendor/lib64/libdpps.so|3067e756c206eeec5bd7ac1fe9d97368b6cb4b00
+vendor/lib64/libqseed3.so|1395834daf3c6cd07acbdbc44110decb3be362c2
+vendor/lib64/libsdmcore.so|7100ba82217eb69affc70e11527db2a80dd71941
+vendor/lib64/libsdm-color.so|9a5a5f27481ef8c29624dc18819442ec2764726e
+vendor/lib64/libsdm-colormgr-algo.so|11b65733d87ff65633a5fe8f4207dde12391625c
+vendor/lib64/libsdm-diag.so|55dafc05ba68666f10412a534f7122d7f45bf403
+vendor/lib64/libsdm-disp-vndapis.so|9ab6725a5efba29b77d1d6ab33e10e3ff3296960
+vendor/lib64/libsdmextension.so|37b50b7865770f4f4ad9540b9fe2b73da554ecae
+vendor/lib64/libtinyxml2_1.so|92101861d95cbdf9625d192d0b2295baa5960b68
+vendor/lib/libdpps.so|b3b181fcb4c9b33b9ca9bc32b8a0baa8f4b9a816
+vendor/lib/libqseed3.so|4bd5267c3a360de23a65cdb8b3996191851e9648
+vendor/lib/libsdmcore.so|68bbbe0005327c0561d7629a40f1abc3fc1b3d01
+vendor/lib/libsdm-color.so|1c853c2d0409b9061331b3613ee7768cc829773a
+vendor/lib/libsdm-colormgr-algo.so|881ffdf26992858dcc3ac6024cf1c6deeaed0cfe
+vendor/lib/libsdm-diag.so|d173de1d03f266e8e38d81eb9e08b78d4c180c70
+vendor/lib/libsdm-disp-vndapis.so|2aa9e2c14b069b7acbe339499f3a35714dcc5c8a
+vendor/lib/libsdmextension.so|739c4e43b8d7538b89604d621c478068fac0b8f9
+vendor/lib/libtinyxml2_1.so|f00b8f6218271d57fd1fb67b192db956e42e66fb
 
-# Display (Hardware)
-vendor/lib64/hw/hwcomposer.msmnile.so
-vendor/lib/hw/hwcomposer.msmnile.so
+# Display (Hardware) - from RMX1931EX_11_F.04
+vendor/lib64/hw/hwcomposer.msmnile.so|a0e4cb7335c324d8e0ba3bc8432fac7a9028b296
+vendor/lib/hw/hwcomposer.msmnile.so|d177f5817130134730d4dc94676b1fee56ac4da2
 
-# Display postrocessing
-product/lib64/vendor.display.color@1.0.so
-product/lib64/vendor.display.color@1.1.so
-product/lib64/vendor.display.color@1.2.so
-product/lib64/vendor.display.color@1.3.so
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib/libdisp-aba.so
-vendor/lib/libdisplayqos.so
-vendor/lib/libmm-hdcpmgr.so
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.color@1.3.so
-vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.postproc@1.0.so
-
-# Display utils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+# Display postrocessing - from RMX1931EX_11_F.04
+system_ext/lib64/vendor.display.color@1.0.so|68e0621f9ee71003f23e58843434e10290b25c9a
+system_ext/lib64/vendor.display.color@1.1.so|9fa1e1cbb30d171d74fe3216ce96df1588dfabd1
+system_ext/lib64/vendor.display.color@1.2.so|f361501fcd870cf9d8978937667111d6ceb15dda
+system_ext/lib64/vendor.display.color@1.3.so|1e2c4fdcb92353c7a6ba45a51d7548b2c794b624
+vendor/bin/hw/vendor.display.color@1.0-service|ce61a8290f57c5d759280038e6cfd3f7db887269
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib/libdisp-aba.so|3f78e36e0a16668a45462070e4243bbdcf1bcdbb
+vendor/lib/libdisplayqos.so|3937fe7575fa86815e2f920a0fe0b4c0cbe910d3
+vendor/lib/libmm-hdcpmgr.so|bc1afa529e71204e0c964691b71edcca34e515e2
+vendor/lib/vendor.display.color@1.0.so|640ab2b9c2f0077634ed74263c5558076d431203
+vendor/lib/vendor.display.color@1.1.so|732531bbea59f5c1a90f409350d290607189c47f
+vendor/lib/vendor.display.color@1.2.so|f1ea074c629f1fc27000efb44617f7e8386b12d4
+vendor/lib/vendor.display.color@1.3.so|1467fbb9cbbb331da846fd2bcc3e644b55723bd5
+vendor/lib/vendor.display.color@1.4.so|3b7f6a489f66b2cc8b3e5a467b9fe3f95a59c775
+vendor/lib/vendor.display.color@1.5.so|e97e31b9567f9a6f9031063d2356e7391ba719e3
+vendor/lib/vendor.display.postproc@1.0.so|251c33b11743f5e24ca220b220da367996f3077b
+vendor/lib64/libdisp-aba.so|b7c8567c3079372479c85834ba1aab4e2eee5522
+vendor/lib64/libdisplayqos.so|13aa5350813e6b3b619ba26a4854e512302e2d97
+vendor/lib64/libmm-hdcpmgr.so|ef675e65af5e1ff383035d6d4341dc470abe8e69
+vendor/lib64/vendor.display.color@1.0.so|253cd210899ea79133c7b7b9d31429e4a8d43c32
+vendor/lib64/vendor.display.color@1.1.so|fe9b373785571bb890db27523b804dc7d4411bca
+vendor/lib64/vendor.display.color@1.2.so|f40eb8c9d39776c43448431d7c7f7ecc3e4506c3
+vendor/lib64/vendor.display.color@1.3.so|3fbe0a8a317789608848f35b39ed9bfb734f9ecc
+vendor/lib64/vendor.display.color@1.4.so|1396673668977af0a8afeaa64f891c3b356f958d
+vendor/lib64/vendor.display.color@1.5.so|f1c12eb133698917385d48913358eaffd9a10879
+vendor/lib64/vendor.display.postproc@1.0.so|e56b66d744dd77bd87afbb30cab558acf15709fb
 
 # DPM
 product/bin/dpmd:system_ext/bin/dpmd
@@ -1043,61 +1041,66 @@ vendor/lib/vendor.qti.gnss@2.1.so
 vendor/lib/vendor.qti.gnss@3.0.so
 vendor/lib/vendor.qti.gnss@3.0-service.so
 
-# Graphics
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libCB.so
-vendor/lib64/libEGL_adreno.so
-vendor/lib64/libGLESv2_adreno.so
-vendor/lib64/libgsl.so
-vendor/lib64/libq3dtools_adreno.so
-vendor/euclid/product/vendor_overlay/29/lib64/libhdrdynamic.so:vendor/lib64/libhdrdynamic.so
-vendor/euclid/product/vendor_overlay/29/lib64/libhdrdynamicootf.so:vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libpvr.so
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libCB.so
-vendor/lib/libEGL_adreno.so
-vendor/lib/libGLESv2_adreno.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib/libpvr.so
-vendor/lib/libq3dtools_adreno.so
+# Graphics - from RMX1931EX_11_F.04
+-vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
+vendor/lib64/egl/eglSubDriverAndroid.so|e61711cfb952e9abb9e64d4da2e62fa16879af13
+vendor/lib64/egl/libEGL_adreno.so|8f3435dbecb22fd3217698ebbd9b002ad2420576
+vendor/lib64/egl/libGLESv1_CM_adreno.so|e2e8a079e680bf92f686fb79146651c158f6e130
+vendor/lib64/egl/libGLESv2_adreno.so|d3ded1363c6a5c1380eccb75ded05ad3018c8126
+vendor/lib64/egl/libq3dtools_adreno.so|046be35d03cbea2c73a1339eefa1bffc87ab6ebc
+vendor/lib64/egl/libq3dtools_esx.so|6d6fa0679a4904d4aaa7e6030b7765acb8134e32
+vendor/lib64/libadreno_app_profiles.so|a886185ce566287c0c5eb55397f51204cedf9de1
+vendor/lib64/libadreno_utils.so|5f443c3d118d534d59139c56658f58962cdf93c5
+vendor/lib64/libC2D2.so|6fb775e393ce7161b30e3a71fa0f320e86374425
+vendor/lib64/libc2d30_bltlib.so|aa37c84cf6cc1e1ac670b433c97d0bf41308f9ca
+vendor/lib64/libCB.so|cd781270af2833a4568e854375b0fa27dda232c6
+vendor/lib64/libEGL_adreno.so|31e44fac035da19ac261de63e0edf186132b24ff
+vendor/lib64/libGLESv2_adreno.so|c4b2417d1fdcee2429667b5eccd9a10c95b8d5f5
+vendor/lib64/libgpudataproducer.so|35e572b0f91c74a1d1da0b87b109c4215c3271e8
+vendor/lib64/libgsl.so|d2d2d524882db9500260a8cd9883e9e9446318ac
+vendor/lib64/libq3dtools_adreno.so|8d86f17059c210ab15a57ac9c648da1311ae35a1
+vendor/lib64/libhdrdynamic.so|f3734669b24901ab44dfba100131dd56bd975b40
+vendor/lib64/libhdrdynamicootf.so|455f0b9e61e43f70fa06f346f01b9691193cfddb
+vendor/lib64/libllvm-glnext.so|6bf88dd28b9f967c63382610f5064b25bf25d89d
+vendor/lib64/libllvm-qcom.so|05d5103b81aefcc12ddf5de841ddf0df2ae88ad1
+vendor/lib64/libOpenCL.so|8c8489db818c4089459574090d6111db4e0802d0
+vendor/lib64/libpvr.so|fe9253727d3e7f53cbce2f6a530379233c5ac6f2
+vendor/lib64/libVkLayer_q3dtools.so|ee5f04c4847dcdf9816bde46380746f9bc0580ed
+vendor/lib/egl/eglSubDriverAndroid.so|70f2c481e24a42c9e899719a7de11fc45f31eb80
+vendor/lib/egl/libEGL_adreno.so|a1ebde8802bddd24745983dbd5a81a520afaf5c3
+vendor/lib/egl/libGLESv1_CM_adreno.so|b94ba8188a14dd262abac1b8d667bce3319cf344
+vendor/lib/egl/libGLESv2_adreno.so|ac3716a060ece26fc345c4a3ce773970905b321f
+vendor/lib/egl/libq3dtools_adreno.so|2ac81ee05dd4afb34ef6e56342ee1757f2db1409
+vendor/lib/egl/libq3dtools_esx.so|3d683dcf2892cdd6dd00b38717454abb45204e7a
+vendor/lib/libadreno_app_profiles.so|db41a59bb7867420c0b19cb2bccd5c7c6bd1000b
+vendor/lib/libadreno_utils.so|543ab6ed489bd668546ff0b2beb1bfde87518ee5
+vendor/lib/libC2D2.so|267be7bd6768fa3b9bed2b9a42062cb5a77ca59b
+vendor/lib/libc2d30_bltlib.so|950c705e6dbc02b646a0129e66e94e192f5cd87f
+vendor/lib/libCB.so|95f6759048bca3a9144bedd4da34ae3726d9acfe
+vendor/lib/libEGL_adreno.so|31e44fac035da19ac261de63e0edf186132b24ff
+vendor/lib/libGLESv2_adreno.so|c4b2417d1fdcee2429667b5eccd9a10c95b8d5f5
+vendor/lib/libgpudataproducer.so|f7b97ea883a0c0e269a08f9c59508c670a9fc5ea
+vendor/lib/libgsl.so|054ed225b52e7846221246c1f3dd4332738a582e
+vendor/lib/libllvm-glnext.so|e3b7d7d4a29dc6fa92eca0c2904290a1259b31d5
+vendor/lib/libllvm-qcom.so|fd077b004c53191aba2fa8a82f9a4301ba0e8c13
+vendor/lib/libOpenCL.so|594490738cf3729baa2a745c4f7cbc073d806ede
+vendor/lib/libpvr.so|b4a2d6cc8fbefb16c9c2e0737090d578f8fccb74
+vendor/lib/libq3dtools_adreno.so|8d86f17059c210ab15a57ac9c648da1311ae35a1
+vendor/lib/libVkLayer_q3dtools.so|5866382a9e0a9a8a71125e8427d6aa4e190a66e4
 
-# Graphics (Vulkan
-vendor/lib64/hw/vulkan.msmnile.so
-vendor/lib/hw/vulkan.msmnile.so
+# Graphics (Vulkan) - from RMX1931EX_11_F.04
+vendor/lib64/hw/vulkan.adreno.so|dbe08047ec51224d63645180673eb7db1db2a004
+vendor/lib/hw/vulkan.adreno.so|040b1bfaa025c0eae3a69df306f0567ea6fe1960
 
-# Graphics (Adreno firmware)
-vendor/firmware/a630_gmu.bin
-vendor/firmware/a630_sqe.fw
-vendor/firmware/a640_gmu.bin
-vendor/firmware/a640_zap.b00
-vendor/firmware/a640_zap.b01
-vendor/firmware/a640_zap.b02
-vendor/firmware/a640_zap.elf
-vendor/firmware/a640_zap.mdt
+# Graphics (Adreno firmware) - from RMX1931EX_11_F.04
+vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
+vendor/firmware/a630_sqe.fw|e25094f97b44244775cc38a9d909fba6bd4cf76b
+vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
+vendor/firmware/a640_zap.b00|7afc31984d7eeacdd0fc78118ad8fa46c9b3e4ee
+vendor/firmware/a640_zap.b01|ac3986e4b2684716a269662569d0f6579ef0c726
+vendor/firmware/a640_zap.b02|27d26ca0ae982c065fb7ab58be73bf3ca2e8bdf3
+vendor/firmware/a640_zap.elf|6bb306953ddb9657c7dee287d092985489a7e4a3
+vendor/firmware/a640_zap.mdt|01ed9e927172d80446287905d3bc25b941b517ef
 
 # Hardware Factory
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
