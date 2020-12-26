@@ -874,16 +874,6 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
 vendor/lib/vendor.qti.esepowermanager@1.0.so
 
-# Fingerprint
-vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib64/android.frameworks.fingerprintservice@1.0.so
-vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib/vendor.oppo.hardware.commondcs@1.0.so
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-
 # Fingerprint (goodix)
 vendor/lib64/hw/fingerprint.goodix_G2.default.so
 vendor/lib64/hw/fingerprint.goodix_G3.default.so
@@ -1326,6 +1316,12 @@ vendor/lib64/libsnpeml.so
 vendor/etc/libnfc-nci.conf
 vendor/etc/nfc/libnfc-mtp-SN100.conf_19781:vendor/etc/libnfc-nxp.conf
 vendor/lib/libsn100u_fw.so
+
+# OPLUS - biometrics - from RMX1931EX_11_F.04
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|226048caf31c205cac865537e411aff22ee38f4f
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|bf7b4a5bc26a782b553a4e1ab818ca0f2fb423d3
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so|ce57342748f5315ad268fbc5ed232c30a632eb0d
+odm/lib64/vendor.oplus.hardware.commondcs@1.0.so|df560b924181bd96ec8927c9d4076a4028cf7dde
 
 # OPLUS - ormsHalService - from RMX1931EX_11_F.04
 odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service|2f3004f709cdb9ff472d8a273a7f6c0d516da214
