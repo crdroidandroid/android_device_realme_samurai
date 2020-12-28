@@ -28,4 +28,17 @@
 
     <!-- Doze: should the significant motion sensor be used as a pulse signal?  -->
     <bool name="doze_pulse_on_significant_motion">true</bool>
+
+    <!-- Override value to use for proximity sensor.  -->
+    <string name="proximity_sensor_type">android.sensor.proximity</string>
+
+    <!-- If using proximity_sensor_type, specifies a threshold value to distinguish near and
+         far break points. A sensor value more than this is considered "far". If not set,
+         proximity_sensor_threshold is used. This allows one to implement a latching mechanism for
+         noisy sensors. -->
+    <item name="proximity_sensor_threshold_latch" format="float" type="dimen">2.0</item>
+
+    <!-- If using proximity_sensor_type, specifies a threshold value to distinguish near and
+         far break points. A sensor value less than this is considered "near". -->
+    <item name="proximity_sensor_threshold" format="float" type="dimen">1</item>
 </resources>
