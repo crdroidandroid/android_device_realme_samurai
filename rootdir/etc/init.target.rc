@@ -128,20 +128,11 @@ on boot
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
-on property:vendor.display.lcd_density=560
-   setprop dalvik.vm.heapgrowthlimit 256m
-
-on property:vendor.display.lcd_density=640
-   setprop dalvik.vm.heapgrowthlimit 512m
-
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
 on property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
-
-#Load WLAN driver
-    insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
