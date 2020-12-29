@@ -18,7 +18,6 @@ on init
     write /sys/block/dm-2/queue/read_ahead_kb 2048
 
     # Disable UFS powersaving
-    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkscale_enable 0
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/hibern8_on_idle_enable 0
 
@@ -93,7 +92,6 @@ on charger
     wait /dev/block/bootdevice
 
     # Enable UFS powersaving
-    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkscale_enable 1
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/hibern8_on_idle_enable 1
 
@@ -102,7 +100,6 @@ on charger
 
 on enable-low-power
     # Enable UFS powersaving
-    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkscale_enable 1
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/hibern8_on_idle_enable 1
 
