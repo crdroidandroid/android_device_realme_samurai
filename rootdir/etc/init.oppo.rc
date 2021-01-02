@@ -174,6 +174,3 @@ on property:ro.board.platform=msmnile && property:ro.baseband=msm && property:ro
 on post-fs-data
     mkdir /data/system/audio 0775 media media
     mkdir /mnt/vendor/persist/media 0775 media media
-
-on property:init.svc.iop-hal-2-0=restarting
-    stop iop-hal-2-0
