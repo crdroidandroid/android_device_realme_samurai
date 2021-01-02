@@ -1193,19 +1193,17 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# IO prefetcher - from hotdog - QKQ1.190716.003
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|8b4068afda231df9e72622671b1d076413fd7e3f
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|b25250ca8b5f7e53fa580e935607759da8da6264
-vendor/lib64/libqti-iopd-client.so|408dbfed124b654bc953bfa50becba2c51bde2c1
-vendor/lib64/libqti-iopd.so|39d42cba51abf8db619d79621cc01703c7df2da4
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|12704928964585489a296bf373d2f873e3657958
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|8a3858b92cb857ffe34dee6db6960edfbe319942
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|e51a6b716d87fb97d852f64b27dd5ee763ce9b51
-vendor/lib/libqti-iopd-client.so|fb5a13ec4e0dccc3880d90eaa7764379239b2f0f
-vendor/lib/libqti-iopd.so|616fdf8eab3f61745f6064bf841ba897ef9bed1d
-vendor/lib/vendor.qti.hardware.iop@1.0.so|64e5cc01443db44a4ba90426e7cb325130ce4491
-vendor/lib/vendor.qti.hardware.iop@2.0.so|75ed66da32ba8f57c019c65107e5af11c01decfe
+# IO prefetcher - from RMX1931EX_11_F.04
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|f44b5e1dda355fe2f99ccaaf3860f4f443d38b22
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|64df93ffd7f27c067996512d146131a4bc908acd
+vendor/lib64/libqti-iopd-client.so|7ab6e2a9a26197167671d4f9e3631b67da44cbc4
+vendor/lib64/libqti-iopd.so|2b73fcad0d5562e0cf1677fefddd8c819788b64d
+vendor/lib64/vendor.qti.hardware.iop@1.0.so|ab7e9d16481a52a919cd7484eed480913ce29e66
+vendor/lib64/vendor.qti.hardware.iop@2.0.so|a99da96aa7abf8b9a4cb950113d7fe4ccbe4ff6c
+vendor/lib/libqti-iopd-client.so|dd4029d3ee0a1396431cb246c6af4fbcabd01802
+vendor/lib/libqti-iopd.so|d93e62ebff4c1c4b17e64c383a05ad2d84d69bb8
+vendor/lib/vendor.qti.hardware.iop@1.0.so|7244776c0f9ef0e01b267b7ef92e8db5912ad89a
+vendor/lib/vendor.qti.hardware.iop@2.0.so|ec767e11249f7f86d66f232676e6b2d5382979e4
 
 # IPA
 vendor/etc/init/ipa_fws.rc
@@ -1407,45 +1405,51 @@ vendor/lib64/libspcom.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libspcom.so
 
-# PASR Manager
--vendor/app/pasrservice/pasrservice.apk
-vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
-vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
-vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
-vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
-vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
-vendor/lib/vendor.qti.power.pasrmanager@1.0.so
+# PASR Manager - from RMX1931EX_11_F.04
+-vendor/app/pasrservice/pasrservice.apk|f1106fc241a46a635405cce179c9141221186403
+vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service|fd77dd9d01e14486b49d1f926607d3e9b15d9b8a
+vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc|b34c1b9179c89cd47adce145bae9a609e5141bc0
+vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so|4be4deb43cab58ef19d71ae3f5633f53543a30dd
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|e5affcf769b56e137e55f9fd40a2937c4629cddb
+vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so|8bbbdb4a59d4b4eca2ab593fb54797d72f087884
+vendor/lib/vendor.qti.power.pasrmanager@1.0.so|bf533f064308244fc484f3a1a6bb7d1a9984aa46
 
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/libappclassifier.so
-vendor/lib64/libgameoptfeature.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
+# Perf - from RMX1931EX_11_F.04
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|6b8f077dc724a202f3fc91c0255f88ad45cbdb62
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/lm/AppClassifierFeature.xml|102e4291357dd384c0f474d4192370e25123c5e7
+vendor/etc/perf/commonresourceconfigs.xml|827c63cb52552af0c19a4735430f98334e1760bf
+vendor/etc/perf/perfboostsconfig.xml|cd2183d254b0ba27cc17f7dd51f090c432b672bc
+vendor/etc/perf/perfconfigstore.xml|62f780c6f974a62d18a66d0dcee30efb04903512
+vendor/etc/perf/targetconfig.xml|95f511bb4030b2755a0b340814fe41cccac994ab
+vendor/etc/perf/targetresourceconfigs.xml|bcac95b779250981197349f926a84b67e649aa2f
+vendor/etc/powerhint.xml|f35137c8f5068d03bba832b995e3e89b1ad718c2
+vendor/lib64/libadaptlaunch.so|23abb42bc88b552f8bc70dcd1832fab39ec79f47
+vendor/lib64/libappclassifier.so|b18ba33ff968c2e13d95558e12e0c130a4611945
+vendor/lib64/libgameoptfeature.so|288259c3cafcec75a8789864a58f5a3028c4e3cc
+vendor/lib64/liblearningmodule.so|266c1207891d09b97f9de34c365c2b25f23fdc35
+vendor/lib64/libmeters-ns.so|05a4e9661d9b727db7622ad6c8460ff305556a65
+vendor/lib64/libmeters.so|d5c9a4605bd2f631d6b0eb3c3cbb1f5fb8629114
+vendor/lib64/libperfconfig.so|082055646d2fffcf0120d23ca152d56c903ebd41
+vendor/lib64/libperfgluelayer.so|77c14d1868b52f759f122441b5df7e5fe1e278e1
+vendor/lib64/libperfioctl.so|7bf289a68671f675ded7fb62e561e59832983138
+vendor/lib64/libqti-perfd-client.so|d6502c16ab4dd7642641b6a8cbb061847ff5cb2d
+vendor/lib64/libqti-perfd.so|2a30ad97973e17694b897c09b5b293c96cbcbab0
+vendor/lib64/libqti-util.so|834cc98315887e57a5f229f9ee1a0d20d0d8f4c3
+vendor/lib64/libqti-utils.so|e734331e086c9b78852871312429ce69092775ca
+vendor/lib64/vendor.qti.hardware.perf@2.0.so|60a1362c97f5f1fa54de8f7e59ab004c5b525f97
+vendor/lib64/vendor.qti.hardware.perf@2.1.so|af1764ad3d191dfe92348183b1be431d86b10e4e
+vendor/lib64/vendor.qti.hardware.perf@2.2.so|52c4c0cf35d3fa9e509e26252a6dc196c1e89282
+vendor/lib/libperfconfig.so|bbecdc5b9f72f5aac80caed31079336cc41e6234
+vendor/lib/libperfgluelayer.so|52cf265b9dab53f798c8c48c70eee763e9543085
+vendor/lib/libperfioctl.so|42789bf7d53750d33f501a130e47e596332744fc
+vendor/lib/libqti-perfd-client.so|1b0c70391d684ad95c79bc24ecb5ac8096d39019
+vendor/lib/libqti-perfd.so|a145dbd5108dfc9c827a482b9359132bfa0660c5
+vendor/lib/libqti-util.so|0fc209bb65b08ea39177fa9dd61db9a9bfe6c754
+vendor/lib/libqti-utils.so|f0396512d699825cd405cd87f59b019ae05e3f81
+vendor/lib/vendor.qti.hardware.perf@2.0.so|09d2c1174a7ea62bedb1d3a1fc62c486997d9369
+vendor/lib/vendor.qti.hardware.perf@2.1.so|1161aa84929bdbd00f4e2c5789ed4699c25db326
+vendor/lib/vendor.qti.hardware.perf@2.2.so|e5997926aa323141885e330a564e816a7d66ef17
 
 # Power-off alarm
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
