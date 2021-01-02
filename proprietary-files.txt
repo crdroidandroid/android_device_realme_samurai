@@ -946,11 +946,11 @@ vendor/euclid/product/vendor/firmware/goodixfp.mdt:vendor/firmware/goodixfp.mdt
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper - from RMX1931EX_11_F.04
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|de1e8d026b16255040dbe6eb67faa73c9b656553
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|74ff564ec413866644361401ef5cf8d55846ead5
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|9042059c28de1ed06f6e0795b6d7ee9bb9d939ab
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|1dcf731eb554eb5a84d51e8aae7a6dff61780318
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
@@ -1241,21 +1241,21 @@ vendor/firmware/cryptoeng.b06
 vendor/firmware/cryptoeng.b07
 vendor/firmware/cryptoeng.mdt
 
-# Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
+# Keymaster - from RMX1931EX_11_F.04
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|cce8913b8bdbdf0e50f5fdecd47823a11330534b
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|b361b15b60da3185c196c85abdab6646e4d7d4f8
+vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti|43e18dd04793654da2749620de8dce115f545a4c
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|bc95d15d27309862516dd88c11d6308f446ee1f0
+vendor/lib64/libkeymasterdeviceutils.so|9758d74c95bb62eb15e8f4e9f1d300e8a4da64ae
+vendor/lib64/libkeymasterprovision.so|23f22e2fefa33dba77cd076a9a045f401146f2b1
+vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
+vendor/lib64/libqtikeymaster4.so|f2cc49a9f7514828b994cd69bcc78ec73dbbc061
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|9eb2953b0126a5401f94d1e994ce8dd385af6f5a
+vendor/lib/libkeymasterdeviceutils.so|41ee4b220726a71ba5a0b68b3afd36f5f78a27ae
+vendor/lib/libkeymasterprovision.so|9d8dd62b95fd0aceb801f4ee06a62d0d9808b33f
+vendor/lib/libkeymasterutils.so|aeb984222fbd7d6881f9915a5ad1a9ab828c862b
+vendor/lib/libqtikeymaster4.so|8fae3676abb1aa893e441ef829517a108d0ec33b
 
 # Listen
 vendor/lib64/hw/sound_trigger.primary.msmnile.so
