@@ -26,6 +26,9 @@
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
 <audio_platform_info>
     <acdb_ids>
+        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/10/12, Add for dummy dev START -->
+        <device name="SND_DEVICE_OUT_DUMMY" acdb_id="15"/>
+        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/10/12, Add for dummy dev END -->
         <device name="SND_DEVICE_OUT_SPEAKER" acdb_id="15"/>
         <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" acdb_id="15"/>
         <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" acdb_id="124"/>
@@ -63,15 +66,50 @@
         <device name="SND_DEVICE_IN_ANC_MIC_RECORD" acdb_id="104"/>
         <device name="SND_DEVICE_IN_MMI_MIC_RECORD" acdb_id="144"/>
         <device name="SND_DEVICE_IN_MMI_ANC_MIC_RECORD" acdb_id="144"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_HEADSET_MIC" acdb_id="23"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC_KTV" acdb_id="98"/>
         <!--#ifdef VENDOR_EDIT Zhao.Pan@PSW.MM.AudioDriver.feature, 2019/03/19, ktv loopback support usb headset -->
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_KTV" acdb_id="44"/>
+        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_KTV" acdb_id="98"/>
         <!--#endif VENDOR_EDIT Zhao.Pan@PSW.MM.AudioDriver.feature, 2019/03/19, ktv loopback support usb headset end -->
         <device name="SND_DEVICE_IN_HANDSET_MIC_AUDIO_BARGE_IN" acdb_id="149"/>
         <!--#endif VENDOR_EDIT Zhao.Pan@PSW.MM.AudioDriver.HAL, 2018/11/20, Add for acdb id config end -->
         <device name="SND_DEVICE_IN_ANC_KTV_MIC" acdb_id="4"/>
         <!--#endif VENDOR_EDIT Xiaoke.Zhi@PSW.MM.AudioDriver.HAL, 2019/3/26, Add for acdb id config end -->
-        <device name="SND_DEVICE_OUT_HEADPHONES_AND_BT_A2DP" acdb_id="10"/>
+        <!--#ifdef OPLUS_ARCH_EXTENDS Richeng.Wang@@MULTIMEDIA.AUDIODRIVER.HAL, 2020/10/29 add for  voip  acdb id config -->
+        <device name="SND_DEVICE_OUT_SPEAKER_COMMUNICATION_PLAYBACK" acdb_id="151"/>
+        <device name="SND_DEVICE_OUT_HANDSET_COMMUNICATION_PLAYBACK" acdb_id="152"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_VOICE_PLAYBACK" acdb_id="136"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_VOICE_COMMUNICATION_WEIXIN" acdb_id="116"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_VOICE_COMMUNICATION_WEIXIN" acdb_id="110"/>
+
+        <device name="SND_DEVICE_IN_HEADSET_MIC_VOICE_RECORD_TMGP" acdb_id="84"/>
+
+        <device name="SND_DEVICE_OUT_HANDSET_VOICE_PLAYBACK" acdb_id="7"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AUDIO_PLAYBACK_EFFECT" acdb_id="19"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_VOICE_RECORD_EFFECT" acdb_id="119"/>
+
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_VOICE_RECORD_TMGP" acdb_id="13"/>
+
+        <device name="SND_DEVICE_OUT_SPEAKER_VOICE_PLAYBACK_TMGP" acdb_id="150"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AUDIO_PLAYBACK_TMGP" acdb_id="134"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_VOICE_PLAYBACK_EFFECT" acdb_id="101"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK_TMGP" acdb_id="10"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK_EFFECT" acdb_id="29"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_INTERVIEW" acdb_id="5"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_CONFERENCE" acdb_id="105"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_VIDEO_WEIXIN" acdb_id="34"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_VOICE_RECORD_WEIXIN" acdb_id="6"/>
+        <device name="SND_DEVICE_IN_HEADSET_MIC_VOICE_RECORD_WEIXIN" acdb_id="47"/>
+        <device name="SND_DEVICE_IN_HEADSET_MIC_VOICE_COMMUNICATION_WEIXIN" acdb_id="47"/>
+        <device name="SND_DEVICE_IN_HEADSET_MIC_VOICE_RECORD_EFFECT" acdb_id="147"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK" acdb_id="10"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_COMMUNICATION_PLAYBACK" acdb_id="26"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_AUDIO_PLAYBACK_TMGP" acdb_id="10"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_AUDIO_PLAYBACK_EFFECT" acdb_id="29"/>
+        <device name="SND_DEVICE_OUT_BT_A2DP_AUDIO_PLAYBACK_EFFECT" acdb_id="49"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_VOICE_PLAYBACK_EFFECT" acdb_id="101"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK_TMGP" acdb_id="10"/>
+	<device name="SND_DEVICE_OUT_HEADPHONES_AND_BT_A2DP" acdb_id="10"/>
         <device name="SND_DEVICE_OUT_USB_HEADPHONES_AND_BT_A2DP" acdb_id="45"/>
     </acdb_ids>
 
@@ -134,6 +172,12 @@
         <usecase name="USECASE_INCALL_REC_UPLINK" type="in" id="27" />
         <usecase name="USECASE_INCALL_REC_DOWNLINK" type="in" id="27" />
         <usecase name="USECASE_INCALL_REC_UPLINK_AND_DOWNLINK" type="in" id="27" />
+	<!--zhangerhu@PSW.MM.AudioDriver.feature.1234017, 2020/10/26, Add for ktv loopback-->
+        <usecase name="USECASE_AUDIO_OPLUS_KTV" type="in" id="38" />
+        <usecase name="USECASE_AUDIO_OPLUS_KTV" type="out" id="38" />
+        <usecase name="USECASE_AUDIO_OPLUS_KTV_USB_HS" type="in" id="38" />
+        <usecase name="USECASE_AUDIO_OPLUS_KTV_USB_HS" type="out" id="38" />
+    	<!--zhangerhu@PSW.MM.AudioDriver.feature.1234017, 2020/10/26, Add for ktv loopback end-->
     </pcm_ids>
     <config_params>
         <param key="spkr_1_tz_name" value="wsatz.13"/>
@@ -149,6 +193,12 @@
         <param key="true_32_bit" value="true"/>
         <!-- In the below value string, the value indicates sidetone gain in dB -->
         <param key="usb_sidetone_gain" value="35"/>
+		<!--#Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2019/08/22, Add for oppo config-->
+        <param key="oppo_mic_count" value="2"/>
+        <param key="oppo_speaker_id" value="4"/>
+        <param key="oppo_multi_record" value="true"/>
+        <param key="SPK_VI_HOSTLESS" value="Quaternary MI2S_TX Hostless"/>
+        <!--#Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2019/08/22, Add for oppo config end-->
     </config_params>
     <gain_db_to_level_mapping>
         <gain_level_map db="-59" level="5"/>
@@ -206,8 +256,15 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" backend="speaker-and-hdmi" interface="QUAT_MI2S_RX-and-HDMI"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_DISPLAY_PORT" backend="speaker-and-display-port" interface="QUAT_MI2S_RX-and-DISPLAY_PORT"/>
         <device name="SND_DEVICE_OUT_HANDSET" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_NREC" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" interface="SLIMBUS_7_TX"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB_NREC" interface="SLIMBUS_7_TX"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="speaker" interface="QUAT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/10/12, Add for dummy dev START -->
+        <device name="SND_DEVICE_OUT_DUMMY" backend="dummy" interface="AFE_PCM_RX"/>
+        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/10/12, Add for dummy dev END -->
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO" backend="speaker" interface="QUAT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" backend="speaker" interface="QUAT_MI2S_RX"/>
@@ -225,12 +282,20 @@
         <device name="SND_DEVICE_IN_ANC_MIC_RECORD" interface="SLIMBUS_0_TX"/>
         <device name="SND_DEVICE_IN_MMI_MIC_RECORD" interface="SLIMBUS_0_TX"/>
         <device name="SND_DEVICE_IN_MMI_ANC_MIC_RECORD" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_HEADPHONES" backend="speaker-and-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_AND_VOICE_ANC_HEADSET" backend="speaker-and-headphones" interface="QUAT_MI2S_RX-and-SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface="QUAT_MI2S_RX-and-SLIMBUS_7_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface="QUAT_MI2S_RX-and-SLIMBUS_7_RX"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_USB_HEADSET_MIC" interface="USB_AUDIO_TX"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_KTV" backend="ktv-afe" interface="SLIMBUS_1_TX"/>
+        <device name="SND_DEVICE_IN_HEADSET_MIC_KTV" backend="headset-mic" interface="SLIMBUS_1_TX"/>
         <!--#ifdef VENDOR_EDIT Zhao.Pan@PSW.MM.AudioDriver.feature, 2019/03/19, ktv loopback support usb headset -->
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_KTV" backend="ktv-afe-usb" interface="USB_AUDIO_TX"/>
+        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_KTV" backend="usb-headset-mic" interface="USB_AUDIO_TX"/>
         <!--#endif VENDOR_EDIT Zhao.Pan@PSW.MM.AudioDriver.feature, 2019/03/19, ktv loopback support usb headset end -->
         <device name="SND_DEVICE_IN_HANDSET_MIC_AUDIO_BARGE_IN" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_INTERVIEW" interface="SLIMBUS_0_TX"/>
+	<device name="SND_DEVICE_IN_HANDSET_MIC_CONFERENCE" interface="SLIMBUS_0_TX"/>
+	<device name="SND_DEVICE_IN_HANDSET_MIC_VIDEO_WEIXIN" interface="SLIMBUS_0_TX"/>
+	<device name="SND_DEVICE_IN_HANDSET_MIC_VOICE_RECORD_WEIXIN" interface="SLIMBUS_0_TX"/>
         <!--#endif VENDOR_EDIT Zhao.Pan@PSW.MM.AudioDriver.HAL, 2018/11/20, Add for infterface config end-->
         <!--#ifdef VENDOR_EDIT GuoWang.Huang@PSW.MM.AudioDriver.HAL, 2019/08/21, Add for headset -->
         <device name="SND_DEVICE_OUT_VOICE_HEADSET" backend="headset" interface="SLIMBUS_6_RX"/>
@@ -242,6 +307,27 @@
         <device name="SND_DEVICE_IN_HEADSET_MIC_VOICE_RECORD_TMGP" backend="headset-mic" interface="SLIMBUS_1_TX"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC_VOICE_RECORD_EFFECT" backend="headset-mic" interface="SLIMBUS_1_TX"/>
         <!--#endif VENDOR_EDIT GuoWang.Huang@PSW.MM.AudioDriver.HAL, 2019/12/31, Add for headset end-->
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO" interface="SLIMBUS_0_TX"/>
+        <!--#ifdef OPLUS_ARCH_EXTENDS Richeng.Wang@@MULTIMEDIA.AUDIODRIVER.HAL, 2020/10/29 add for  voip  devices  -->
+        <device name="SND_DEVICE_OUT_SPEAKER_COMMUNICATION_PLAYBACK" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_VOICE_PLAYBACK" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_VOICE_COMMUNICATION_WEIXIN" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_OUT_HANDSET_COMMUNICATION_PLAYBACK" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC_VOICE_COMMUNICATION_WEIXIN" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_OUT_HANDSET_VOICE_PLAYBACK" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AUDIO_PLAYBACK_EFFECT" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_VOICE_RECORD_EFFECT" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_IN_SPEAKER_MIC_VOICE_RECORD_TMGP" interface="SLIMBUS_0_TX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_VOICE_PLAYBACK_TMGP" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AUDIO_PLAYBACK_TMGP" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_VOICE_PLAYBACK_EFFECT" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK_TMGP" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK_EFFECT" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_VOICE_PLAYBACK" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_COMMUNICATION_PLAYBACK" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_AUDIO_PLAYBACK_TMGP" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_AUDIO_PLAYBACK_EFFECT" backend="headphones" interface="SLIMBUS_6_RX"/>
+        <device name="SND_DEVICE_OUT_BT_A2DP_AUDIO_PLAYBACK_EFFECT" backend="bt-a2dp" interface="SLIMBUS_7_RX"/>
     </backend_names>
     <!-- below values are for ref purpose to OEM, doesn't contain actual hardware info on MTP -->
     <microphone_characteristics>
