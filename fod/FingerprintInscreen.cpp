@@ -25,13 +25,17 @@
 #include <thread>
 
 /* Hardcoded stuffs */
+#define AOD_LIGHT_MODE_PATH "/sys/kernel/oppo_display/aod_light_mode_set"
+#define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
+#define DOZE_STATUS "/proc/touchpanel/DOZE_STATUS"
+#define FP_ENABLE_PATH "/proc/touchpanel/fp_enable"
 #define FP_PRESS_PATH "/sys/kernel/oppo_display/notify_fppress"
 #define PANEL_BLANK_PATH "/sys/kernel/oppo_display/notify_panel_blank"
-#define DOZE_STATUS "/proc/touchpanel/DOZE_STATUS"
-#define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
+
 #define X_POS 445
 #define Y_POS 2061
 #define FP_SIZE 190
+
 #define FP_BEGIN 1
 #define FP_ENDIT 0
 
@@ -94,8 +98,13 @@ Return<void> FingerprintInscreen::onPress() {
         std::this_thread::sleep_for(std::chrono::milliseconds(60));
         if (isDreamState) {
             set(FP_PRESS_PATH, FP_BEGIN);
+            set(AOD_LIGHT_MODE_PATH, FP_BEGIN);
         }
     }).detach();
+    if(get(DOZE_STATUS, FP_BEGIN) && get(FP_ENABLE_PATH, FP_BEGIN)) {
+    set(FP_ENABLE_PATH, FP_ENDIT);
+    set(FP_ENABLE_PATH, FP_BEGIN);
+    }
     } else {
     set(FP_PRESS_PATH, FP_BEGIN);
     }
@@ -106,13 +115,14 @@ Return<void> FingerprintInscreen::onRelease() {
     set(FP_PRESS_PATH, FP_ENDIT);
     if(isDreamState)
     set(DIMLAYER_PATH, FP_ENDIT);
+    set(AOD_LIGHT_MODE_PATH, FP_ENDIT);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
     if(get(DOZE_STATUS, FP_ENDIT)) {
-    set(PANEL_BLANK_PATH, FP_BEGIN);
     isDreamState = true;
+    set(PANEL_BLANK_PATH, FP_BEGIN);
     } else {
     isDreamState = false;
     set(DIMLAYER_PATH, FP_BEGIN);
