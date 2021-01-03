@@ -32,10 +32,6 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 # Charger
 ro.charger.enable_suspend=true
 
-# CNE
-persist.vendor.cne.feature=1
-persist.cne.subscription_aware=false
-
 # Data modules
 persist.data.netmgrd.qos.enable=true
 persist.vendor.data.profile_update=true
