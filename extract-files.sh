@@ -72,6 +72,9 @@ function blob_fixup() {
         product/lib64/libdpmframework.so)
             patchelf --add-needed "libshim_dpmframework.so" "${2}"
             ;;
+        vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc)
+            sed -i "s/\/odm\//\/vendor\//g" "${2}"
+            ;;
         vendor/lib/libvpplibrary.so | vendor/lib64/libvpplibrary.so)
             sed -i "s|/odm/|/////|g" "${2}"
             ;;

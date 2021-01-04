@@ -846,62 +846,25 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# DRM
-vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libqisl.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/librpmb.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libspl.so
-vendor/lib64/libssd.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libtzdrmgenprov.so
-vendor/lib/libbase64.so
-vendor/lib/libcpion.so
-vendor/lib/libcppf.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/libGPreqcancel.so
-vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libqisl.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/librpmb.so
-vendor/lib/libSecureUILib.so
-vendor/lib/libsecureui.so
-vendor/lib/libsecureui_svcsock.so
-vendor/lib/libspl.so
-vendor/lib/libssd.so
-vendor/lib/libStDrvInt.so
-vendor/lib/libtzdrmgenprov.so
-
-# DRM firmware
-vendor/firmware/cppf.b00
-vendor/firmware/cppf.b01
-vendor/firmware/cppf.b02
-vendor/firmware/cppf.b03
-vendor/firmware/cppf.b04
-vendor/firmware/cppf.b05
-vendor/firmware/cppf.b06
-vendor/firmware/cppf.b07
-vendor/firmware/cppf.mdt
-vendor/firmware/widevine.b00
-vendor/firmware/widevine.b01
-vendor/firmware/widevine.b02
-vendor/firmware/widevine.b03
-vendor/firmware/widevine.b04
-vendor/firmware/widevine.b05
-vendor/firmware/widevine.b06
-vendor/firmware/widevine.b07
-vendor/firmware/widevine.mdt
+# DRM - from RMX1931EX_11_F.04
+vendor/bin/qseecomd|51d1924504450c587e0d0d0e97a428f3d5d5f918
+vendor/etc/init/qseecomd.rc|0ebfb7c5d1d2459be4fdac951a182dc486f3bda7
+vendor/lib64/libbase64.so|ddadae2df67d5393250c0357b4ca713e5bf73011
+vendor/lib64/libcpion.so|2ac074b9ee7afd1578c33128db6df65c3b18e870
+vendor/lib64/libdrmfs.so|ab54db27124ccb65e130b0e0f486d99bf4b9165d
+vendor/lib64/libdrmtime.so|29ee2dffbe28954a6bbb20fd2f3935b9bf036c64
+vendor/lib64/libGPreqcancel.so|cef7983d5aceb03b4c422731c838ead1a8f3fed4
+vendor/lib64/libGPreqcancel_svc.so|d699b5a0cfa82df643626396b4d9aeb3a6655bcc
+vendor/lib64/libqisl.so|529d7e20bb33147fe3404c1a58d266e49228046a
+vendor/lib64/libQSEEComAPI.so|c2f61d6b3148ac880d9387bd841d38cf659ee5ef
+vendor/lib64/librpmb.so|aaeeba5a4de13af2401fe6847ae7d13920a44169
+vendor/lib64/libSecureUILib.so|8eaad2703c2964c8f36e35a19943a54e1a0f3f64
+vendor/lib64/libsecureui.so|69a0cb8db2024689dbeb82f4ff962812d1742a2f
+vendor/lib64/libsecureui_svcsock.so|2232f56927964f10d41868919d94711930d50ed0
+vendor/lib64/libspl.so|f9c12bc40b075ef5b933fe0ff6b86ebe72a031db
+vendor/lib64/libssd.so|f13516098c5a9c7318cbd66624e2d0a0bd76d6b2
+vendor/lib64/libStDrvInt.so|a166aeaeaeb70f12bc607ff7852e039ee5cb004f
+vendor/lib64/libtzdrmgenprov.so|c5f1a7d1f4bc5fc03156f34c9b020d4fc41b79cd
 
 # ESE
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
@@ -1881,17 +1844,18 @@ vendor/lib/vendor.qti.hardware.vpp@1.1.so|8df356bc93951b2072590ff17c5d7af08b4e82
 vendor/lib/vendor.qti.hardware.vpp@1.2.so|edd5e3b33c51c31c8e9e54912269e893c4e3c730
 vendor/lib/vendor.qti.hardware.vpp@1.3.so|5daf9c261188ca05696002622509756d079177ca
 
-# Widevine DRM
-vendor/euclid/product/vendor_overlay/29/lib64/liboemcrypto.so:vendor/lib64/liboemcrypto.so
-vendor/euclid/product/vendor_overlay/29/lib/liboemcrypto.so:vendor/lib/liboemcrypto.so
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/libwvhidl.so
-vendor/lib/mediadrm/libwvdrmengine.so
+# Widevine DRM - from RMX1931EX_11_F.04
+vendor/lib64/liboemcrypto.so|d4700a5d4d93b3868d33455f80d43671b3d1ab3d
+vendor/lib/liboemcrypto.so|0da98edcdec50bec80d8d169d12a318d8db1d87b
+vendor/euclid/odm/bin/hw/android.hardware.drm@1.3-service.widevine:vendor/bin/hw/android.hardware.drm@1.3-service.widevine|37b4dce2288c0c37bc28680c2de400622f49bf72
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|a2a79fa74fc569bbee34efc4f1bc106b3044af53
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib64/mediadrm/libwvdrmengine.so|9cd722b68ae795f48b4a8f082fcfdc84219fb703
+vendor/lib64/libhdcp1prov.so|61702ec3b91c9922d8b85cf44a07add9d977e1ba
+vendor/lib64/libhdcp2p2prov.so|20d222610d9984343747449e62100d859f1d072c
+vendor/lib64/libhdcpsrm.so|bc3384a9f02a2a236a7d6316e6101a5ac4a1a039
+vendor/lib64/libwvhidl.so|ed7cd4a47e17738dfaec0c45d4184d75e77f5693
+vendor/lib/mediadrm/libwvdrmengine.so|5416366ba95cadd7d7a7787a8fd324d4c12c5933
 
 # WiFi
 vendor/bin/cnss-daemon
