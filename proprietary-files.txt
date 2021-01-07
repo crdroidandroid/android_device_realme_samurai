@@ -1327,6 +1327,15 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/nfc/libnfc-mtp-SN100.conf_19781:vendor/etc/libnfc-nxp.conf
 vendor/lib/libsn100u_fw.so
 
+# OPLUS - ormsHalService - from RMX1931EX_11_F.04
+odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service|2f3004f709cdb9ff472d8a273a7f6c0d516da214
+odm/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc|6166785962129ee22e24483246e9aaeb50ed9759
+-odm/etc/vintf/manifest/manifest_oplus_orms.xml|a676d4aab0bb59b6663989e50a9e0cdda095c731
+odm/lib64/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so|e0c3448b67c486e53b2de59ca1485af2ac7b0e67
+odm/lib64/libormshalclient.so|67ffeec4720de0cfbb8947ccf9f58649322e15ac
+odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so|3764d41da7604ec6b00b88e8738aa36cf13294bf
+odm/lib64/vendor.oplus.hardware.orms@1.0.so|273c4f73e75dcc9a0c7f8447f3eaa8defef5d263
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
