@@ -44,12 +44,11 @@ vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
-persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
-persist.vendor.bluetooth.modem_nv_support=true
-persist.vendor.service.bdroid.soc.alwayson=true
-persist.vendor.service.bt.iot.enablelogging=true
+persist.vendor.qcom.bluetooth.scram.enabled=true
 vendor.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
@@ -125,7 +124,7 @@ persist.dbg.wfc_avail_ovr=1
 ro.hardware.keystore_desede=true
 
 # Media
-debug.stagefright.ccodec=1
+debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank.sw-audio=16
 debug.stagefright.omx_default_rank=0
 
@@ -134,6 +133,7 @@ ro.hardware.nfc_nci=nqx.default
 
 # PASR
 vendor.power.pasr.enabled=true
+vendor.pasr.activemode.enabled=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so

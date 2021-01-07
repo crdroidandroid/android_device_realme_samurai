@@ -60,6 +60,10 @@ ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
 vendor.iop.enable_prefetch_ofr=0
 vendor.iop.enable_uxe=0
 
+# IWLAN
+persist.data.iwlan.enable=true
+persist.data.iwlan.rekey=4294967295
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
@@ -69,6 +73,9 @@ vendor.media.vpp.enable=true
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Mock
+persist.sys.force_sw_gles=1
 
 # Netflix custom property
 ro.netflix.bsp_rev=Q855-16947-1
@@ -131,9 +138,8 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 # Time
 persist.vendor.delta_time.enable=true
 
-# IWLAN
-persist.data.iwlan.enable=true
-persist.data.iwlan.rekey=4294967295
+# WiFi
+config.disable_rtt=true
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
