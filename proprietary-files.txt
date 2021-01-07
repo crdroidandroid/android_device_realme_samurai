@@ -1184,21 +1184,6 @@ vendor/firmware/ipa_uc.mdt
 # IRQ balance
 vendor/bin/msm_irqbalance
 
-# Keybox
-vendor/bin/hw/vendor.oppo.hardware.cryptoeng@1.0-service
-vendor/etc/init/vendor.oppo.hardware.cryptoeng@1.0-service_FDE.rc
-vendor/lib64/libqsee_keybox_ca.so
-vendor/lib64/vendor.oppo.hardware.cryptoeng@1.0.so
-vendor/firmware/cryptoeng.b00
-vendor/firmware/cryptoeng.b01
-vendor/firmware/cryptoeng.b02
-vendor/firmware/cryptoeng.b03
-vendor/firmware/cryptoeng.b04
-vendor/firmware/cryptoeng.b05
-vendor/firmware/cryptoeng.b06
-vendor/firmware/cryptoeng.b07
-vendor/firmware/cryptoeng.mdt
-
 # Keymaster - from RMX1931EX_11_F.04
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|cce8913b8bdbdf0e50f5fdecd47823a11330534b
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|b361b15b60da3185c196c85abdab6646e4d7d4f8
@@ -1322,6 +1307,21 @@ odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|226048caf31c
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|bf7b4a5bc26a782b553a4e1ab818ca0f2fb423d3
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so|ce57342748f5315ad268fbc5ed232c30a632eb0d
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so|df560b924181bd96ec8927c9d4076a4028cf7dde
+
+# OPLUS - Keybox - from RMX1931EX_11_F.04
+odm/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service|d4c9c1ddb5d03f9b662661250ff606c6fd92ec76
+odm/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc|a89bc7faa1d28f68e5367f13f62b66c132076451
+odm/lib64/libqsee_keybox_ca.so|afac23329961773bb246c9e486890da51cffbd59
+odm/lib64/vendor.oplus.hardware.cryptoeng@1.0.so|4f6d4fadf72d9ba3ea858db7e904e17e09c08665
+odm/vendor/firmware/cryptoeng.b00|cf63fb73ffd37c641832caadfbd4c0e51483de71
+odm/vendor/firmware/cryptoeng.b01|d26c73b1161c03504b63906a662c6fcf1298d17b
+odm/vendor/firmware/cryptoeng.b02|aef3ca841d7844759bc6757719cce6d2823d2076
+odm/vendor/firmware/cryptoeng.b03|96ce24f36fa4ef13e49335d10a019c79ba2ddf66
+odm/vendor/firmware/cryptoeng.b04|69d0d602a344f56b51b8b1a9cc72ab6ea638738b
+odm/vendor/firmware/cryptoeng.b05|5121ee9606876e02afedc50d6fd1748c44a031bf
+odm/vendor/firmware/cryptoeng.b06|4bc3824d646d4ca02bf261faa3ada12bbf01b20a
+odm/vendor/firmware/cryptoeng.b07|9be9c7ef992c801671b82f5a82c3eea85e62db6c
+odm/vendor/firmware/cryptoeng.mdt|120b74e55232dbb15962d2688aa9800a0c274e5c
 
 # OPLUS - ormsHalService - from RMX1931EX_11_F.04
 odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service|2f3004f709cdb9ff472d8a273a7f6c0d516da214

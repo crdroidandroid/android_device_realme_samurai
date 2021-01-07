@@ -6,7 +6,7 @@
 /vendor/bin/hw/vendor\.oppo\.hardware\.ktv@1\.0-service                                                 u:object_r:hal_camera_default_exec:s0
 
 # CryptoEng
-/vendor/bin/hw/vendor\.oppo\.hardware\.cryptoeng@1\.0-service                                           u:object_r:hal_cryptoeng_default_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.cryptoeng@1\.0-service                                u:object_r:hal_cryptoeng_default_exec:s0
 
 # Fingerprint
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.RMX1931                         u:object_r:hal_fingerprint_default_exec:s0
