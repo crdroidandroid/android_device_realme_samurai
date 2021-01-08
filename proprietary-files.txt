@@ -1856,36 +1856,34 @@ vendor/lib64/libhdcpsrm.so|bc3384a9f02a2a236a7d6316e6101a5ac4a1a039
 vendor/lib64/libwvhidl.so|ed7cd4a47e17738dfaec0c45d4184d75e77f5693
 vendor/lib/mediadrm/libwvdrmengine.so|5416366ba95cadd7d7a7787a8fd324d4c12c5933
 
-# WiFi
-vendor/bin/cnss-daemon
-vendor/bin/wifilearner
-vendor/etc/configstore/wigig.xml
-vendor/etc/hostapd/hostapd.accept
-vendor/etc/hostapd/hostapd.deny
-vendor/etc/hostapd/hostapd_default.conf
-vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
-vendor/etc/wifi/aoa_cldb_falcon.bin
-vendor/etc/wifi/aoa_cldb_swl14.bin
-vendor/etc/wifi/bdwlan_19688.bin
-vendor/etc/wifi/bdwlan_19781.bin
-vendor/etc/wifi/bin_version
-vendor/etc/wifi/bin_version_realme
-vendor/etc/wifi/fstman.ini
-vendor/etc/wifi/sar-vendor-cmd.xml
-vendor/etc/wifi/WCNSS_qcom_cfg_cmcc.ini
-vendor/etc/wifi/wigig_p2p_supplicant.conf
-vendor/etc/wifi/wigig_supplicant.conf
-vendor/lib64/libwigig_flashaccess.so
-vendor/lib64/libwigig_pciaccess.so
-vendor/lib64/libwigig_utils.so
-vendor/lib64/libcert_parse.wpa_s.so
-vendor/lib64/libwapi_cert.so
-vendor/lib64/vendor.oppo.hardware.wifi.supplicant@1.0.so
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
-vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
-vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
+# WiFi - from RMX1931EX_11_F.04
+vendor/bin/cnss-daemon|8d2f0ae694320fb18eec0661dc0acae8507e9a90
+vendor/bin/wifilearner|ea55062560a01a2deee5f57871d6a3e43b08f7ba
+vendor/etc/configstore/wigig.xml|ae50a99600bfd7b95f2a073943c8018316ca014f
+vendor/etc/hostapd/hostapd.accept|4ef58266ff29fd5ad1639f212d8e025bfd5a8418
+vendor/etc/hostapd/hostapd.deny|19522d391a92f701d3329bcd9cc1bd810e5b89a3
+vendor/etc/hostapd/hostapd_default.conf|c91dda3b47059d020ece09f62cef12d74dc4d42b
+vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc|aacefc44da5e64760bc12779a83b905ca6b78f01
+vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc|551a975d990fd977fff3f72d0dc6b981c1207c28
+vendor/etc/wifi/aoa_cldb_falcon.bin|7511e868c40e66e9758568b7112894cbce2650a4
+vendor/etc/wifi/aoa_cldb_swl14.bin|2a3be07a8f24bc1b9798d07c7133b0f71b77738f
+odm/etc/wifi/bdwlan.bin|c2fe64903d86058fa10acd1351c8ea5407215dfc
+odm/etc/wifi/bin_version|9f9af029585ba014e07cd3910ca976cf56160616
+odm/etc/wifi/bin_version_realme|40bd001563085fc35165329ea1ff5c5ecbdbbeef
+vendor/etc/wifi/fstman.ini|0583604009194da2c311adb80ef6c2fa9e3f4998
+vendor/etc/wifi/sar-vendor-cmd.xml|5643664fde9a77ea9094b40272c816c717e30ba1
+vendor/etc/wifi/wigig_p2p_supplicant.conf|9290b3afaf6175e8dcfe63956b27cfd8f78c6e25
+vendor/etc/wifi/wigig_supplicant.conf|c62e0b2dee7cb149accbe658d841daabbc92a6b9
+vendor/lib64/libwigig_flashaccess.so|2740c1e5faffe8e827f8c884a5ca626c1591316d
+vendor/lib64/libwigig_pciaccess.so|e7c1defaa88d64caa64a88a537be0fcb1edfa85d
+vendor/lib64/libwigig_utils.so|15b3dbbefcdf969da610f17fb355eec946ac85bc
+vendor/lib64/libcert_parse.wpa_s.so|bb6eb6239645d182d564c06006b4b3320beeaaae
+vendor/lib64/libwapi_cert.so|27835e7a2d0910f1436e3e01e75950a334ff6d00
+odm/lib64/vendor.oplus.hardware.wifi.supplicant@2.0.so|db46cbbeaa767782a6a5bca2aacd649a007e9642
+vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so|f0975105b93037322630abc267b6274abc347bd1
+vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so|cbdb61c9c3974479bdaeeda71cdf6a4d3ac4558a
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so|1b039e8f5bacbce1e163fe193938b8054aa02d4d
+vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so|74aa1b56de032bdaefed266f285d5a05cbfb253f
 
 # WiFi Display - from RMX1931EX_11_F.04
 -system/framework/WfdCommon.jar|de1adc7a4adbb117123aa5bb116c5df83c686433
