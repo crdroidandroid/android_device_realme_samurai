@@ -840,7 +840,7 @@ system_ext/lib64/libdpmctmgr.so|df8427f799e6a8cc5ff2ff39fe0323d8b60e815a
 system_ext/lib64/libdpmfdmgr.so|bd1bbd376c2bdfac2f3a4c230ce65cd35cb1c6bd
 system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
 system_ext/lib64/libdpmtcm.so|ddef98d55e3045ebac458b38165acd5d2f75cd7a
-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|a65835ffe329e640a37d38201029eae70ed8e057
+-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|a65835ffe329e640a37d38201029eae70ed8e057
 vendor/bin/dpmQmiMgr|4fe936478b0da1ee20c6222234b80d478a72cc2a
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|c5c893e86d38b8aa8cd277ccb8b011fb2f19995e
@@ -865,14 +865,6 @@ vendor/lib64/libspl.so|f9c12bc40b075ef5b933fe0ff6b86ebe72a031db
 vendor/lib64/libssd.so|f13516098c5a9c7318cbd66624e2d0a0bd76d6b2
 vendor/lib64/libStDrvInt.so|a166aeaeaeb70f12bc607ff7852e039ee5cb004f
 vendor/lib64/libtzdrmgenprov.so|c5f1a7d1f4bc5fc03156f34c9b020d4fc41b79cd
-
-# ESE
-vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
-vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
-vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib/vendor.qti.esepowermanager@1.0.so
 
 # Fingerprint (goodix)
 vendor/lib64/hw/fingerprint.goodix_G2.default.so
@@ -901,9 +893,9 @@ vendor/euclid/product/vendor/firmware/goodixfp.b06:vendor/firmware/goodixfp.b06
 vendor/euclid/product/vendor/firmware/goodixfp.b07:vendor/firmware/goodixfp.b07
 vendor/euclid/product/vendor/firmware/goodixfp.mdt:vendor/firmware/goodixfp.mdt
 
-# FM
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
+# FM - from RMX1931EX_11_F.04
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44fb21
+vendor/lib/vendor.qti.hardware.fm@1.0.so|ec14a34ecae5061d674283499a812374c8be4ce5
 
 # Gatekeeper - from RMX1931EX_11_F.04
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|de1e8d026b16255040dbe6eb67faa73c9b656553
@@ -1023,22 +1015,22 @@ vendor/firmware/a640_zap.b02|27d26ca0ae982c065fb7ab58be73bf3ca2e8bdf3
 vendor/firmware/a640_zap.elf|6bb306953ddb9657c7dee287d092985489a7e4a3
 vendor/firmware/a640_zap.mdt|01ed9e927172d80446287905d3bc25b941b517ef
 
-# Hardware Factory
-vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
-vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
-vendor/lib64/vendor.qti.hardware.factory@1.0.so
-vendor/lib64/vendor.qti.hardware.factory@1.1.so
+# Hardware Factory - from RMX1931EX_11_F.04
+vendor/bin/hw/vendor.qti.hardware.factory@1.0-service|93aaabd14ebc772c8d47bb424ae8b25656bc4970
+vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc|b47de7097f6b81ad6a6b05f70a2678861fda69fb
+vendor/lib64/vendor.qti.hardware.factory@1.0.so|1840f0b0a54c666598eceb9fa1217373b850cc07
+vendor/lib64/vendor.qti.hardware.factory@1.1.so|433fa6e6c62b3c1b46d1e88e6a0eebe37b30f3e5
 
-# HBTP
-vendor/etc/hbtp/hbtpcfg_sdm855_801s_4k.dat
-vendor/etc/hbtp/loader.cfg
-vendor/etc/hbtp/qtc801s.bin
-vendor/lib64/libhbtpclient.so
-vendor/lib64/libhbtpdsp.so
-vendor/lib64/libhbtpfrmwk.so
-vendor/lib/libhbtpclient.so
-vendor/lib/libhbtpdsp.so
-vendor/lib/libhbtpfrmwk.so
+# HBTP - from RMX1931EX_11_F.04
+vendor/etc/hbtp/hbtpcfg_sdm855_801s_4k.dat|b3ced41253f704a5f0b190c32935658c2c9ba39c
+vendor/etc/hbtp/loader.cfg|d397cdd3c3aac51cf2f06402638744b6b31f5f60
+vendor/etc/hbtp/qtc801s.bin|aeed780565fe45f1ffc196e1cd01808fd61ba9b8
+vendor/lib64/libhbtpclient.so|3a20b20dcc3056d3e8a1f582a6b8ad629f79ff4a
+vendor/lib64/libhbtpdsp.so|bca310dfabac8faf3e6728addda6de2cf0e469a4
+vendor/lib64/libhbtpfrmwk.so|cc3886b8454ee083db98c4f77d8f87cea1c9727e
+vendor/lib/libhbtpclient.so|cfacaf0ee51bc2709b2a4019569499e087d6196c
+vendor/lib/libhbtpdsp.so|c9f9e8568a3ffd19e9bfc90667fc66523001410f
+vendor/lib/libhbtpfrmwk.so|4286a441855e7e5e31248cdff86d256c9041b54c
 
 # Health
 vendor/bin/hw/android.hardware.health@2.0-service:vendor/bin/hw/android.hardware.health@2.0-service.RMX1931
@@ -1266,10 +1258,10 @@ vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsnpe_loader.so
 vendor/lib64/libsnpeml.so
 
-# NFC
-vendor/etc/libnfc-nci.conf
-vendor/etc/nfc/libnfc-mtp-SN100.conf_19781:vendor/etc/libnfc-nxp.conf
-vendor/lib/libsn100u_fw.so
+# NFC - from RMX1931EX_11_F.04
+odm/etc/libnfc-nxp-pnscr.conf:odm/etc/libnfc-nxp.conf|c9bbf87032cf73dc0b76793a15eff838f11ebf84
+vendor/etc/libnfc-nci.conf|1b8111586cfc50afdc1cefd050984bbbb7f60d40
+odm/lib/libsn100u_fw.so|4adda2c9449cdc8f66fc3c653153f8b69c7dc78c
 
 # OPLUS - biometrics - from RMX1931EX_11_F.04
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|226048caf31c205cac865537e411aff22ee38f4f
@@ -1301,13 +1293,13 @@ odm/lib64/libormshalclient.so|67ffeec4720de0cfbb8947ccf9f58649322e15ac
 odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so|3764d41da7604ec6b00b88e8738aa36cf13294bf
 odm/lib64/vendor.oplus.hardware.orms@1.0.so|273c4f73e75dcc9a0c7f8447f3eaa8defef5d263
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib64/libperipheral_client.so
-vendor/lib64/libspcom.so
-vendor/lib/libperipheral_client.so
-vendor/lib/libspcom.so
+# Peripheral manager - from RMX1931EX_11_F.04
+vendor/bin/pm-proxy|a9ed48eb4738a848a1f73ca7873a35023eac6463
+vendor/bin/pm-service|103510ce9cc410d4f9ee57481d6acbde5a70418a
+vendor/lib64/libperipheral_client.so|8cb65f4c93719767048dd7b1b845473fe6074ff7
+vendor/lib64/libspcom.so|c7d36d8fc648d8239e95ed30980b524d0f6a07d8
+vendor/lib/libperipheral_client.so|4f4700270730d4043580a1e76566fd0124b01e18
+vendor/lib/libspcom.so|5622f25f9b337ef6280924d46582f9541f4a4438
 
 # PASR Manager - from RMX1931EX_11_F.04
 -vendor/app/pasrservice/pasrservice.apk|f1106fc241a46a635405cce179c9141221186403
@@ -1355,14 +1347,14 @@ vendor/lib/vendor.qti.hardware.perf@2.0.so|09d2c1174a7ea62bedb1d3a1fc62c486997d9
 vendor/lib/vendor.qti.hardware.perf@2.1.so|1161aa84929bdbd00f4e2c5789ed4699c25db326
 vendor/lib/vendor.qti.hardware.perf@2.2.so|e5997926aa323141885e330a564e816a7d66ef17
 
-# Power-off alarm
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/power_off_alarm
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
-vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.alarm@1.0.so
+# Power-off alarm - from RMX1931EX_11_F.04
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|6f58edbe898a0582b02b688ec8a47a57a50707ec
+vendor/bin/power_off_alarm|a22dad49a912473d92bf9c111ef7de6dd927b6f2
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|0119fa4d87505bc5d9426ec8ffe56d9dd3bc9e4f
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|c7c418cfc889a89ea4f21bf828f626c75a2017c3
+vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so|e230209c8f994e4794e331d386921fa2db17b72e
+vendor/lib/vendor.qti.hardware.alarm@1.0.so|b63e584f4c590a2ce242be825921bf284b976760
 
 # QDCM calibration data
 vendor/etc/qdcm_calib_data_samsung_sofef03f_m_amoled_fhd+_panel_with_DSC.xml
@@ -1648,54 +1640,51 @@ vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0-halimpl.so
 vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
 
-# Soter
--app/SoterService/SoterService.apk
-product/framework/vendor.qti.hardware.soter-V1.0-java.jar
-product/lib64/vendor.qti.hardware.soter@1.0.so
-vendor/bin/vendor.qti.hardware.soter@1.0-provision
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
+# Soter - from RMX1931EX_11_F.04
+-system_ext/app/SoterService/SoterService.apk|a2457d9c302487bc9efa8a0ef6bd6823fe85f33f
+system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar|83227d66df8f047d69f5b90fe16339794fa75ce3
+system_ext/lib64/vendor.qti.hardware.soter@1.0.so|a4d26ae3b15adf1eb985c20473e042a455863aae
+vendor/bin/vendor.qti.hardware.soter@1.0-provision|1fcee71dc9b2cc07c6edd1f8e6c3b1d8f56befc8
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|a6ea6031c27889797b96fe29ba100924b79fe3fb
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|56499689245ffa4772ea999f386f4ce2fb314d27
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|9424d8a625bbc9e399597ecb0ac80402fae7782c
 
-# SSR
-vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
+# SSR - from RMX1931EX_11_F.04
+vendor/bin/ssr_setup|f34f2e5cdb1818117eb20f3c450477b5592964b2
+vendor/bin/subsystem_ramdump|82196d0afe9d34332178e2423500a23f9c6cfc28
 
-# Thermal
-vendor/bin/thermal-engine
-vendor/etc/thermal-engine.conf
-vendor/lib64/libthermalclient.so
-vendor/lib/libthermalclient.so
+# Thermal - from RMX1931EX_11_F.04
+vendor/bin/thermal-engine|bacf88c801ba037e1e1d2671937404184eb8964b
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
-# Time services
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
-vendor/lib/libtime_genoff.so
+# Time services - from RMX1931EX_11_F.04
+-vendor/app/TimeService/TimeService.apk|8f6b0d6741a0113d3d36f7d51a172027c257efea
+vendor/bin/time_daemon|e62d164b8c8b30743837896d4c5e8bca39b364e6
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+vendor/lib64/libtime_genoff.so|3f57de1aeb7aa113a0a579cebed85ab4405b9b49
+vendor/lib/libtime_genoff.so|9f1e0fd1180207b3df81aa65c319b0d5a467d74c
 
-# Touchpanel firmware
+# Trusted Execution Environment connector - from RMX1931EX_11_F.04
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|f7b9b7baafeb6b822df3e8ee584afe856885684f
+vendor/lib64/libGPQTEEC_vendor.so|22bf79c99fffb5a96c5a674e9d002f6472267de1
+vendor/lib64/libGPTEE_vendor.so|a8896a022e2b977997a40be9c584ff778d25c0f9
+vendor/lib64/libQTEEConnector_vendor.so|62d8993f51e0d4a0c4d6ae2645512ddfc76577f3
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|29130d7b0050885a6b455390a02a8615563403c4
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|5ce0a4ede7393e4ae3984738d10fc73087e52f74
+vendor/lib/libGPQTEEC_vendor.so|59c24261325b8391880ad2a1464b083859d4171f
+vendor/lib/libGPTEE_vendor.so|ec4e64f998c4437318a94acacf266748c20f1346
+vendor/lib/libQTEEConnector_vendor.so|e7235407c52fed215d089884c8c9b6db9b5a6bae
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|19dca9b4ee8f90339923902ecfc93545ca9b0eca
 
-# Trusted Execution Environment connector
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/libGPQTEEC_vendor.so
-vendor/lib/libGPTEE_vendor.so
-vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
-
-# Trusted User Interface
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
+# Trusted User Interface - from RMX1931EX_11_F.04
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|e8d97981d09a4e34907d13bcbbd10f03572c9218
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|960561ba01e28777e099294fb0a9a749e2b2a775
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|37a9af9fbdf5e3ec24129037d6f2fc16317ade23
 
 # Vibrator
 vendor/lib/hw/awinic.haptic.effect.so

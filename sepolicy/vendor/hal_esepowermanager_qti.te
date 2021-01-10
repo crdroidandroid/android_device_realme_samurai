@@ -1,2 +1,0 @@
-allow vendor_hal_esepowermanager_qti oppo_ver_proc:dir search;
-allow vendor_hal_esepowermanager_qti oppo_ver_proc:file r_file_perms;
