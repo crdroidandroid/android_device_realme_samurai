@@ -62,12 +62,6 @@ function blob_fixup() {
         etc/permissions/qti_libpermissions.xml)
             sed -i 's|name="android.hidl.manager-V1.0-java"|name="android.hidl.manager@1.0-java"|g' "${2}"
             ;;
-        vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc)
-            sed -i "s/\/odm\//\/vendor\//g" "${2}"
-            ;;
-        vendor/lib/libvpplibrary.so | vendor/lib64/libvpplibrary.so)
-            sed -i "s|/odm/|/////|g" "${2}"
-            ;;
     esac
 }
 
