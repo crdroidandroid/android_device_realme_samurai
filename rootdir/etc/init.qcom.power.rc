@@ -129,3 +129,11 @@ on late-fs
     write /sys/block/dm-1/queue/read_ahead_kb 128
     write /sys/block/dm-2/queue/read_ahead_kb 128
     write /sys/block/dm-3/queue/read_ahead_kb 128
+
+on post-fs-data
+
+on property:perf_profile=1
+    setprop vendor.display.enable_rotator_ui 1
+
+on property:perf_profile=0
+    setprop vendor.display.enable_rotator_ui 0
