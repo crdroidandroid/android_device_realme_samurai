@@ -939,6 +939,7 @@ vendor/lib/libqcodec2.so|25be46d8bc16ba2b88310dea1ea6e4ab25cbe1fa
 # Media codecs - from RMX1931EX_11_F.05
 vendor/lib64/libAlacSwDec.so|bfd2eb75d733c99d7c0b46f3016834f6f3ebcbdc
 vendor/lib64/libApeSwDec.so|96b957bd6d993737483d9d8705229b406d616ec7
+vendor/lib64/libavservices_minijail.so|416e76814f87419f00097ca99e3a102ce5379441
 vendor/lib64/libFlacSwDec.so|720f8497fcbc3d98aa8ff333ed55ca575eb08815
 vendor/lib64/libMpeg4SwEncoder.so|9197ade83f762c2dc955954141be23d53a1bc2e2
 vendor/lib64/libOmxAacDec.so|0851c0efaf67f663c4b9e3d9bb97e21b243f6d6e
