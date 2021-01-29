@@ -27,37 +27,35 @@ vendor/etc/acdbdata/19781/GD/Headset_cal.acdb
 vendor/etc/acdbdata/19781/GD/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libfastrpc_utf_stub.so
-vendor/lib64/libmdsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
-vendor/lib/libfastrpc_utf_stub.so
-vendor/lib/libmdsprpc.so
+# ADSP - from RMX1931EX_11_F.05
+vendor/bin/adsprpcd|b736b00857d64e74a3b9be887215124d186f95d5
+vendor/etc/init/vendor.qti.adsprpc-service.rc|4c7662eee83760391bcaf616f9c2184f8346f2c1
+vendor/lib64/libadsp_default_listener.so|0324e797f6fdd15680df7fdacc51f713e40b9806
+vendor/lib64/libadsprpc.so|2479ecaa940db3e48368e0614f562af11e559cf2
+vendor/lib64/libfastrpc_utf_stub.so|f689fe4deb2f9b37aa6c008182e21895762e41cb
+vendor/lib64/libmdsprpc.so|3b43e8da9111e4171b165e6015866c495df095a5
+vendor/lib/libadsp_default_listener.so|0376a56ab5d88e5d118e37f6e6371b30746a97e2
+vendor/lib/libadsprpc.so|27314bc8db211dc1b65b9bb52892a522bdf3ec78
+vendor/lib/libfastrpc_utf_stub.so|b7df4310dec92972bd92116fed5e932d90825d76
+vendor/lib/libmdsprpc.so|f702b67f1c5c392de633ae409c2927b13f20052b
 
-# ADSP modules
-vendor/lib/rfsa/adsp/libVC1Dec.so
-vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libclock_adjust_skel.so
-vendor/lib/rfsa/adsp/libcvpdsp_skel.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libproxy_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+# ADSP modules - from RMX1931EX_11_F.05
+vendor/lib/rfsa/adsp/libVC1Dec.so|732ede3ede9e6e1b09c439156f62a07d8fa0ee3e
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|eff059c5a29a44d205bd60ad24aecc46416e939e
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|1cdac354c585c0d236d77b0888ebd5894b333326
+vendor/lib/rfsa/adsp/libcvpdsp_skel.so|58cbb97212073cf7e4780c6d77a7628c3ee845bd
+vendor/lib/rfsa/adsp/libdspCV_skel.so|63fc368b17e1b112c8824cd245c3a4dec17d13e4
+vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so|2ccb3f4f32a73ee6c14e1b4697f449561ab8dc18
+vendor/lib/rfsa/adsp/libdsp_streamer_binning.so|00eb6acc7c864371b932f95ff98e98351c6508d8
+vendor/lib/rfsa/adsp/libdsp_streamer_skel.so|9cbf4d3c72b3e989c07e8b8f37c03f3b78e91f3d
+vendor/lib/rfsa/adsp/libfastcvadsp.so|cb6849db333972f3891973d052106dfc95f88c90
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|48fef93a3d7801eb8bd7a9b2c38d98b45801d21f
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|07558223d445756090d898425dee55a0a950ae61
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|8c6a3ed8154f7125e9f3b2b3e64ca3ac2e187011
+odm/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so|d724f312d2f9519393c967b64f0a41d61d284e4a
+vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so|4659105d1ca963ddfab1560e21009107b8cc520d
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 
 # ANT+
 product/lib64/com.qualcomm.qti.ant@1.0.so
@@ -371,19 +369,17 @@ product/lib/libseccamservice.so
 vendor/bin/hw/vendor.qti.hardware.seccam@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.seccam@1.0-service-qti.rc
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libclock_adjust.so
-vendor/lib64/libsdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libclock_adjust.so
-vendor/lib/libfastcrc.so
-vendor/lib/libsdsprpc.so
-vendor/lib/libsysmon_cdsp_skel.so
+# CDSP - from RMX1931EX_11_F.05
+vendor/bin/cdsprpcd|8f541eab74d52bff8d73f7f280e085c4bf706e99
+vendor/lib64/libcdsp_default_listener.so|c639e68a44537450a7aabb3549ac9edb5b940641
+vendor/lib64/libcdsprpc.so|d4035528b6a2288b232a8c388aa8480adb7ae2cd
+vendor/lib64/libsdsprpc.so|0a5fb6c179d65da6f330163e6097ebd396c36427
+vendor/lib64/libsysmon_cdsp_skel.so|e5ba4d173b0e09d736b16474ed2f57874cb91916
+vendor/lib/libcdsp_default_listener.so|3af8e9fbe0b154574ac0a709d1af401960922471
+vendor/lib/libcdsprpc.so|ec94d3e6debbe18690e695bb35a244a8dbac1113
+vendor/lib/libfastcrc.so|9274920c249096d4b22581e72e34a60b63e0231c
+vendor/lib/libsdsprpc.so|682f5f9f066268d0b61da6cf141e40924d7a6d8f
+vendor/lib/libsysmon_cdsp_skel.so|d30f7863f72cbcb6d5f657ab780bb53e02e1aaa4
 
 # Charger
 vendor/bin/hvdcp_opti
@@ -608,6 +604,13 @@ vendor/lib64/libssd.so|f13516098c5a9c7318cbd66624e2d0a0bd76d6b2
 vendor/lib64/libStDrvInt.so|a166aeaeaeb70f12bc607ff7852e039ee5cb004f
 vendor/lib64/libtzdrmgenprov.so|c5f1a7d1f4bc5fc03156f34c9b020d4fc41b79cd
 
+# DSP - from RMX1931EX_11_F.05
+vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|8119845f8e6a24e53bdf286e19f34e9906d64e78
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|e553aafebc4b5f2908fc03f29b086cd1261aa454
+
 # Fingerprint (goodix)
 vendor/lib64/hw/fingerprint.goodix_G2.default.so
 vendor/lib64/hw/fingerprint.goodix_G3.default.so
@@ -624,6 +627,7 @@ vendor/lib/libarm_proxy_skel.so
 vendor/lib/libgf_hal_G2.so
 vendor/lib/libgf_hal_G3.so
 vendor/lib/libgf_hal_G5.so
+vendor/lib/rfsa/adsp/libproxy_skel.so
 
 # Fingerprint firmware
 vendor/euclid/product/vendor/firmware/goodixfp.b00:vendor/firmware/goodixfp.b00
@@ -995,10 +999,10 @@ vendor/lib64/unnhal-acc-hta.so|f38899dbcc7582d267703f1967e77485e82bf66b
 vendor/lib64/unnhal-acc-hvx.so|9e75c759a04aed19b36eaeb86aa8ae73521ff463
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|55d2c71535acdcbbdd7b0a3fe475249c8d99eb08
 
-# Neural Processing Engine
-vendor/lib64/libsnpe_dsp_domains_v2.so
-vendor/lib64/libsnpe_loader.so
-vendor/lib64/libsnpeml.so
+# Neural Processing Engine - from RMX1931EX_11_F.05
+odm/lib64/libsnpe_dsp_domains_v2.so|7b2aa3976134b2acef655fc2b93e2bf1ac3434ff
+odm/lib64/libsnpe_loader.so|002725d45bf4a9b2986d0509998fd54fc012c85f
+odm/lib64/libsnpeml.so|880b4eae70646d75e0567ad48ef28d5aa7721261
 
 # NFC - from RMX1931EX_11_F.05
 odm/etc/libnfc-nxp-pnscr.conf:odm/etc/libnfc-nxp.conf|c9bbf87032cf73dc0b76793a15eff838f11ebf84
