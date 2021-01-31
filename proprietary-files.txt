@@ -1544,6 +1544,7 @@ odm/lib64/mediadrm/libwvdrmengine.so|9cd722b68ae795f48b4a8f082fcfdc84219fb703
 vendor/lib64/libhdcp1prov.so|61702ec3b91c9922d8b85cf44a07add9d977e1ba
 vendor/lib64/libhdcp2p2prov.so|20d222610d9984343747449e62100d859f1d072c
 vendor/lib64/libhdcpsrm.so|bc3384a9f02a2a236a7d6316e6101a5ac4a1a039
+vendor/lib64/libtrustedapploader.so|fbd6f6db5b91357a5cc6d621d3ce48ba27ec3f75
 odm/lib64/libwvhidl.so|ed7cd4a47e17738dfaec0c45d4184d75e77f5693
 odm/lib/mediadrm/libwvdrmengine.so|5416366ba95cadd7d7a7787a8fd324d4c12c5933
 
