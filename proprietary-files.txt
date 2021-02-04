@@ -135,36 +135,42 @@ vendor/lib64/vendor.oppo.hardware.ktv@1.0.so|4a3bddce7ef0be9eb285ad50928e3e9c780
 vendor/lib/hw/vendor.oppo.hardware.ktv@1.0-impl.so|e50d2b8e41968d0577c710e3e49583355e3467b2
 vendor/lib/vendor.oppo.hardware.ktv@1.0.so|6ee279c11459b4f9876106e7128d0b57b089af9d
 
-# Bluetooth - from phoenix - RKQ1.200826.002/21.1.6
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|df208af5347e10667c48a5659e14fb2dbe691711
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|e894977f841b1fb8ef23d51e644f3c4d276d2dbd
-vendor/lib64/libbtnv.so|b72a66ef2d0f7ce315e19f162db60db8891f3e61
-vendor/lib64/libbt-hidlclient.so|4e528c3c6bef6b7c6900d0343cbed115709ef742
+# Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/libbtnv.so
+vendor/lib64/libbt-hidlclient.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/libbtnv.so
+vendor/lib/libbt-hidlclient.so
 
-# Bluetooth (A2DP) - from phoenix - RKQ1.200826.002/21.1.6
-vendor/lib64/btaudio_offload_if.so|259f2736e70c6576acf076a78ec2ba51d574681e
-vendor/lib64/hw/audio.bluetooth_qti.default.so|b49516dd9103c33a2ded97432075a3cbb2a7f845
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|6cbf0c63e0122ec2fe0e63aa511d45680859f0d0
-vendor/lib64/libbluetooth_audio_session_qti.so|cbc0750ab86b5014c4a050ec24377f3011f7e826
+# Bluetooth (A2DP)
+vendor/lib64/btaudio_offload_if.so
+vendor/lib64/hw/audio.bluetooth_qti.default.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib64/libbluetooth_audio_session_qti.so
+vendor/lib/btaudio_offload_if.so
+vendor/lib/hw/audio.bluetooth_qti.default.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib/libbluetooth_audio_session_qti.so
 
-# Bluetooth (aptX) - from phoenix - RKQ1.200826.002/21.1.6
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so|136ee309e7c9892d55b3e87e45cd0ab39120658e
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
+# Bluetooth (aptX)
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD.so
 
-# Bluetooth (Configstore) - from phoenix - RKQ1.200826.002/21.1.6
-system_ext/lib64/libbtconfigstore.so|dd1209e9155344e235e6dec9fcf0c29c18d1deed
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|8e15d11bd1ffc3fb4debe1be9b0a0a0f3c510518
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|34f9de6084224052b728837358340e9fff1d0e46
+# Bluetooth (Configstore) system_ext - from RMX1931EX_11_F.05
+system_ext/lib64/libbtconfigstore.so|100886e9c01b1500ed4c5607c79e4311d1e2c07a
+system_ext/lib/libbtconfigstore.so|c80086438afc06998b8d3ad62a754419c8e03f18
 
-# Bluetooth (SAR) - from phoenix - RKQ1.200826.002/21.1.6
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|837979d5ede013c5f421da19e9e0815ee8b61542
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|302eca87415711253e0d47c3c12b031d4fa36714
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|d239076c76d1e33b4a7160a3049b0e35e4886ae0
+# Bluetooth (Configstore)
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 
-# Bluetooth (ANT+) - from phoenix - RKQ1.200826.002/21.1.6
-vendor/lib64/com.dsi.ant@1.0.so|614277f65bf32aaf0e072d6740bfb2896a32cbb5
+# Bluetooth (SAR)
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 
 # Camera - from RMX1931EX_C.34
 lib64/libarcsoft_calibverify_TriCamera.so|665fda41f7be86028155775f9c57ef237d930e20
