@@ -57,6 +57,16 @@ vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 
+# ANT+
+product/lib64/com.qualcomm.qti.ant@1.0.so
+-lib64/libantradio.so
+product/lib/com.qualcomm.qti.ant@1.0.so
+-lib/libantradio.so
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib64/com.qualcomm.qti.ant@1.0.so
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib/com.qualcomm.qti.ant@1.0.so
+
 # Audio - from RMX1931EX_C.34
 vendor/lib64/libacdb-fts.so|889a9d4016c5744208465fd739e09f0a301c0c7e
 vendor/lib64/libacdbloader.so|b90d238a2e2f9f354190725320ed78581f926b97
