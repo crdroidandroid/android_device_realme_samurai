@@ -1,5 +1,6 @@
 dontaudit hal_camera_default default_prop:file r_file_perms;
 dontaudit hal_camera_default hal_camera_default:tcp_socket create;
+dontaudit hal_camera_default property_type:file { getattr open };
 dontaudit hal_camera_default vendor_shell_exec:file { execute_no_trans };
 
 allow hal_camera_default cam_proc:file { open read write getattr };
