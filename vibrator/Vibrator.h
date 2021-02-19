@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef ANDROID_HARDWARE_VIBRATOR_V1_2_VIBRATOR_H
-#define ANDROID_HARDWARE_VIBRATOR_V1_2_VIBRATOR_H
+
+#pragma once
 
 #include <android/hardware/vibrator/1.2/IVibrator.h>
 
@@ -68,5 +68,3 @@ class Vibrator : public IVibrator {
 }  // namespace vibrator
 }  // namespace hardware
 }  // namespace android
-
-#endif  // ANDROID_HARDWARE_VIBRATOR_V1_2_VIBRATOR_H
