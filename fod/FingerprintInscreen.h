@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
-#define VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
+#pragma once
 
 #include <vendor/lineage/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
 
@@ -64,5 +63,3 @@ private:
 }  // namespace biometrics
 }  // namespace lineage
 }  // namespace vendor
-
-#endif  // VENDOR_LINEAGE_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
