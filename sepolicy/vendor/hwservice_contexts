@@ -9,3 +9,4 @@ vendor.oppo.hardware.camera.oppoAlgoProcessService::IOppoAlgoProcessService  u:o
 vendor.oppo.hardware.hypnus::IHypnusUtil                                     u:object_r:hal_hypnus_hwservice:s0
 vendor.oppo.hardware.ktv::IKtv                                               u:object_r:hal_camera_hwservice:s0
 vendor.oppo.hardware.lmvibrator::ILinearMotorVibrator                        u:object_r:hal_vibrator_hwservice:s0
+vendor.oppo.hardware.radio.opporadio::IOppoRadio                             u:object_r:hal_telephony_hwservice:s0
