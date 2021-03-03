@@ -3,3 +3,4 @@ allow ueventd debugfs:file getattr;
 allow ueventd debugfs_wakeup_sources:file getattr;
 allow ueventd self:capability sys_nice;
 allow ueventd vendor_sysfs_fingerprint:file rw_file_perms;
+allow ueventd metadata_file:dir search;
