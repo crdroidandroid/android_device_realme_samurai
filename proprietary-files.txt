@@ -158,10 +158,6 @@ vendor/lib/libbluetooth_audio_session_qti.so
 # Bluetooth (aptX)
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD.so
 
-# Bluetooth (Configstore) system_ext - from RMX1931EX_11_F.05
-system_ext/lib64/libbtconfigstore.so|100886e9c01b1500ed4c5607c79e4311d1e2c07a
-system_ext/lib/libbtconfigstore.so|c80086438afc06998b8d3ad62a754419c8e03f18
-
 # Bluetooth (Configstore)
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
