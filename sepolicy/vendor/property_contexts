@@ -54,6 +54,9 @@ vendor.nfc_se.config_ready          u:object_r:vendor_nfc_nq_prop:s0
 # Perf
 perf_profile                        u:object_r:vendor_perf_prop:s0
 
+# Project
+ro.separate.soft                    u:object_r:exported_default_prop:s0
+
 # RIL
 oppo.device.imeicache               u:object_r:vendor_radio_prop:s0
 oppo.eng.factory.no                 u:object_r:vendor_radio_prop:s0
