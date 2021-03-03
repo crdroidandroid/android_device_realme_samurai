@@ -152,6 +152,10 @@ persist.vendor.radio.rat_on=combine
 # Sensors
 persist.vendor.sensors.debug.hal=0
 
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM8150
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.use_ffs_mtp=0
