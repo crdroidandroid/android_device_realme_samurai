@@ -57,15 +57,15 @@ vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# ANT+
-product/lib64/com.qualcomm.qti.ant@1.0.so
--lib64/libantradio.so
-product/lib/com.qualcomm.qti.ant@1.0.so
--lib/libantradio.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
-vendor/lib/com.qualcomm.qti.ant@1.0.so
+# ANT+ - from RMX1931EX_C.34
+product/lib64/com.qualcomm.qti.ant@1.0.so|eec59cdcbf480504a0a961fac7bb6e16fcc6deb1
+-lib64/libantradio.so|d7ba7651e2e5dcf2a88bcbb16cc36f1579669e3c
+product/lib/com.qualcomm.qti.ant@1.0.so|c76eed19665363a643ee25044cb17ca2378825eb
+-lib/libantradio.so|8cac14e0ae2e6bc6d41e09bd231d61b8ac86e185
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|203528c568c1c5ce33b35dcb9ee9eb7ecb1de206
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|12a37c78b1d4e8a79437be27dc49d87cf25304c1
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|2c2769964955a031cd34056c4c7c39402d78dfb9
+vendor/lib/com.qualcomm.qti.ant@1.0.so|04269f8cc2fa3580044b7f2881f545cd7cf4876e
 
 # Audio - from RMX1931EX_C.34
 vendor/lib64/libacdb-fts.so|889a9d4016c5744208465fd739e09f0a301c0c7e
@@ -135,38 +135,38 @@ vendor/lib64/vendor.oppo.hardware.ktv@1.0.so|4a3bddce7ef0be9eb285ad50928e3e9c780
 vendor/lib/hw/vendor.oppo.hardware.ktv@1.0-impl.so|e50d2b8e41968d0577c710e3e49583355e3467b2
 vendor/lib/vendor.oppo.hardware.ktv@1.0.so|6ee279c11459b4f9876106e7128d0b57b089af9d
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
-vendor/lib64/libbt-hidlclient.so
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/libbtnv.so
-vendor/lib/libbt-hidlclient.so
+# Bluetooth - from RMX1931EX_C.34
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|dce7c7298b1801f6a037dc3e4597af56e3649bd0
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|45ff6cc959f9d3bba8b1f5b4c2cbc3c82d1f8f6b
+vendor/lib64/libbtnv.so|428cbe4a4d77bf24f07d7cd9e23604acd47aee47
+vendor/lib64/libbt-hidlclient.so|ac22c083b01619f4f8b68b48f6747b5c3d94b5ef
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|a09ddfe06397bcf3e43343269f2afe35f6c2ea48
+vendor/lib/libbtnv.so|b1c57a76e25c06614f857345df2f339aecdb6a83
+vendor/lib/libbt-hidlclient.so|ef70b1d22496370795c00cf2780eaa93a03b3ed2
 
-# Bluetooth (A2DP)
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib/btaudio_offload_if.so
-vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/libbluetooth_audio_session_qti.so
+# Bluetooth (A2DP) - from RMX1931EX_C.34
+vendor/lib64/btaudio_offload_if.so|f9d7229e818a3044d56739d9d47462c4af726c02
+vendor/lib64/hw/audio.bluetooth_qti.default.so|102539a0013edf06790215b21bed68c704437a96
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|7c525421896d79464717a03fdc61e87336f740c9
+vendor/lib64/libbluetooth_audio_session_qti.so|695b82c2cde0ae22da54c82c442a55ad1eaca0bb
+vendor/lib/btaudio_offload_if.so|2da07d2d862a9597e8efff9a7dccf590f532b1ad
+vendor/lib/hw/audio.bluetooth_qti.default.so|6a7bd7a7599d1ef8522de832576ede7129b66fe4
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|4608c53fe2cb9c8bef67491f4e2aee0aaabb9813
+vendor/lib/libbluetooth_audio_session_qti.so|5ba0c3366db48bdfb74f14ac9d579bbd4aa865fc
 
-# Bluetooth (aptX)
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD.so
+# Bluetooth (aptX) - from RMX1931EX_C.34
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD.so|136ee309e7c9892d55b3e87e45cd0ab39120658e
 
-# Bluetooth (Configstore)
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+# Bluetooth (Configstore) - from RMX1931EX_C.34
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|5e06b7b33d084975d6326875268cb237ad6d8559
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|363def01ef61b198ce15dfbaecc0d5e14f742f98
 
-# Bluetooth (SAR)
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
+# Bluetooth (SAR) - from RMX1931EX_C.34
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|ebdfcc7064fc144acf6cba300486c6394af3d73b
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|ba72fb1dc8f004273c495c11aeaee49fab7d5b2d
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|66c68b4f6f59bb893c5982e4821751b90a49fcb9
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|ee8cd29b1b1241c53fe1f0197d589fced711a0a3
 
 # Camera - from RMX1931EX_C.34
 lib64/libarcsoft_calibverify_TriCamera.so|665fda41f7be86028155775f9c57ef237d930e20
