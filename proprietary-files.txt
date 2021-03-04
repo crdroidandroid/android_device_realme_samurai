@@ -840,31 +840,27 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# Listen - from RMX1931EX_C.34
-vendor/lib64/hw/sound_trigger.primary.msmnile.so|c4b143b0dd761361957ecd4534d314753a76cfcb
-vendor/lib64/libcapiv2svacnn.so|7441c216b6665824d662b436f015dccc2dd3b901
-vendor/lib64/libcapiv2svarnn.so|94a8854f6bc89f6711710708ffd7ea92f02f971a
-vendor/lib64/libcapiv2vop.so|7e1eeaf5f7010af0b749c12a007a7780558dee17
-vendor/lib64/libgcs-calwrapper.so|a8a5f6b41335f9bff41ce678d11b82d65f3f761e
-vendor/lib64/libgcs-ipc.so|0bf027ef7c701afa73442a30aad770f416a40dd3
-vendor/lib64/libgcs-osal.so|a1c5c73662cfaeaf462fe8f30fac6abe991e0f2a
-vendor/lib64/libgcs.so|b2c4cdb310b8def9e1fe3f7642bb7fe6ff3e6716
-vendor/lib64/liblistenjni.so|1eb29891b4fdc7cf9a42b980531fd1952ed07c0b
-vendor/lib64/liblistensoundmodel2.so|2d01bb019d7e2d43892694a952dff2f7809ee29f
-vendor/lib64/libmulawdec.so|2f8cd09580892a2bfa4f8e711895e2b08340d0ed
-vendor/lib/hw/sound_trigger.primary.msmnile.so|79c38ff4d7f689b2744a29b680243ccc5543e6ac
-vendor/lib/libadpcmdec.so|949e672467231103aa1804dba8b3ca72a2a3f1a4
-vendor/lib/libcapiv2svacnn.so|3dacf8ba201cd93aa1e899ee249f2e19ae1ea0b2
-vendor/lib/libcapiv2svarnn.so|9dc46fe54f67ae010b299b777e21f1768ca220b8
-vendor/lib/libcapiv2vop.so|cd373ad73e700754dec15fa41cafb5d1630587a3
-vendor/lib/libgcs-calwrapper.so|f35026f2c1a16d10b642914210e47711872815be
-vendor/lib/libgcs-ipc.so|f780e51610d895d7efa3cec347089b79fe3d1e89
-vendor/lib/libgcs-osal.so|98b04d0dacbd13bec4d77114ab3c271a386d82f6
-vendor/lib/libgcs.so|e5e5d068a1ce2d7610cf7ea0bcaeae13f346122c
-vendor/lib/libsmwrapper.so|7f70af63945b4d338d035cb7750b17aeab5c7e65
-vendor/lib/liblistenjni.so|3da2959298372e153bfdcfc19501061bc8586a3d
-vendor/lib/liblistensoundmodel2.so|521a28dedce90de02cdc991bacd47a57bc686b59
-vendor/lib/libmulawdec.so|57d963f8038bf807683c5ec69e2db14281d9ed90
+# Listen
+vendor/lib64/hw/sound_trigger.primary.msmnile.so
+vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2vop.so
+vendor/lib64/libgcs-calwrapper.so
+vendor/lib64/libgcs-ipc.so
+vendor/lib64/libgcs-osal.so
+vendor/lib64/libgcs.so
+vendor/lib64/liblistensoundmodel2.so
+vendor/lib64/libmulawdec.so
+vendor/lib/hw/sound_trigger.primary.msmnile.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libcapiv2svacnn.so
+vendor/lib/libcapiv2vop.so
+vendor/lib/libgcs-calwrapper.so
+vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs-osal.so
+vendor/lib/libgcs.so
+vendor/lib/libsmwrapper.so
+vendor/lib/liblistensoundmodel2.so
+vendor/lib/libmulawdec.so
 
 # Media codec2
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
