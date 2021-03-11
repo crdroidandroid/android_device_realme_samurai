@@ -147,10 +147,6 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
     android.hardware.contexthub@1.0-service \
 
-# devicesettings
-PRODUCT_PACKAGES += \
-    devicesettings
-
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
@@ -183,10 +179,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0 \
     vendor.qti.hardware.display.mapper@4.0.vendor
-
-# Doze
-PRODUCT_PACKAGES += \
-    RealmeDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -338,6 +330,10 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# Parts
+PRODUCT_PACKAGES += \
+    RealmeParts
 
 # Power
 PRODUCT_PACKAGES += \
