@@ -722,6 +722,12 @@ vendor/lib64/libhbtpfrmwk.so
 # Health - from RMX1931EX_C.34
 vendor/bin/hw/android.hardware.health@2.0-service:vendor/bin/hw/android.hardware.health@2.0-service.RMX1931|66bf676b534e49828920075027cf2979e280fa38
 
+# Hotword enrollment - from RMX2081PU_F.01
+my_product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml:product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml|57d16f0f2504b9b59655bdc00ab50071f9e55fa9
+my_product/etc/permissions/com.android.hotwordenrollment.common.util.xml:product/etc/permissions/com.android.hotwordenrollment.common.util.xml|52b6a326e59e543daac9b8d6e960654095c0fb6b
+my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|714382db8d12aca9f5388dd72060e867e30d88e4
+-my_product/priv-app/HotwordEnrollmentOKGoogleWCD9340.apk:product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk|0db13692bbce3c14ad0fb391c3b1c04a7a54db45
+
 # Hypnus - from RMX1931EX_C.34
 vendor/bin/hw/vendor.oppo.hardware.hypnus@1.0-service|81c15ba0c3431bc96dede04eadec7e87d8a754a5
 vendor/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc|50e233bc87571140cfac7c6636a7bb0c3c369332
