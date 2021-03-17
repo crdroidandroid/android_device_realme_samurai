@@ -332,8 +332,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Parts
-PRODUCT_PACKAGES += \
-    RealmeParts
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
 
 # Power
 PRODUCT_PACKAGES += \
