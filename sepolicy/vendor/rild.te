@@ -1,5 +1,7 @@
 typeattribute rild data_between_core_and_vendor_violators;
 
+dontaudit rild default_prop:property_service set;
+
 allow rild block_device:dir search;
 allow rild cache_file:dir { getattr search read write add_name create };
 allow rild cache_file:file { create write open };

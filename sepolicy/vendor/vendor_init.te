@@ -1,5 +1,7 @@
 typeattribute vendor_init data_between_core_and_vendor_violators;
 
+dontaudit vendor_init property_type:file { getattr open read };
+
 allow vendor_init {
   cache_file
   nv_data_file
