@@ -1,3 +1,5 @@
+dontaudit hal_sensors_default property_type:file { getattr open read map };
+
 allow hal_sensors_default proc_touchpanel:dir { read search open };
 allow hal_sensors_default proc_touchpanel:file { read open };
 
