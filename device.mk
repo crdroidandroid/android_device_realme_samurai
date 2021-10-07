@@ -480,7 +480,8 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.RMX1931
+    vendor.qti.hardware.vibrator.service.RMX1931 \
+    android.hardware.vibrator-V1-ndk_platform.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
