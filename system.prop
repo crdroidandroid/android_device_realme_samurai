@@ -136,6 +136,3 @@ persist.vendor.delta_time.enable=true
 
 # WiFi
 config.disable_rtt=true
-
-# Zygote
-persist.device_config.runtime_native.usap_pool_enabled=true
