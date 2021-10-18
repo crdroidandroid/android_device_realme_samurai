@@ -15,7 +15,6 @@
 
 # Fingerprint
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.RMX1931                         u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.RMX1931                  u:object_r:hal_lineage_fod_RMX1931_exec:s0
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service                  u:object_r:hal_fingerprint_default_exec:s0
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprintpay@1\.0-service               u:object_r:hal_fingerprint_default_exec:s0
 /dev/goodix_fp                                                                                          u:object_r:fingerprint_device:s0
