@@ -131,6 +131,9 @@ ro.qti.sensors.wu=false
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# Storage
+persist.sys.binary_xml=false
+
 # Time
 persist.vendor.delta_time.enable=true
 
