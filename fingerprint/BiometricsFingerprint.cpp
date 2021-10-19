@@ -13,11 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.RMX1931"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.RMX1931"
+
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.RMX1931"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.RMX1931"
 
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
+#include <android-base/logging.h>
 #include "BiometricsFingerprint.h"
 
 #include <inttypes.h>
@@ -35,7 +37,7 @@ namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V2_1 {
+namespace V2_3 {
 namespace implementation {
 
 template <typename T>
@@ -293,6 +295,18 @@ Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId, 
     return OppoToAOSPRequestStatus(mOppoBiometricsFingerprint->authenticate(operationId, gid));
 }
 
+Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
+    return true;
+}
+
+Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onFingerUp() {
+    return Void();
+}
+
 void BiometricsFingerprint::setFingerprintScreenState(const bool on) {
     mOppoBiometricsFingerprint->setScreenState(
         on ? vendor::oplus::hardware::biometrics::fingerprint::V2_1::FingerprintScreenState::FINGERPRINT_SCREEN_ON :
@@ -301,8 +315,8 @@ void BiometricsFingerprint::setFingerprintScreenState(const bool on) {
     set(DIMLAYER_PATH, on ? STATUS_ON: STATUS_OFF);
 }
 
-} // namespace implementation
-}  // namespace V2_1
+}  // namespace implementation
+}  // namespace V2_3
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
