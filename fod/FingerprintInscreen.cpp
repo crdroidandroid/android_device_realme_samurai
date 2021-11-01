@@ -105,18 +105,15 @@ Return<void> FingerprintInscreen::onPress() {
         set(FP_PRESS_PATH, FP_BEGIN);
         set(AOD_LIGHT_MODE_PATH, FP_BEGIN);
     }).detach();
+    }
     if(get(DOZE_STATUS, FP_BEGIN) && get(FP_ENABLE_PATH, FP_BEGIN)) {
     set(FP_ENABLE_PATH, FP_ENDIT);
     set(FP_ENABLE_PATH, FP_BEGIN);
-    }
-    } else {
-    set(FP_PRESS_PATH, FP_BEGIN);
     }
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    set(FP_PRESS_PATH, FP_ENDIT);
     if(isDreamState)
     set(DIMLAYER_PATH, FP_ENDIT);
     set(AOD_LIGHT_MODE_PATH, FP_ENDIT);
