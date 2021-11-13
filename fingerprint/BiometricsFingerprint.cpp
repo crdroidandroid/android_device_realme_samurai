@@ -48,7 +48,7 @@ static inline void set(const std::string& path, const T& value) {
 
 BiometricsFingerprint::BiometricsFingerprint(): isEnrolling(false) {
     for(int i=0; i<10; i++) {
-        mOppoBiometricsFingerprint = vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint::tryGetService();
+        mOppoBiometricsFingerprint = vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint::getService();
         if(mOppoBiometricsFingerprint != nullptr) break;
         sleep(10);
     }
