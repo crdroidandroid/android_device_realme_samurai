@@ -3099,7 +3099,13 @@
 
     <!-- KTV headset mic -->
     <path name="headset-mic-ktv">
-        <path name="amic2" />
+        <ctl name="AIF3_CAP Mixer SLIM TX1" value="1"/>
+        <ctl name="SLIM_1_TX Channels" value="One" />
+        <ctl name="CDC_IF TX1 MUX" value="DEC1" />
+        <ctl name="ADC MUX1" value="AMIC" />
+        <ctl name="AMIC MUX1" value="ADC2" />
+        <ctl name="IIR0 INP0 MUX" value="DEC1" />
+        <ctl name="DEC1 Volume" value="84" />
     </path>
     <path name="usb-headset-mic-ktv">
     </path>
