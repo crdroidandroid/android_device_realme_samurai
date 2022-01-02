@@ -50,7 +50,7 @@ persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
 # Fingerprint
-ro.boot.realme.lockstate=0
+vendor.flash.locked=0
 
 # Graphics
 debug.sf.enable_hwc_vds=1
