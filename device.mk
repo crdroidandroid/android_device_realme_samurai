@@ -212,7 +212,7 @@ PRODUCT_PACKAGES += \
     IFAAService \
     ifaamanager
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     ifaamanager
 
 # Framework Detect
