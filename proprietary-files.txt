@@ -245,7 +245,6 @@ odm/lib64/libVDUpScale.so
 odm/lib64/libXDocProcessSDK.so
 odm/lib64/lib_rectify.so
 odm/lib64/libancbase_rt_bokeh.so
-odm/lib64/libbinder.so
 odm/lib64/libc++_shared.so
 odm/lib64/libhwconfigurationutil.so
 odm/lib64/libmpbase.so
