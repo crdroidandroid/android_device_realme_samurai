@@ -1,6 +1,7 @@
 vendor.nxp.nxpese::INxpEse                                                   u:object_r:hal_secure_element_hwservice:s0
 vendor.nxp.nxpnfc::INxpNfc                                                   u:object_r:hal_nxpnfc_hwservice:s0
 vendor.oplus.hardware.biometrics.fingerprint::IBiometricsFingerprint         u:object_r:hal_fingerprint_hwservice:s0
+vendor.oplus.hardware.biometrics.fingerprintpay::IFingerprintPay             u:object_r:hal_fingerprint_hwservice:s0
 vendor.oplus.hardware.commondcs::ICommonDcsHalService                        u:object_r:commondcs_hwservice:s0
 vendor.oplus.hardware.cryptoeng::ICryptoeng                                  u:object_r:hal_cryptoeng_hwservice:s0
 vendor.oplus.hardware.orms::IOrmsHalProxy                                    u:object_r:hal_orms_hwservice:s0

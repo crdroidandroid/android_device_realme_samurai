@@ -586,6 +586,19 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 odm/etc/samsung1024_sofef03f_m_eyeprotect_data.xml
 odm/etc/samsung1024_sofef03f_m_srgb_eyeprotect_data.xml
 
+# Fingerprint (alipay)
+odm/lib64/libalipay_factory.so
+odm/lib64/librpmbengclient.so
+odm/vendor/firmware/alipay.b00
+odm/vendor/firmware/alipay.b01
+odm/vendor/firmware/alipay.b02
+odm/vendor/firmware/alipay.b03
+odm/vendor/firmware/alipay.b04
+odm/vendor/firmware/alipay.b05
+odm/vendor/firmware/alipay.b06
+odm/vendor/firmware/alipay.b07
+odm/vendor/firmware/alipay.mdt
+
 # Fingerprint (goodix)
 odm/lib64/hw/fingerprint.goodix_G2.default.so
 odm/lib64/hw/fingerprint.goodix_G3.default.so
@@ -1007,8 +1020,12 @@ vendor/etc/libnfc-nci.conf
 
 # OPLUS - biometrics
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 
 # OPLUS - Keybox

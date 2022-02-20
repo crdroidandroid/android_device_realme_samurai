@@ -256,7 +256,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.oppo.hardware.biometrics.fingerprintpay</name>
+        <name>vendor.oplus.hardware.biometrics.fingerprintpay</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
