@@ -727,8 +727,8 @@ vendor/lib64/hw/vendor.oppo.hardware.hypnus@1.0-impl.so|a267bd4e9ea02db220146807
 vendor/lib64/libhypnusclient.so|efba8c42781b0eca5a0b0c1b80a0938a0cbbdda4
 vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so|29ef4baa79612542434556ace53a7506906fcdff
 
-# IMS - from raphael - QKQ1.190825.002-V11.0.4.0.QFKMIXM
--product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk|77ea72ab04c651c2a365320179cb1b7c75dcd8bb
+# IMS app - from PNX - RKQ1.200906.002
+-system_ext/priv-app/ims/ims.apk|f87eba10af95d6d7fe3b0f1b9e145e00ccdf69f8
 
 # IMS - from RMX1931EX_C.34
 -product/app/uceShimService/uceShimService.apk:system_ext/app/uceShimService/uceShimService.apk|a3045172e20d8b99858c3cffdab087db73fceb8a
