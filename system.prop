@@ -49,6 +49,9 @@ persist.vendor.data.mode=concurrent
 # Fingerprint
 vendor.flash.locked=0
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # Graphics
 debug.sf.enable_hwc_vds=1
 debug.sf.early.sf.duration=16000000
