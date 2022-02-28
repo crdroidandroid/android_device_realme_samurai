@@ -30,8 +30,8 @@
 
 #define FP_PRESS_PATH "/sys/kernel/oppo_display/notify_fppress"
 #define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
-#define STATUS_ON 1
-#define STATUS_OFF 0
+#define STATUS_ON "1"
+#define STATUS_OFF "0"
 
 namespace android {
 namespace hardware {
@@ -40,10 +40,11 @@ namespace fingerprint {
 namespace V2_3 {
 namespace implementation {
 
-template <typename T>
-static inline void set(const std::string& path, const T& value) {
-    std::ofstream file(path);
-    file << value;
+inline static void set(const std::string& path, const std::string& data) {
+    std::unique_ptr<FILE, decltype(&fclose)> stream(fopen(path.c_str(), "w"), &fclose);
+    if (stream) {
+        (void)write(fileno(stream.get()), data.c_str(), 1);
+    }
 }
 
 BiometricsFingerprint::BiometricsFingerprint(): isEnrolling(false) {
