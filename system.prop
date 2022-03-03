@@ -105,14 +105,6 @@ persist.dbg.wfc_avail_ovr=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.rcs.supported=0
-persist.vendor.ims.disableQXDMLogs=0
-persist.vendor.ims.disableADBLogs=0
-persist.vendor.ims.disableDebugLogs=0
-persist.vendor.ims.disableIMSLogs=0
-persist.vendor.ims.rtp.enableqxdm=3
-persist.vendor.ims.vt.enableadb=3
-persit.radio.VT_LOG_LEVEL=255
-persist.vendor.ims.loglevel=255
 
 # RIL
 persist.radio.hvolte.enable=1
