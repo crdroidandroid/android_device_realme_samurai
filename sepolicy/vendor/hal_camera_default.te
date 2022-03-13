@@ -16,6 +16,8 @@ allow hal_camera_default sysfs:file { read open };
 allow hal_camera_default sysfs_net:dir search;
 allow hal_camera_default sysfs_net:file { read open };
 
+allow hal_camera_default commondcs_hwservice:hwservice_manager find;
+
 get_prop(hal_camera_default, camera_ro_prop)
 get_prop(hal_camera_default, vendor_radio_prop)
 get_prop(hal_camera_default, vendor_camera_prop)

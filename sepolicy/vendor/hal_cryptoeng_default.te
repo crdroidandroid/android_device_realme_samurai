@@ -7,6 +7,8 @@ init_daemon_domain(hal_cryptoeng_default)
 add_hwservice(hal_cryptoeng_server, hal_cryptoeng_hwservice)
 allow hal_cryptoeng_client hal_cryptoeng_hwservice:hwservice_manager find;
 
+allow hal_cryptoeng_default commondcs_hwservice:hwservice_manager find;
+
 allow hal_cryptoeng_default ion_device:chr_file rw_file_perms;
 allow hal_cryptoeng_default self:qipcrtr_socket create;
 allow hal_cryptoeng_default tee_device:chr_file rw_file_perms;

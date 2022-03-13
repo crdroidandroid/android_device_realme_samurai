@@ -7,7 +7,7 @@ allow hal_fingerprint_default proc_touchpanel:dir search;
 allow hal_fingerprint_default proc_touchpanel:file { open write };
 allow hal_fingerprint_default vendor_qdsp_device:chr_file r_file_perms;
 allow hal_fingerprint_default self:netlink_socket { read write create bind };
-allow hal_fingerprint_default vendor_sysfs_fingerprint:dir r_dir_perms;
+allow hal_fingerprint_default vendor_sysfs_fingerprint:dir { search read };
 allow hal_fingerprint_default vendor_sysfs_fingerprint:file rw_file_perms;
 allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
 allow hal_fingerprint_default tee_device:chr_file { ioctl open read write };
@@ -17,3 +17,6 @@ r_dir_file(hal_fingerprint_default, firmware_file)
 get_prop(hal_fingerprint_default, oppo_fp_prop)
 set_prop(hal_fingerprint_default, oppo_fp_prop)
 get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
+
+allow hal_fingerprint_default commondcs_hwservice:hwservice_manager find;
+allow hal_fingerprint_default hal_orms_hwservice:hwservice_manager find;
