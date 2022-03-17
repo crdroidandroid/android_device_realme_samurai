@@ -96,10 +96,8 @@ Return<void> FingerprintInscreen::onPress() {
     set(DIMLAYER_PATH, FP_BEGIN);
     std::thread([this]() {
         std::this_thread::sleep_for(std::chrono::milliseconds(60));
-        if (isDreamState) {
-            set(FP_PRESS_PATH, FP_BEGIN);
-            set(AOD_LIGHT_MODE_PATH, FP_BEGIN);
-        }
+        set(FP_PRESS_PATH, FP_BEGIN);
+        set(AOD_LIGHT_MODE_PATH, FP_BEGIN);
     }).detach();
     if(get(DOZE_STATUS, FP_BEGIN) && get(FP_ENABLE_PATH, FP_BEGIN)) {
     set(FP_ENABLE_PATH, FP_ENDIT);
