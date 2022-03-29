@@ -54,6 +54,7 @@ private:
     sp<IFingerprintInscreenCallback> mCallback;
 
     bool isDreamState;
+    bool mFodCircleVisible;
 };
 
 }  // namespace implementation

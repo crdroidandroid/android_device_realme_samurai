@@ -24,8 +24,11 @@
 #include <cmath>
 #include <thread>
 
+#define FINGERPRINT_ACQUIRED_VENDOR 6
+
 /* Hardcoded stuffs */
 #define AOD_LIGHT_MODE_PATH "/sys/kernel/oppo_display/aod_light_mode_set"
+#define DC_DIM_PATH "/sys/kernel/oppo_display/dimlayer_bl_en"
 #define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
 #define DOZE_STATUS "/proc/touchpanel/DOZE_STATUS"
 #define FP_ENABLE_PATH "/proc/touchpanel/fp_enable"
@@ -38,6 +41,8 @@
 
 #define FP_BEGIN 1
 #define FP_ENDIT 0
+
+bool dcDimState;
 
 namespace {
 
@@ -69,6 +74,7 @@ namespace implementation {
 
 FingerprintInscreen::FingerprintInscreen()
     : isDreamState{false} {
+    this->mFodCircleVisible = false;
 }
 
 Return<int32_t> FingerprintInscreen::getPositionX() {
@@ -118,6 +124,10 @@ Return<void> FingerprintInscreen::onRelease() {
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+    if (!mFodCircleVisible) {
+        dcDimState = get(DC_DIM_PATH, FP_ENDIT);
+        set(DC_DIM_PATH, FP_ENDIT);
+    }
     if(get(DOZE_STATUS, FP_ENDIT)) {
     isDreamState = true;
     set(PANEL_BLANK_PATH, FP_BEGIN);
@@ -129,13 +139,38 @@ Return<void> FingerprintInscreen::onShowFODView() {
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
+    if (mFodCircleVisible) {
+        set(DC_DIM_PATH, dcDimState);
+    }
     if(!isDreamState)
     set(DIMLAYER_PATH, FP_ENDIT);
     return Void();
 }
 
 Return<bool> FingerprintInscreen::handleAcquired(int32_t acquiredInfo, int32_t vendorCode) {
-    LOG(ERROR) << "acquiredInfo: " << acquiredInfo << ", vendorCode: " << vendorCode << "\n";
+    std::lock_guard<std::mutex> _lock(mCallbackLock);
+    if (mCallback == nullptr) {
+        return false;
+    }
+
+    if (acquiredInfo == FINGERPRINT_ACQUIRED_VENDOR) {
+        if (mFodCircleVisible && vendorCode == 1) {
+            Return<void> ret = mCallback->onFingerDown();
+            if (!ret.isOk()) {
+                LOG(ERROR) << "FingerDown() error: " << ret.description();
+            }
+            return true;
+        }
+
+        if (mFodCircleVisible && vendorCode == 0) {
+            Return<void> ret = mCallback->onFingerUp();
+            if (!ret.isOk()) {
+                LOG(ERROR) << "FingerUp() error: " << ret.description();
+            }
+            return true;
+        }
+    }
+
     return false;
 }
 
