@@ -99,12 +99,10 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 
 Return<void> FingerprintInscreen::onPress() {
     if(isDreamState) {
-    set(DIMLAYER_PATH, FP_BEGIN);
-    std::thread([this]() {
+        set(DIMLAYER_PATH, FP_BEGIN);
         std::this_thread::sleep_for(std::chrono::milliseconds(60));
         set(FP_PRESS_PATH, FP_BEGIN);
         set(AOD_LIGHT_MODE_PATH, FP_BEGIN);
-    }).detach();
     }
     if(get(DOZE_STATUS, FP_BEGIN) && get(FP_ENABLE_PATH, FP_BEGIN)) {
     set(FP_ENABLE_PATH, FP_ENDIT);
@@ -121,8 +119,8 @@ Return<void> FingerprintInscreen::onRelease() {
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+    dcDimState = get(DC_DIM_PATH, FP_ENDIT);
     if (!mFodCircleVisible) {
-        dcDimState = get(DC_DIM_PATH, FP_ENDIT);
         set(DC_DIM_PATH, FP_ENDIT);
     }
     if(get(DOZE_STATUS, FP_ENDIT)) {
@@ -136,9 +134,7 @@ Return<void> FingerprintInscreen::onShowFODView() {
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
-    if (mFodCircleVisible) {
-        set(DC_DIM_PATH, dcDimState);
-    }
+    set(DC_DIM_PATH, dcDimState);
     if(!isDreamState)
     set(DIMLAYER_PATH, FP_ENDIT);
     return Void();
