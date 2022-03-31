@@ -384,7 +384,7 @@ vendor/lib64/camera.device@3.3-impl.so
 system_ext/lib64/libseccam-ipc.so
 system_ext/lib64/libseccam.so
 system_ext/lib64/libseccamservice.so
--system_ext/priv-app/seccamservice/seccamservice.apk
+system_ext/priv-app/seccamservice/seccamservice.apk
 vendor/bin/hw/vendor.qti.hardware.seccam@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.seccam@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.seccam@1.0.so
@@ -410,8 +410,8 @@ vendor/etc/cne/profileSlm.xml
 vendor/etc/cne/slm.conf
 
 # CNE - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
--vendor/app/CneApp/CneApp.apk|345dc6c677e9bd7a7d36033b8955e90d2a1594d5
--vendor/app/IWlanService/IWlanService.apk|9ea57bfbf58799a564fcf498de9f5fe3506f7342
+vendor/app/CneApp/CneApp.apk|345dc6c677e9bd7a7d36033b8955e90d2a1594d5
+vendor/app/IWlanService/IWlanService.apk|9ea57bfbf58799a564fcf498de9f5fe3506f7342
 vendor/bin/cnd|953858869b513828894800bf8556f3845d9665a2
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
@@ -551,7 +551,7 @@ system_ext/lib64/libdpmctmgr.so|9d13e5ae9882f5b7e6ac31a9d073a66a27d1c465
 system_ext/lib64/libdpmfdmgr.so|b705b098462e1198fc24175732d687142cc26562
 system_ext/lib64/libdpmframework.so|c3d8d6f1745c19d29466e9de823ff56f9f8f6993
 system_ext/lib64/libdpmtcm.so|57b6c42d581305d8ef16aa127cd4cd1672d2e7f1
--system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|4d78eda10ef66c3c59b7b4c13afeb2c93de5bddb
+system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|4d78eda10ef66c3c59b7b4c13afeb2c93de5bddb
 
 # DPM - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/dpmQmiMgr|e682a4c6e684be96de179158c65e5732f052ab2c
@@ -636,7 +636,7 @@ odm/etc/izat.conf
 odm/etc/sap.conf
 
 # GNSS - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
--vendor/app/CACertService/CACertService.apk|b1072f129d588b5c5aefa8824b6d531586a26755
+vendor/app/CACertService/CACertService.apk|b1072f129d588b5c5aefa8824b6d531586a26755
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti|d0744c1f81b96c770f024981a1d5ca8745e60e51
 vendor/bin/loc_launcher|be9f321e7c03e038749239ae4accd3db00949e2c
 vendor/bin/lowi-server|e05c6c7371c56ab73e2ce81505988180c8f3ddca
@@ -645,8 +645,8 @@ vendor/bin/xtra-daemon|49887eb451c713c6adb1c3c502775e116b02af7c
 vendor/bin/xtwifi-client|19b5002166b8f6f73aae6aeb513658b43628629c
 vendor/bin/xtwifi-inet-agent|2453d2776049b9ef2b29f6abe1256359f321a088
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50548a2095f92dd0235
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
+vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/etc/apdr.conf|52c9b4265e55c87ddf07c9b60817b3c09420712a
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 vendor/etc/flp.conf|8c8642685c225fa0b715c284481018a527dae451
@@ -781,8 +781,8 @@ my_product/framework/com.android.hotwordenrollment.common.util.jar:product/frame
 -my_product/priv-app/HotwordEnrollmentOKGoogleWCD9340.apk:product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk|0db13692bbce3c14ad0fb391c3b1c04a7a54db45
 
 # IMS (system) - from LA.QSSI.13.0.r1-05300-qssi.0
--system_ext/app/ImsRcsService/ImsRcsService.apk|c0566bd1093cc281df903f64f62945088d14087b
--system_ext/app/uceShimService/uceShimService.apk|d6de9593cf743440f861f041d4724ec9488e4139
+system_ext/app/ImsRcsService/ImsRcsService.apk|c0566bd1093cc281df903f64f62945088d14087b
+system_ext/app/uceShimService/uceShimService.apk|d6de9593cf743440f861f041d4724ec9488e4139
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|7ce9e6ccb5026b0aa87b0eb94a20448e2d4c481c
 system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar|ec58d15adf1930c4dcfb59e209a4bcf8d230a756
 system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar|3218cd7bba1dd0e0a140d93d252b96b8e2c81ae5
@@ -799,7 +799,7 @@ system_ext/lib64/libimsmedia_jni.so|d1b4c03352a9b34f4d26a4fe3a8595f295c7cef8
 system_ext/lib64/vendor.qti.diaghal@1.0.so|cb9428b76c47d283d614833ed9207a894ab533ce
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|ace5e02b6cd79b43a07d84e2d18d6818821a3c48
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|e64aa8a21a8db69d2e2ea14929bb20ced99c119d
--system_ext/priv-app/ims/ims.apk|9dd8f0bbe724abe8ea50e653290a2192742205df
+system_ext/priv-app/ims/ims.apk|9dd8f0bbe724abe8ea50e653290a2192742205df
 
 # IMS
 vendor/bin/ims_rtp_daemon
@@ -977,8 +977,8 @@ vendor/lib64/libstagefright_soft_qtiflacdec.so|8531b262078659ec4f63f39a69c24605d
 # Neural networks - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|d8f5981b1bedaa9cbef1b9fc93a400dc98e89cfa
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml|57e182a296097870a4c4ed1579c67da20c2b69de
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml|57e182a296097870a4c4ed1579c67da20c2b69de
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|baf2152894bf05c0c14581e3def9b4d1abf9e6d1
 vendor/lib64/libhexagon_nn_stub.so|6fdaffc1c9372c0e70bcd82f5d806162ca31c176
 vendor/lib64/libhta_hexagon_runtime.so|e8f735a8d9396052fe217eafe506e28b492f024c
@@ -1039,7 +1039,7 @@ vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
 vendor/lib64/libspcom.so|7cc4390e7caf520586c22cdb7219842fa5d6ed2c
 
 # PASR Manager - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
--vendor/app/pasrservice/pasrservice.apk|6d4e8bab2426b03231531ec09bce922601b8e8e6
+vendor/app/pasrservice/pasrservice.apk|6d4e8bab2426b03231531ec09bce922601b8e8e6
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service|27dd1f54cfdc65f365c6b63e9b13bdb6ade5aa70
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc|b34c1b9179c89cd47adce145bae9a609e5141bc0
 vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so|4e83bd83fa439f15dc3c0a2256eadd81d6c45386
@@ -1150,11 +1150,11 @@ vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiservices.so
 
 # RIL (system) - from LA.QSSI.13.0.r1-05300-qssi.0
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|9ef9e77f209b7d699d0b37463acfb19faf46d6d4
+system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|9ef9e77f209b7d699d0b37463acfb19faf46d6d4
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
 system_ext/framework/qti-telephony-common.jar|a4cc2c9423cae6e0f550db28c0539a53ca8eb866
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|3ed05e8d9078c817ad3c93780f1541fc27bd552c
+system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|3ed05e8d9078c817ad3c93780f1541fc27bd552c
 
 # RIL
 vendor/bin/hw/qcrild
@@ -1390,7 +1390,7 @@ vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/lib64/libthermalclient.so|26475ef0d6b80fcf40c9490f795d21e46d3d9054
 
 # Time services - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
--vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923
+vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923
 vendor/bin/time_daemon|48401d7f85c87aa3e12ce7b4a969a50cbf59c293
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|8bb116ad297a5e4a94da2f10509509cb6e863a5f
@@ -1529,7 +1529,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so|85a4e2ca843525db5c76486dbee4c5c7a672
 # Widevine DRM
 odm/bin/hw/android.hardware.drm@1.3-service.widevine
 odm/etc/init/android.hardware.drm@1.3-service.widevine.rc
--odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 odm/lib/mediadrm/libwvdrmengine.so
 odm/lib/liboemcrypto.so
 odm/lib64/mediadrm/libwvdrmengine.so
@@ -1556,7 +1556,7 @@ vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 vendor/etc/wifi/fstman.ini
-vendor/etc/wifi/sar-vendor-cmd.xml
+vendor/etc/wifi/sarvendor-cmd.xml
 vendor/etc/wifi/wigig_p2p_supplicant.conf
 vendor/etc/wifi/wigig_supplicant.conf
 vendor/lib64/libcert_parse.wpa_s.so
