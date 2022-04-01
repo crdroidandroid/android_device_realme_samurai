@@ -7,6 +7,8 @@ allow hal_fingerprint_default proc_touchpanel:dir search;
 allow hal_fingerprint_default proc_touchpanel:file { open write };
 allow hal_fingerprint_default vendor_qdsp_device:chr_file r_file_perms;
 allow hal_fingerprint_default self:netlink_socket { read write create bind };
+allow hal_fingerprint_default sysfs_oppo_display:dir search;
+allow hal_fingerprint_default sysfs_oppo_display:file rw_file_perms;
 allow hal_fingerprint_default vendor_sysfs_fingerprint:dir { search read };
 allow hal_fingerprint_default vendor_sysfs_fingerprint:file rw_file_perms;
 allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;

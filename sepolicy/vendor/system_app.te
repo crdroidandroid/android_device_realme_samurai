@@ -11,6 +11,8 @@ allow system_app sysfs_oppo_display:dir search;
 allow system_app sysfs_oppo_display:file rw_file_perms;
 allow system_app proc_touchpanel:dir search;
 allow system_app proc_touchpanel:file rw_file_perms;
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file rw_file_perms;
 get_prop(system_app, vendor_bluetooth_prop)
 get_prop(system_app, vendor_default_prop)
 set_prop(system_app, vendor_perf_prop)
