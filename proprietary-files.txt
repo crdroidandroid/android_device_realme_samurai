@@ -1,45 +1,33 @@
 # All unpinned blobs below are extracted from RMX1931EX_11_F.12
 
-# ACDB - from RMX1931EX_C.34
-vendor/etc/acdbdata/19781/Bluetooth_cal.acdb|0c33c836250c9a3a51a4c40c50d758c3d5457a1f
-vendor/etc/acdbdata/19781/Codec_cal.acdb|f179d2db706fcda44b56534820463ceb5b558573
-vendor/etc/acdbdata/19781/General_cal.acdb|c4bf7382df37b6502f29ca1db0d8474b67a00658
-vendor/etc/acdbdata/19781/Global_cal.acdb|cb7df8c8717759063ab25c204dad209216b03802
-vendor/etc/acdbdata/19781/Handset_cal.acdb|8c5bb7b02ae51c329a287303cd6b87acd3057bf3
-vendor/etc/acdbdata/19781/Hdmi_cal.acdb|3521299693a1c9e5a4ad2dc00746ecd690acf012
-vendor/etc/acdbdata/19781/Headset_cal.acdb|4d5b36b024eeeae113038cbc0f76c39905af2b5b
-vendor/etc/acdbdata/19781/Speaker_cal.acdb|ad6a75c793e856ba759c783b80b24bba28de7c42
-vendor/etc/acdbdata/19781/CMCC/Bluetooth_cal.acdb|20b8b809070dd109f3bd2abdd799dc3cb36f0653
-vendor/etc/acdbdata/19781/CMCC/Codec_cal.acdb|d77503e119f602c7863168ca548cbe911d26375e
-vendor/etc/acdbdata/19781/CMCC/General_cal.acdb|9bbfde8a7534b53d1bcacebef1a4fb74b09c786f
-vendor/etc/acdbdata/19781/CMCC/Global_cal.acdb|744c0d75d1c3debe04e129c6440391d5b1667589
-vendor/etc/acdbdata/19781/CMCC/Handset_cal.acdb|e5684caf3d18e15ae5221a353bd5cbd14933eed3
-vendor/etc/acdbdata/19781/CMCC/Hdmi_cal.acdb|cc0db4693e58e89a769c90dbd4428549582edca1
-vendor/etc/acdbdata/19781/CMCC/Headset_cal.acdb|c84a8c581c73bfcb48576bc67df592b7fec66367
-vendor/etc/acdbdata/19781/CMCC/Speaker_cal.acdb|f4bd819da0ace56632ddd12462ced3ae0c6ebb59
-vendor/etc/acdbdata/19781/GD/Bluetooth_cal.acdb|8f7d996896710ade3be0a8a2ed2043f813775d2f
-vendor/etc/acdbdata/19781/GD/Codec_cal.acdb|fdd84c89d28a596c728dfdc52e72548e59013e10
-vendor/etc/acdbdata/19781/GD/General_cal.acdb|3aa65eda0b676a3ee188832a3399d0d296edd127
-vendor/etc/acdbdata/19781/GD/Global_cal.acdb|8b64b313ac36e92911f180abac928ddc1259a5d5
-vendor/etc/acdbdata/19781/GD/Handset_cal.acdb|3ac365f1890b801a47a0405a4955d14ff26c8eea
-vendor/etc/acdbdata/19781/GD/Hdmi_cal.acdb|d70ac1dd8395a04a6b65a21e9d502353f4f34562
-vendor/etc/acdbdata/19781/GD/Headset_cal.acdb|2fc2e8e1a81c452b5b53ec7a2d959a57ff358051
-vendor/etc/acdbdata/19781/GD/Speaker_cal.acdb|d82ad0f2ecdeb1508664527d67029809c3ea4df7
-vendor/etc/acdbdata/adsp_avs_config.acdb|aecdc24f99844d2aa12b79aaf67fa9e2127ee1b5
+# ACDB
+odm/etc/acdbdata/Bluetooth_cal.acdb
+odm/etc/acdbdata/Codec_cal.acdb
+odm/etc/acdbdata/General_cal.acdb
+odm/etc/acdbdata/Global_cal.acdb
+odm/etc/acdbdata/Handset_cal.acdb
+odm/etc/acdbdata/Hdmi_cal.acdb
+odm/etc/acdbdata/Headset_cal.acdb
+odm/etc/acdbdata/Speaker_cal.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libfastrpc_utf_stub.so
-vendor/lib64/libmdsprpc.so
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
 vendor/lib/libfastrpc_utf_stub.so
 vendor/lib/libmdsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libfastrpc_utf_stub.so
+vendor/lib64/libmdsprpc.so
 
 # ADSP modules
+odm/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
+odm/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so:vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
+odm/lib/rfsa/adsp/libsnpe_dsp_skel.so
+vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so
 vendor/lib/rfsa/adsp/libVC1Dec.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -52,7 +40,6 @@ vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
-odm/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
@@ -67,73 +54,96 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so|12a37c78b1d4e8a79437be27dc49d87cf25304c
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|2c2769964955a031cd34056c4c7c39402d78dfb9
 vendor/lib/com.qualcomm.qti.ant@1.0.so|04269f8cc2fa3580044b7f2881f545cd7cf4876e
 
-# Audio - from RMX1931EX_C.34
-vendor/lib64/libacdb-fts.so|889a9d4016c5744208465fd739e09f0a301c0c7e
-vendor/lib64/libacdbloader.so|b90d238a2e2f9f354190725320ed78581f926b97
-vendor/lib64/libacdbrtac.so|7ca6a4e5aa950f41a24327d0ef0e3d13258b5c72
-vendor/lib64/libadiertac.so|198769fc20b1ad561a792d53476b67767b9245f2
-vendor/lib64/libaudcal.so|f398195e27206822026483081e7c1a979d265380
-vendor/lib64/libaudioalsa.so|bdf49c709df8a1a7a7e232a6cb1ba6d15af594c7
-vendor/lib64/libqtigef.so|1c5060dea8c0bf141ec32989cc6d30b91d4d26a2
-vendor/lib/libacdb-fts.so|a495a845811879742d355627d223cc16c4995691
-vendor/lib/libacdbloader.so|fb7fe58b95bf964331d0994eb720babafb8256bc
-vendor/lib/libacdbrtac.so|6817f9d8f6c32efa6662d1560cf6f54b92693f0c
-vendor/lib/libadiertac.so|4d45dd848dd28d516b03657b4f2ca67d119882f2
-vendor/lib/libadm.so|8b91716aa66d1386a3a3d1585c996a6bffd943ce
-vendor/lib/libaudcal.so|bcf99535d43a7866bf3363a2be6887840fd6dbbf
-vendor/lib/libaudioalsa.so|8ebde9c3978ac21bf82f3e2bad31e3641e163597
-vendor/lib/libqtigef.so|a139aeb7b0af1dcbe752f692381d1f1d08553e5f
+# Audio
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libadm.so
+vendor/lib/libaudcal.so
+vendor/lib/libaudioalsa.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libqtigef.so
+vendor/lib/libtinycompress.so
+vendor/lib64/libacdb-fts.so
+vendor/lib64/libacdbloader.so
+vendor/lib64/libacdbrtac.so
+vendor/lib64/libadiertac.so
+vendor/lib64/libaudcal.so
+vendor/lib64/libaudioalsa.so
+vendor/lib64/libaudioparsers.so
+vendor/lib64/libqtigef.so
+vendor/lib64/libtinycompress.so
 
-# Audio extensions - from RMX1931EX_C.34
-vendor/lib64/liba2dpoffload.so|40923d97cd33bca387e1b98b73edc7d730015556
-vendor/lib64/libbatterylistener.so|4675c6bcf2b1a3a229e6522416117a3b452eec5e
-vendor/lib64/libcomprcapture.so|4951b4671a7535680e57a2fcef13ad094ae9869a
-vendor/lib64/libexthwplugin.so|9ab583b6e098c4311b11bc8d49cac6b9bea549d8
-vendor/lib64/libhdmiedid.so|1e67ad84000c3ef630b4d3ad430c23d0909be9bd
-vendor/lib64/libhdmipassthru.so|2f8e7ee132253f95a05625191e8f395c9be49150
-vendor/lib64/libhfp.so|21f2ef5af795b5e68b9ebf6a7a7096a79a6e7e68
-vendor/lib64/libsndmonitor.so|b800a75fbfd1f422232bf9747a1215c2bb0d89d6
-vendor/lib64/libspkrprot.so|d2a32a0ab79fe9f08b426ed28097b8a2eb7711ed
-vendor/lib/liba2dpoffload.so|307498cbbd245d6bb10190ace080eb20894a9107
-vendor/lib/libbatterylistener.so|726c991d519bf73889127b61a7a60c40d475ecbd
-vendor/lib/libcomprcapture.so|91b277a9c74f733401151cce39618d488ca0273a
-vendor/lib/libexthwplugin.so|eccdcb2a4f2fe40802400d06112202e0952fdbbb
-vendor/lib/libhdmiedid.so|9e4a2f81773a537d11ec6816ff90a78287fa8c08
-vendor/lib/libhdmipassthru.so|88c9739645afdb5bb8b50d9fd948ca8ed40fa9fe
-vendor/lib/libhfp.so|ad2c51861b9d280f4a17489193e4ad28fe622c4d
-vendor/lib/libsndmonitor.so|1e0a99d6211611a922ef7b01b083a0f22ea3e94d
-vendor/lib/libspkrprot.so|b8a7c100debd0349d4ea3acefaf74b73f8f158fd
+# Audio extensions
+vendor/lib/liba2dpoffload.so
+vendor/lib/libbatterylistener.so
+vendor/lib/libcomprcapture.so
+vendor/lib/libcomprcapture.so
+vendor/lib/libexthwplugin.so
+vendor/lib/libhdmiedid.so
+vendor/lib/libhdmipassthru.so
+vendor/lib/libhfp.so
+vendor/lib/libsndmonitor.so
+vendor/lib/libspkrprot.so
+vendor/lib64/liba2dpoffload.so
+vendor/lib64/libbatterylistener.so
+vendor/lib64/libcirrusspkrprot.so
+vendor/lib64/libcomprcapture.so
+vendor/lib64/libexthwplugin.so
+vendor/lib64/libhdmiedid.so
+vendor/lib64/libhdmipassthru.so
+vendor/lib64/libhfp.so
+vendor/lib64/libsndmonitor.so
+vendor/lib64/libspkrprot.so
 
-# Audio HAL - from RMX1931EX_C.34
-vendor/lib64/hw/audio.primary.msmnile.so|4d945603002fda6c70950ef0552910d6006586f3
-vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|5fef5445dacd723830f2df72afdfded45f42b79d
-vendor/lib64/libaudioEngineerTest.so|c7da28bf38a82e2db4c74d424f6d7629d1b2d524
-vendor/lib64/libaudio_log_utils.so|371eac73a036177105c2a1f59272b39e69244d0d
-vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so|0a7e98aaf378a15e3bd3d53381522b96db5072e1
-vendor/lib/hw/audio.primary.msmnile.so|4774efc341eee0b28dc8b6d621bce4d517406fa1
-vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|5275877c3197fe8dc828ebbd9eb27259bbb3ffad
-vendor/lib/libaudioEngineerTest.so|d0756d200be90939aff5db07c0c23d91f82d18a8
-vendor/lib/libaudio_log_utils.so|64bee0dae9c5f18922630c7f33bffd31dd9d9654
-vendor/lib/vendor.qti.hardware.audiohalext@1.0.so|4fd1c81b34ea590ffcb9951d374b9cc570f866c1
+# Audio HAL
+odm/lib/libaudioEngineerTest.so
+odm/lib64/libaudioEngineerTest.so
+vendor/lib/hw/audio.primary.msmnile.so
+vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib64/hw/audio.primary.msmnile.so
+vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
+
+# AudioHal Ext
+system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
+system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
+vendor/lib/libaudioconfigstore.so
+vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
+vendor/lib64/libaudioconfigstore.so
+vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
 # Audio FX modules
+odm/lib/soundfx/libhaptic_effect.so
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libshoebox.so
 vendor/lib/soundfx/libasphere.so
-odm/lib/soundfx/libhaptic_effect.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/soundfx/libqcreverb.so
+vendor/lib64/soundfx/libqcvirt.so
+vendor/lib64/soundfx/libshoebox.so
 
-# Audio KTV - from RMX1931EX_C.34
-lib64/vendor.oppo.hardware.ktv@1.0.so|1fe744a8caa456f4f7218a18e2893326532bda74
-lib/vendor.oppo.hardware.ktv@1.0.so|bd4be7e8ee9648dcce1fe185cff82057b0025444
-vendor/bin/hw/vendor.oppo.hardware.ktv@1.0-service|dbb6b309999d8c5ece409397b32812289bff47e5
-vendor/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc|79748501360f2131ed39d066dde66be7dec6d31b
-vendor/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so|839f8e237624a26a3ca1c673f9330f29f2f02bf6
-vendor/lib64/vendor.oppo.hardware.ktv@1.0.so|4a3bddce7ef0be9eb285ad50928e3e9c780d12ce
-vendor/lib/hw/vendor.oppo.hardware.ktv@1.0-impl.so|e50d2b8e41968d0577c710e3e49583355e3467b2
-vendor/lib/vendor.oppo.hardware.ktv@1.0.so|6ee279c11459b4f9876106e7128d0b57b089af9d
+# Audio KTV
+odm/lib/rfsa/adsp/libc++.so.1
+odm/lib/rfsa/adsp/libc++abi.so.1
+odm/lib/rfsa/adsp/libktvdrc.so
+odm/lib/rfsa/adsp/libktveffect.so
+odm/lib/rfsa/adsp/libktveq.so
+odm/lib/rfsa/adsp/libktvns.so
+odm/lib/rfsa/adsp/libktvreverb.so
+odm/lib/rfsa/adsp/libktvsoundtouch.so
+odm/lib/rfsa/adsp/libktvvolume.so
 
 # Bluetooth - from RMX1931EX_C.34
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|dce7c7298b1801f6a037dc3e4597af56e3649bd0
