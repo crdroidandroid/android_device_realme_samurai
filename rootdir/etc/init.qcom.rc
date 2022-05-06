@@ -88,27 +88,6 @@ on early-boot
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.can.sh
 
-    # for backward compatibility
-    chown system system /persist/sensors
-    chown system system /persist/sensors/registry
-    chown system system /persist/sensors/registry/registry
-    chown system system /persist/sensors/registry/registry/sensors_registry
-    chown system system /persist/sensors/sensors_settings
-    chown system system /persist/sensors/registry/config
-    chmod 0664 /persist/sensors/sensors_settings
-
-    chown system system /mnt/vendor/persist/sensors
-    chown system system /mnt/vendor/persist/sensors/sns.reg
-    chown system system /mnt/vendor/persist/sensors/sensors_list.txt
-    chown system system /mnt/vendor/persist/sensors/registry
-    chown system system /mnt/vendor/persist/sensors/registry/registry
-    chown system system /mnt/vendor/persist/sensors/registry/registry/sensors_registry
-    chown system system /mnt/vendor/persist/sensors/sensors_settings
-    chown system system /mnt/vendor/persist/sensors/registry/sns_reg_config
-    chown system system /mnt/vendor/persist/sensors/registry/sns_reg_version
-    chown system system /mnt/vendor/persist/sensors/registry/config
-    chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
-
     chown system system /mnt/vendor/persist/data/pfm/licenses
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
     chown system system /mnt/vendor/persist/data/pfm/licenses/store_0
@@ -482,18 +461,6 @@ service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     user root
     oneshot
 
-service vendor.sensors /vendor/bin/sscrpcd sensorspd
-    class early_hal
-    user system
-    group system wakelock
-    capabilities BLOCK_SUSPEND
-
-service vendor.sensors.qti /vendor/bin/sensors.qti
-    class core
-    user system
-    group system
-    disabled
-
 service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant \
     -iwigig0 -Dnl80211 -c/data/vendor/wifi/wigig_supplicant.conf \
     -m/data/vendor/wifi/wigig_p2p_supplicant.conf \
@@ -534,11 +501,6 @@ service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
     group root system radio
-    oneshot
-
-service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
-    class core
-    user root
     oneshot
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
