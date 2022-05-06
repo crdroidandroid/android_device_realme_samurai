@@ -13,6 +13,7 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP
 vendor/bin/adsprpcd
+vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
@@ -21,6 +22,7 @@ vendor/lib/libmdsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libfastrpc_utf_stub.so
+vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libmdsprpc.so
 
 # ADSP modules
@@ -497,6 +499,7 @@ system_ext/lib64/vendor.display.color@1.1.so
 system_ext/lib64/vendor.display.color@1.2.so
 system_ext/lib64/vendor.display.color@1.3.so
 vendor/bin/hw/vendor.display.color@1.0-service
+vendor/bin/ppd
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayqos.so
@@ -531,6 +534,7 @@ vendor/lib64/libdpmqmihal.so
 # DRM
 vendor/bin/qseecomd
 vendor/etc/init/qseecomd.rc
+vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
@@ -554,6 +558,10 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
+
+# Eyeprotect data
+odm/etc/samsung1024_sofef03f_m_eyeprotect_data.xml
+odm/etc/samsung1024_sofef03f_m_srgb_eyeprotect_data.xml
 
 # Fingerprint (goodix)
 odm/lib64/hw/fingerprint.goodix_G2.default.so
@@ -586,6 +594,10 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS
+odm/etc/gps.conf
+odm/etc/izat.conf
+odm/etc/sap.conf
+-vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -599,16 +611,23 @@ vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/apdr.conf
 vendor/etc/cacert_location.pem
 vendor/etc/flp.conf
+vendor/etc/gnss_antenna_info.conf
 vendor/etc/gps.conf
 vendor/etc/izat.conf
+vendor/etc/lowi.conf
 vendor/etc/sap.conf
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libaoa.so
+vendor/lib64/libasn1cper.so
+vendor/lib64/libasn1crt.so
+vendor/lib64/libasn1crtx.so
 vendor/lib64/libbatching.so
 vendor/lib64/libcacertclient.so
+vendor/lib64/libcdfw.so
+vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgdtap.so
@@ -640,7 +659,6 @@ vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # Graphics (Adreno) - from LA.UM.9.14.r1-18900-LAHAINA.QSSI12.0
 vendor/gpu/kbc/sequence_manifest.bin|cc050a8058904871b3cfabec74521d42f0a61a1f
@@ -940,6 +958,8 @@ vendor/lib64/libstagefright_soft_qtiflacdec.so
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libhta_hexagon_runtime.so
@@ -949,6 +969,7 @@ vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # Neural Processing Engine
+odm/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so
 odm/lib64/libsnpe_dsp_domains_v2.so
 odm/lib64/libsnpe_loader.so
 odm/lib64/libsnpeml.so
@@ -999,6 +1020,7 @@ vendor/lib64/libspcom.so
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
 vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Perf
@@ -1038,6 +1060,18 @@ vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+
+# QCC
+vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
+vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+
+# QCV
+vendor/lib64/libsoc_helper.so
+vendor/lib64/libsoc_helper_jni.so
 
 # QDCM calibration data
 vendor/etc/qdcm_calib_data_samsung_sofef03f_m_amoled_fhd+_panel_with_DSC.xml
@@ -1086,6 +1120,13 @@ vendor/lib64/libqmi_csi.so|61c5546f27bbebe2e654c86035f164024934c0f8
 vendor/lib64/libqmi_csvt_srvc.so|36424406113ce651eecac5a3e0c24d7d4e455c81
 vendor/lib64/libqmi_encdec.so|eedf39676bf4447cb2e3f629d1d18dcad846ab85
 vendor/lib64/libqmiservices.so|f4ee559e1a8dd28fd776dccc22717809bc220e89
+
+# QTI service tracker
+vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
+vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
+-vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
+vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
+vendor/lib64/vendor.qti.hardware.servicetracker@1.2.so
 
 # RIL (qti-telephony-common) - from DRG - QKQ1.190828.002
 system_ext/framework/qti-telephony-common.jar|695214c1294dc9a79ee48387140c9907203300d7
@@ -1316,6 +1357,7 @@ vendor/bin/subsystem_ramdump
 
 # Thermal
 vendor/bin/thermal-engine
+vendor/etc/init/init_thermal-engine.rc
 vendor/etc/thermal-engine.conf
 vendor/lib64/libthermalclient.so
 

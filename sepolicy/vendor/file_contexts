@@ -27,7 +27,6 @@
 
 # Light
 /vendor/bin/hw/android\.hardware\.lights-service\.RMX1931                                               u:object_r:hal_light_default_exec:s0
-/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti                                       u:object_r:vendor_hal_neuralnetworks_default_exec:s0
 
 # Modem reason
 /dev/mdmreason                                                                                          u:object_r:mdmreason_device:s0
