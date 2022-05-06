@@ -1,6 +1,5 @@
 type commondcs_hwservice, hwservice_manager_type;
 type hal_cryptoeng_hwservice, hwservice_manager_type;
-type hal_hypnus_hwservice, hwservice_manager_type;
 type hal_nxpnfc_hwservice, hwservice_manager_type;
 type hal_orms_hwservice, hwservice_manager_type;
 type halService_orms_hwservice, hwservice_manager_type;

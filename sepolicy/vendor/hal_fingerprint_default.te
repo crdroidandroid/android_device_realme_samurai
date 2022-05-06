@@ -1,5 +1,4 @@
 binder_call(hal_fingerprint_default, hal_fingerprint_default)
-binder_call(hal_fingerprint_default, hal_hypnus_default)
 
 allow hal_fingerprint_default fp_proc:file r_file_perms;
 allow hal_fingerprint_default fingerprint_device:chr_file { ioctl read write open };

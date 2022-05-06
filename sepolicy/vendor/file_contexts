@@ -22,9 +22,6 @@
 # Health
 /vendor/bin/hw/android\.hardware\.health@2\.1-service\.RMX1931                                          u:object_r:hal_health_default_exec:s0
 
-# Hypnus
-/vendor/bin/hw/vendor\.oppo\.hardware\.hypnus@1\.0-service                                              u:object_r:hal_hypnus_default_exec:s0
-
 # Light
 /vendor/bin/hw/android\.hardware\.lights-service\.RMX1931                                               u:object_r:hal_light_default_exec:s0
 
@@ -69,11 +66,6 @@
 # Vibrator
 /sys/class/leds/vibrator(/.*)?                                                                          u:object_r:sysfs_vibrator:s0
 /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator(/.*)?                                   u:object_r:sysfs_vibrator:s0
-
-# vl53l1
-/vendor/bin/vl53l1_daemon_main                                                                          u:object_r:vl53l1_daemon_main_exec:s0
-/sys/module/stmvl53l1(/.*)?                                                                             u:object_r:sysfs_vl53l1:s0
-/dev/socket/vl53l1_daemon                                                                               u:object_r:vl53l1_socket:s0
 
 # Widevine
 /(odm|vendor/odm)/bin/hw/android\.hardware\.drm@1\.3-service\.widevine                                  u:object_r:vendor_hal_drm_widevine_exec:s0

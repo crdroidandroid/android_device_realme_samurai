@@ -596,12 +596,6 @@ service charger /system/bin/charger
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
-service vl53l1_daemon_main /vendor/bin/vl53l1_daemon_main
-    class late_start
-    user root
-    group root
-    socket vl53l1_daemon stream 660 root system
-
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
     class core
     user root
