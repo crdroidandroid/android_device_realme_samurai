@@ -777,13 +777,6 @@ my_product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml:product/et
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|714382db8d12aca9f5388dd72060e867e30d88e4
 -my_product/priv-app/HotwordEnrollmentOKGoogleWCD9340.apk:product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk|0db13692bbce3c14ad0fb391c3b1c04a7a54db45
 
-# Hypnus - from RMX1931EX_C.34
-vendor/bin/hw/vendor.oppo.hardware.hypnus@1.0-service|81c15ba0c3431bc96dede04eadec7e87d8a754a5
-vendor/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc|50e233bc87571140cfac7c6636a7bb0c3c369332
-vendor/lib64/hw/vendor.oppo.hardware.hypnus@1.0-impl.so|a267bd4e9ea02db220146807f7a7e658db5c444d
-vendor/lib64/libhypnusclient.so|efba8c42781b0eca5a0b0c1b80a0938a0cbbdda4
-vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so|29ef4baa79612542434556ace53a7506906fcdff
-
 # IMS app - from PNX - RKQ1.200906.002
 -system_ext/priv-app/ims/ims.apk|f87eba10af95d6d7fe3b0f1b9e145e00ccdf69f8
 
