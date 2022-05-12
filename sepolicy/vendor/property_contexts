@@ -61,6 +61,7 @@ vendor.nfc_se.config_ready          u:object_r:vendor_nfc_nq_prop:s0
 perf_profile                        u:object_r:vendor_perf_prop:s0
 
 # Project
+ro.hardware.chipname                u:object_r:exported_default_prop:s0
 ro.separate.soft                    u:object_r:exported_default_prop:s0
 
 # RIL

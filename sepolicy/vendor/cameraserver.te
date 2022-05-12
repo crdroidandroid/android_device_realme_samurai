@@ -1,2 +1,3 @@
 allow cameraserver commondcs_hwservice:hwservice_manager find;
+allow cameraserver init:unix_stream_socket connectto;
 allow cameraserver property_socket:sock_file write;
