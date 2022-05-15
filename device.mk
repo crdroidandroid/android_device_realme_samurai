@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     FrameworksRes \
     SettingsProviderRes \
     SettingsRes \
+    SimpleDeviceConfigCommon \
     SystemUIRes \
     TelephonyRes \
     TetheringRes \
