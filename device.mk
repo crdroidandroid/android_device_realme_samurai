@@ -341,11 +341,12 @@ PRODUCT_PACKAGES += \
 
 # Neuralnetworks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.2.vendor
+    android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
+    android.hardware.nfc@1.2.vendor \
     com.android.nfc_extras \
     com.gsma.services.nfc \
     NfcNci \
@@ -378,6 +379,7 @@ $(call inherit-product, packages/apps/RealmeParts/parts.mk)
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
+    android.hardware.power@1.2.vendor \
     android.hardware.power.stats@1.0-service.mock \
     vendor.qti.hardware.perf@2.2.vendor
 
