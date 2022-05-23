@@ -78,6 +78,7 @@ on boot
     chown system system /sys/kernel/oppo_display/aod_light_mode_set
     chown system system /sys/kernel/oppo_display/serial_number
     chown system system /sys/kernel/oppo_display/hdr10
+    chown system system /sys/kernel/oppo_display/fp_state
 
     chmod 0666 /sys/kernel/oppo_display/hbm
     chmod 0666 /sys/kernel/oppo_display/seed
@@ -96,6 +97,7 @@ on boot
     chmod 0666 /sys/kernel/oppo_display/aod_light_mode_set
     chmod 0666 /sys/kernel/oppo_display/serial_number
     chmod 0666 /sys/kernel/oppo_display/hdr10
+    chown 0666 /sys/kernel/oppo_display/fp_state
 
     # Touchpanel
     chown system system /proc/touchpanel/tp_fw_update

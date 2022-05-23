@@ -431,6 +431,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.1-service.multihal \
     libsensorndkbridge \
+    sensors.oplus \
     vendor.oplus.hardware.syshelper.service
 
 PRODUCT_COPY_FILES += \
