@@ -63,14 +63,6 @@ on late-fs
     start vendor.hwcomposer-2-4
     start vendor.configstore-hal
 
-    # Wait for hwservicemanager ready since fsck might be triggered in mount_all --late
-    # In such case, init won't responce the property_set from hwservicemanager and then
-    # cause services for bootanim not running.
-    wait_for_prop hwservicemanager.ready true
-
-    # Wait for keymaster
-    exec_start wait_for_keymaster
-
     # mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
