@@ -170,6 +170,15 @@ on property:ro.board.platform=msmnile && property:ro.baseband=msm && property:ro
 
     chmod 0664 /dev/stune/foreground/schedtune.boost
 
+service vendor.sensors-hal-2-1-multihal /vendor/bin/hw/android.hardware.sensors@2.1-service.multihal
+    override
+    class hal
+    user system
+    group system wakelock context_hub input
+    writepid /dev/cpuset/system-background/tasks
+    capabilities BLOCK_SUSPEND
+    rlimit rtprio 10 10
+
 on post-fs-data
     mkdir /data/system/audio 0775 media media
     mkdir /mnt/vendor/persist/media 0775 media media
