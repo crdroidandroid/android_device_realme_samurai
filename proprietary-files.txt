@@ -629,7 +629,6 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS
-odm/etc/gps.conf
 odm/etc/izat.conf
 odm/etc/sap.conf
 -vendor/app/CACertService/CACertService.apk
@@ -647,7 +646,6 @@ vendor/etc/apdr.conf
 vendor/etc/cacert_location.pem
 vendor/etc/flp.conf
 vendor/etc/gnss_antenna_info.conf
-vendor/etc/gps.conf
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
