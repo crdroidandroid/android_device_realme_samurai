@@ -208,7 +208,8 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.samurai \
-    android.hardware.biometrics.fingerprint@2.3.vendor
+    android.hardware.biometrics.fingerprint@2.3.vendor \
+    libshims_fingerprint.samurai
 
 # fingerprint (IFAA)
 PRODUCT_PACKAGES += \
