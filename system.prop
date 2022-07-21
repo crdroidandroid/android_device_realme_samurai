@@ -45,6 +45,7 @@ persist.sys.fuse.passthrough.enable=true
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_hwc_vds=1
 debug.sf.enable_transaction_tracing=false
+debug.sf.predict_hwc_composition_strategy=0
 dev.pm.dyn_samplingrate=1
 persist.front.skipdisplay.enable=1
 ro.vendor.display.sensortype=2
