@@ -8,3 +8,6 @@ type proc_touchpanel, proc_type, fs_type;
 type public_adsprpcd_file, file_type;
 type sysfs_fps, sysfs_type, fs_type;
 type sysfs_oppo_display, sysfs_type, fs_type;
+
+# USB
+type vendor_sysfs_usb_data_enabled, fs_type, sysfs_type;
