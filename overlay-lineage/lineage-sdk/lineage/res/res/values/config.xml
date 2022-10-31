@@ -29,5 +29,7 @@
         <item>org.codeaurora.snapcam</item>
         <item>com.android.camera</item>
         <item>org.thunderdog.challegram</item>
+        <item>org.lineageos.aperture</item>
+        <item>org.lineageos.aperture.dev</item>
     </string-array>
 </resources>
