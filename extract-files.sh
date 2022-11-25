@@ -65,6 +65,9 @@ function blob_fixup() {
         etc/permissions/qti_libpermissions.xml)
             sed -i 's|name="android.hidl.manager-V1.0-java"|name="android.hidl.manager@1.0-java"|g' "${2}"
             ;;
+        vendor/lib64/hw/camera.qcom.so)
+            grep -q libcamera_metadata_shim.so "${2}" || "${PATCHELF}" --add-needed libcamera_metadata_shim.so "${2}"
+            ;;
     esac
 }
 
