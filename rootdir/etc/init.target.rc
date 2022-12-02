@@ -153,3 +153,7 @@ service vendor.lowi /vendor/bin/sscrpcd
    user system
    group system wakelock
    capabilities BLOCK_SUSPEND
+
+on property:sys.boot_completed=1
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
