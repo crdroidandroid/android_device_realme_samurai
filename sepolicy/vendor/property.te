@@ -1,6 +1,6 @@
-type adsprpc_prop, property_type;
-type camera_ro_prop, property_type;
-type cryptoeng_prop, property_type;
-type oppo_fp_prop, property_type;
-type qcom_ims_prop, property_type;
-type vendor_perf_prop, property_type;
+vendor_internal_prop(adsprpc_prop)
+vendor_internal_prop(camera_ro_prop)
+vendor_internal_prop(cryptoeng_prop)
+vendor_internal_prop(oppo_fp_prop)
+vendor_restricted_prop(qcom_ims_prop)
+vendor_public_prop(vendor_perf_prop)
