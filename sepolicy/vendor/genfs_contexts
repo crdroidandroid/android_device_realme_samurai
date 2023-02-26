@@ -5,6 +5,9 @@ genfscon proc /sensor/pressure_cali                                        u:obj
 # Devinfo
 genfscon proc /devinfo                                                     u:object_r:proc_devinfo:s0
 
+# Display
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,dsi-display-primary      u:object_r:vendor_sysfs_graphics:s0
+
 # Fingerprint
 genfscon proc /fp_id                                                       u:object_r:fp_proc:s0
 
