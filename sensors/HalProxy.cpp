@@ -83,25 +83,6 @@ int64_t msFromNs(int64_t nanos) {
     return nanos / nanosecondsInAMillsecond;
 }
 
-bool patchOPPickupSensor(V2_1::SensorInfo& sensor) {
-    if (sensor.typeAsString != "android.sensor.tilt_detector") {
-        return true;
-    }
-
-    /*
-     * Implement only the wake-up version of this sensor.
-     */
-    if (!(sensor.flags & V1_0::SensorFlagBits::WAKE_UP)) {
-        return false;
-    }
-
-    sensor.type = V2_1::SensorType::PICK_UP_GESTURE;
-    sensor.typeAsString = SENSOR_STRING_TYPE_PICK_UP_GESTURE;
-    sensor.maxRange = 1;
-
-    return true;
-}
-
 HalProxy::HalProxy() {
     const char* kMultiHalConfigFile = "/vendor/etc/sensors/hals.conf";
     initializeSubHalListFromConfigFile(kMultiHalConfigFile);
@@ -519,9 +500,11 @@ void HalProxy::initializeSensorList() {
                         ALOGV("Replaced Wise Light sensor with standard light sensor");
                         AlsCorrection::init();
                     }
-                    bool keep = patchOPPickupSensor(sensor);
-                    if (!keep) {
-                        continue;
+                    // Standardize oplus pickup sensor
+                    if (sensor.typeAsString == "android.sensor.tilt_detector") {
+                        sensor.type = V2_1::SensorType::PICK_UP_GESTURE;
+                        sensor.typeAsString = SENSOR_STRING_TYPE_PICK_UP_GESTURE;
+                        ALOGV("Patched oplus pickup sensor");
                     }
 
                     mSensors[sensor.sensorHandle] = sensor;
