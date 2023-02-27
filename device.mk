@@ -405,10 +405,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     librecovery_updater_qcom
 
-# RenderScript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # Ril
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
