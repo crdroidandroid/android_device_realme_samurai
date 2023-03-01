@@ -48,4 +48,4 @@ genfscon sysfs /devices/virtual/misc/msm_wma/wakeup                             
 genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup                                                                                                                               u:object_r:sysfs_wakeup:s0
 
 # USB
-genfscon sysfs /devices/platform/soc/a600000.ssusb/usb_data_enabled        u:object_r:vendor_sysfs_usb_data_enabled:s0
+genfscon sysfs /devices/platform/soc/a600000.ssusb/usb_data_enabled        u:object_r:sysfs_usb_data_enabled:s0
