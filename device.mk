@@ -135,7 +135,6 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    libbthost_if \
     vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0 \
@@ -147,7 +146,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:64 \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
-    Snap \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Charger
@@ -168,7 +166,6 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.mapper@2.0-impl-qti-display \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
@@ -177,17 +174,14 @@ PRODUCT_PACKAGES += \
     gralloc.msmnile \
     hwcomposer.msmnile \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
-    libtinyxml.vendor \
     libvulkan \
     memtrack.msmnile \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.allocator@1.0-service \
     vendor.qti.hardware.display.allocator@3.0 \
     vendor.qti.hardware.display.composer@1.0.vendor \
     vendor.qti.hardware.display.composer@2.0.vendor \
@@ -350,7 +344,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
     android.hardware.nfc@1.2.vendor \
     com.android.nfc_extras \
-    com.gsma.services.nfc \
     NfcNci \
     nqnfcinfo \
     SecureElement \
@@ -361,7 +354,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
     libavservices_minijail \
     libavservices_minijail_vendor \
-    libavservices_minijail_vendor_64 \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
