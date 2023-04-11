@@ -147,7 +147,7 @@ ro.hardware.nfc_nci=nqx.default
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
 
-# Radio
+# Radio & IMS
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
 persist.vendor.radio.add_power_save=1
@@ -161,7 +161,6 @@ persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
-persist.vendor.radio.rat_on=combine
 
 # Sensors
 persist.vendor.sensors.debug.hal=0
