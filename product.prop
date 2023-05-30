@@ -35,6 +35,9 @@ iorapd.readahead.enable=true
 # LMKD
 ro.config.low_ram=false
 
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Zram
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
