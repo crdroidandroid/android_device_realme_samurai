@@ -179,6 +179,13 @@ service vendor.sensors-hal-2-1-multihal /vendor/bin/hw/android.hardware.sensors@
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
 
+service vendor.adsprpcd /vendor/bin/adsprpcd
+    override
+    class main
+    user system
+    group media
+    disabled
+
 on post-fs-data
     mkdir /data/system/audio 0775 media media
     mkdir /mnt/vendor/persist/media 0775 media media
