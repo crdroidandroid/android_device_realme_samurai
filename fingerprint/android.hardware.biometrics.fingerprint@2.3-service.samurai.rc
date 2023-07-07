@@ -6,3 +6,4 @@ service vendor.fps_hal.samurai /vendor/bin/hw/android.hardware.biometrics.finger
     user system
     group system
     onrestart restart fps_hal
+    task_profiles ProcessCapacityHigh HighPerformance
