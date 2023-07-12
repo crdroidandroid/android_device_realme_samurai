@@ -227,6 +227,9 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3.vendor \
     libshims_fingerprint.samurai
 
+# Fingerprint animation
+TARGET_HAS_UDFPS := true
+
 # fingerprint (IFAA)
 PRODUCT_PACKAGES += \
     IFAAService \
