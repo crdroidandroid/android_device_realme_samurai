@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-TARGET_DEVICE := RMX1931
+TARGET_DEVICE := samurai
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -15,7 +15,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/realme/RMX1931/RMX1931-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/samurai/samurai-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -206,7 +206,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.RMX1931
+    android.hardware.biometrics.fingerprint@2.3-service.samurai
 
 # fingerprint (IFAA)
 PRODUCT_PACKAGES += \
@@ -301,7 +301,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.RMX1931
+    android.hardware.lights-service.samurai
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -459,7 +459,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.RMX1931
+    vendor.lineage.touch@1.0-service.samurai
 
 # Trust
 PRODUCT_PACKAGES += \
@@ -471,7 +471,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.RMX1931
+    vendor.qti.hardware.vibrator.service.samurai
 
 # WiFi
 PRODUCT_PACKAGES += \

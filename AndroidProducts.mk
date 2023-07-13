@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1931.mk
+    $(LOCAL_DIR)/lineage_samurai.mk

@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=RMX1931
+DEVICE=samurai
 VENDOR=realme
 
 INITIAL_COPYRIGHT_YEAR=2020

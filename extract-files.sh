@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=RMX1931
+DEVICE=samurai
 VENDOR=realme
 
 # Load extract_utils and do some sanity checks

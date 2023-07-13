@@ -4,17 +4,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/realme/RMX1931/device.mk)
+$(call inherit-product, device/realme/samurai/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := realme
-PRODUCT_DEVICE := RMX1931
+PRODUCT_DEVICE := samurai
 PRODUCT_MANUFACTURER := realme
 PRODUCT_MODEL := realme X2 Pro
-PRODUCT_NAME := lineage_RMX1931
+PRODUCT_NAME := lineage_samurai
 
 BUILD_FINGERPRINT := "realme/RMX1931/RMX1931L1:11/RKQ1.200928.002/1625457120608:user/release-keys"
 

@@ -758,7 +758,7 @@ vendor/lib64/libhbtpdsp.so
 vendor/lib64/libhbtpfrmwk.so
 
 # Health
-vendor/bin/hw/android.hardware.health@2.1-service:vendor/bin/hw/android.hardware.health@2.1-service.RMX1931
+vendor/bin/hw/android.hardware.health@2.1-service:vendor/bin/hw/android.hardware.health@2.1-service.samurai
 
 # Hotword enrollment - from RMX2081PU_F.01
 my_product/etc/permissions/com.android.hotwordenrollment.common.util.xml:product/etc/permissions/com.android.hotwordenrollment.common.util.xml|52b6a326e59e543daac9b8d6e960654095c0fb6b

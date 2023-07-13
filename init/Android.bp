@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_RMX1931",
+    name: "libinit_samurai",
     recovery_available: true,
-    srcs: ["init_RMX1931.cpp"],
+    srcs: ["init_samurai.cpp"],
     include_dirs: [
         "system/core/init"
     ],

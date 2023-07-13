@@ -3,7 +3,7 @@ Copyright (C) 2020 The LineageOS Project
 Device configuration for realme X2 Pro
 =========================================
 
-The realme X2 Pro (codenamed _"RMX1931"_) is a high-end smartphone from realme.
+The realme X2 Pro (codenamed _"samurai"_) is a high-end smartphone from realme.
 
 It was announced & released in October 2019.
 

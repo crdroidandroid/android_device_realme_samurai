@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.lights-service_RMX1931"
+#define LOG_TAG "android.hardware.lights-service_samurai"
 
 #include "Lights.h"
 #include <android-base/file.h>

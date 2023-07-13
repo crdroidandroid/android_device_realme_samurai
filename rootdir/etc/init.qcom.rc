@@ -640,7 +640,7 @@ service health-hal-2-1 /vendor/bin/hw/android.hardware.health@2.1-service
     file /dev/kmsg w
     disabled
 
-service health-hal-2-1.RMX1931 /vendor/bin/hw/android.hardware.health@2.1-service.RMX1931
+service health-hal-2-1.samurai /vendor/bin/hw/android.hardware.health@2.1-service.samurai
     class hal charger
     user system
     group system

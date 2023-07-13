@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.biometrics.fingerprint@2.3-service.RMX1931",
+    name: "android.hardware.biometrics.fingerprint@2.3-service.samurai",
     defaults: ["hidl_defaults"],
-    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.RMX1931.rc"],
-    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.RMX1931.xml"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.samurai.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.samurai.xml"],
     relative_install_path: "hw",
     srcs: [
         "BiometricsFingerprint.cpp",
@@ -43,7 +43,7 @@ cc_binary {
 }
 
 cc_library_static {
-    name: "libudfps_extension.RMX1931",
+    name: "libudfps_extension.samurai",
     srcs: ["UdfpsExtension.cpp"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"

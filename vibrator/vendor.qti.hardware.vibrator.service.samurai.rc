@@ -26,7 +26,7 @@ on post-fs
     chown system system /sys/class/leds/vibrator/ram_test
     chown system system /sys/class/leds/vibrator/ram_update
 
-service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service.RMX1931
+service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service.samurai
     class hal
     user system
     group system input

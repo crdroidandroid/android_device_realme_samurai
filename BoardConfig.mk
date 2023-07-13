@@ -9,7 +9,7 @@ BOARD_VENDOR := realme
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
-DEVICE_PATH := device/realme/RMX1931
+DEVICE_PATH := device/realme/samurai
 
 # Architecture
 TARGET_ARCH := arm64
@@ -45,7 +45,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_USE_LZ4 := true
-TARGET_KERNEL_CONFIG := RMX1931_defconfig
+TARGET_KERNEL_CONFIG := samurai_defconfig
 TARGET_KERNEL_SOURCE := kernel/realme/sm8150
 
 # Platform
@@ -83,7 +83,7 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # FOD
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.RMX1931
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.samurai
 TARGET_USES_FOD_ZPOS := true
 
 # Hidl
@@ -92,7 +92,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_RMX1931
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_samurai
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -175,4 +175,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/realme/RMX1931/BoardConfigVendor.mk
+-include vendor/realme/samurai/BoardConfigVendor.mk
