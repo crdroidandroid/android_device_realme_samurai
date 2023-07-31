@@ -44,7 +44,7 @@ using ::android::OK;
 using ::android::sp;
 using ::android::status_t;
 
-class OppoClientCallback;
+class OplusClientCallback;
 struct BiometricsFingerprint : public IBiometricsFingerprint {
 public:
     BiometricsFingerprint();
@@ -71,9 +71,9 @@ public:
 
 private:
     bool isEnrolling;
-    sp<vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint> mOppoBiometricsFingerprint;
-    sp<OppoClientCallback> mOppoClientCallback;
-    static Return<RequestStatus> OppoToAOSPRequestStatus(vendor::oplus::hardware::biometrics::fingerprint::V2_1::RequestStatus req);
+    sp<vendor::oplus::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint> mOplusBiometricsFingerprint;
+    sp<OplusClientCallback> mOplusClientCallback;
+    static Return<RequestStatus> OplusToAOSPRequestStatus(vendor::oplus::hardware::biometrics::fingerprint::V2_1::RequestStatus req);
 };
 
 }  // namespace implementation
