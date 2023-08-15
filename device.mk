@@ -207,7 +207,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.samurai
+    android.hardware.biometrics.fingerprint@2.3-service.samurai \
+    android.hardware.biometrics.fingerprint@2.3.vendor
 
 # fingerprint (IFAA)
 PRODUCT_PACKAGES += \

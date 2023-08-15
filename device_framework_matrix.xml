@@ -136,6 +136,10 @@
             <name>IALSHelper</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>IUdfpsHelper</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.wifi.supplicant</name>

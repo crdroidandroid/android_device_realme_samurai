@@ -1,0 +1,14 @@
+cc_binary {
+    name: "vendor.oplus.hardware.syshelper-test",
+    vendor: true,
+    srcs: [
+        "main.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+        "libutils",
+        "vendor.oplus.hardware.syshelper-V1-ndk",
+    ],
+}

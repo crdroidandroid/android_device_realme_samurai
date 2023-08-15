@@ -2,5 +2,6 @@
     <hal format="aidl">
         <name>vendor.oplus.hardware.syshelper</name>
         <fqname>IALSHelper/default</fqname>
+        <fqname>IUdfpsHelper/default</fqname>
     </hal>
 </manifest>

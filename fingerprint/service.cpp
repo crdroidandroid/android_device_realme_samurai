@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,29 +21,23 @@
 
 #include "BiometricsFingerprint.h"
 
-using android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
-using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
+using android::sp;
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
-using android::OK;
-using android::sp;
-using android::status_t;
+using android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
+using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
 
 int main() {
-   android::sp<IBiometricsFingerprint> service = new BiometricsFingerprint();
+    sp<IBiometricsFingerprint> bio = new BiometricsFingerprint();
 
-    configureRpcThreadpool(1, true);
+    configureRpcThreadpool(1, true /*callerWillJoin*/);
 
-    status_t status = service->registerAsService();
-    if (status != OK) {
-        LOG(ERROR) << "Cannot register Biometrics 2.3 HAL service.";
+    if (bio->registerAsService() != android::OK) {
+        LOG(ERROR) << "Can't register BiometricsFingerprint HAL service";
         return 1;
     }
 
-    LOG(INFO) << "Biometrics 2.3 HAL service ready.";
-
     joinRpcThreadpool();
 
-    LOG(ERROR) << "Biometrics 2.3 HAL service failed to join thread pool.";
-    return 1;
+    return 0;  // should never get here
 }

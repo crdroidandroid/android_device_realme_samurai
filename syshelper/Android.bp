@@ -5,6 +5,8 @@ cc_binary {
     init_rc: ["vendor.oplus.hardware.syshelper.service.rc"],
     vintf_fragments: ["vendor.oplus.hardware.syshelper.service.xml"],
     srcs: [
+        "UdfpsHelper.cpp",
+        "LinkedCallback.cpp",
         "ALSHelper.cpp",
         "main.cpp",
     ],
