@@ -118,6 +118,9 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
     $(LOCAL_PATH)/audio/audio_configs_stock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs_stock.xml \
