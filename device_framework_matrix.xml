@@ -97,6 +97,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.engsensor</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEngSensor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.ims</name>
         <version>1.0</version>
         <interface>

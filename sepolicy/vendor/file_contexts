@@ -32,7 +32,7 @@
 /data/opponvitems(/.*)?                                                                                 u:object_r:nv_data_file:s0
 /cache/opponvitems(/.*)?                                                                                u:object_r:nv_data_file:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/oppodycnvbk                                               u:object_r:vendor_modem_efs_partition_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/opporeserve2                                              u:object_r:vendor_modem_efs_partition_device:s0
+/dev/block/platform/soc/1d84000.ufshc/by-name/opporeserve[1-3]                                          u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/oppostanvbk                                               u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/reserve4                                                  u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/reserve5                                                  u:object_r:vendor_modem_efs_partition_device:s0
@@ -42,6 +42,10 @@
 
 # Oplus ORMS
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.orms\.ormsHalService@1\.0-service                     u:object_r:hal_orms_default_exec:s0
+
+# Oplus engsensor
+/mnt/vendor/persist/engineermode(/.*)?                                                                  u:object_r:vendor_persist_sensors_file:s0
+/(odm|vendor/odm)/bin/hw/vendor.oplus.hardware.engsensor@1.0-service                                  u:object_r:hal_engsensor_default_exec:s0
 
 # Power supply
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/ac(/.*)? u:object_r:sysfs_battery_supply:s0

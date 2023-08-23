@@ -1,3 +1,7 @@
+# Als
+genfscon proc /sensor/als_cali                                             u:object_r:proc_sensor:s0
+genfscon proc /sensor/pressure_cali                                        u:object_r:proc_sensor:s0
+
 # Devinfo
 genfscon proc /devinfo                                                     u:object_r:proc_devinfo:s0
 

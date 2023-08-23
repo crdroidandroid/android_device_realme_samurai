@@ -4,6 +4,7 @@ vendor.oplus.hardware.biometrics.fingerprint::IBiometricsFingerprint         u:o
 vendor.oplus.hardware.biometrics.fingerprintpay::IFingerprintPay             u:object_r:hal_fingerprint_hwservice:s0
 vendor.oplus.hardware.commondcs::ICommonDcsHalService                        u:object_r:commondcs_hwservice:s0
 vendor.oplus.hardware.cryptoeng::ICryptoeng                                  u:object_r:hal_cryptoeng_hwservice:s0
+vendor.oplus.hardware.engsensor::IEngSensor                                  u:object_r:hal_engsensor_hwservice:s0
 vendor.oplus.hardware.orms::IOrmsHalProxy                                    u:object_r:hal_orms_hwservice:s0
 vendor.oplus.hardware.orms.ormsHalService::IOrmsHalService                   u:object_r:halService_orms_hwservice:s0
 vendor.oplus.hardware.radio.oplusradio::IOplusRadio                          u:object_r:hal_telephony_hwservice:s0

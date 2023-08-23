@@ -4,6 +4,7 @@ type nv_data_file, file_type, data_file_type, core_data_file_type;
 type oppo_ver_proc, proc_type, fs_type;
 type persist_camera_file, file_type;
 type proc_devinfo, proc_type, fs_type;
+type proc_sensor, proc_type, fs_type;
 type proc_touchpanel, proc_type, fs_type;
 type public_adsprpcd_file, file_type;
 type sysfs_fps, sysfs_type, fs_type;

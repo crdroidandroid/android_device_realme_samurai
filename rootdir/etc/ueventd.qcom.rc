@@ -402,3 +402,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb0     modes                    0664    system  graphics
 /sys/class/graphics/fb0     mode                     0664    system  graphics
 /sys/class/graphics/fb0     msm_cmd_autorefresh_en   0664    system  graphics
+
+# Oppo reserve
+/dev/block/bootdevice/by-name/opporeserve*           0660    root    system
+/dev/block/sdf6                                      0660    root    system
+/dev/block/sdf7                                      0660    root    system
+/dev/block/sdf8                                      0660    root    system

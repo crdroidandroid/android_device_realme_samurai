@@ -1,0 +1,19 @@
+type hal_engsensor_default, domain;
+hal_server_domain(hal_engsensor_default, hal_engsensor)
+
+type hal_engsensor_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_engsensor_default)
+
+binder_call(hal_engsensor_client, hal_engsensor_server)
+binder_call(hal_engsensor_server, hal_engsensor_client)
+
+hal_attribute_hwservice(hal_engsensor, hal_engsensor_hwservice)
+
+allow hal_engsensor_default block_device:dir search;
+allow hal_engsensor_default vendor_modem_efs_partition_device:blk_file r_file_perms;
+
+allow hal_engsensor_default mnt_vendor_file:dir search;
+
+r_dir_file(hal_engsensor_default, oppo_ver_proc)
+rw_dir_file(hal_engsensor_default, proc_sensor)
+r_dir_file(hal_engsensor_default, vendor_persist_sensors_file)

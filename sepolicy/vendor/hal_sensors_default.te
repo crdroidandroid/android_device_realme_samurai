@@ -1,6 +1,14 @@
 dontaudit hal_sensors_default property_type:file { getattr open read map };
 
+allow hal_sensors_default proc_sensor:dir { search };
+allow hal_sensors_default proc_sensor:file rw_file_perms;
+
 allow hal_sensors_default proc_touchpanel:dir { read search open };
 allow hal_sensors_default proc_touchpanel:file { read open };
 
+allow hal_sensors_default vendor_persist_sensors_file:dir rw_dir_perms;
+allow hal_sensors_default vendor_persist_sensors_file:file rw_file_perms;
+
 get_prop(hal_sensors_default, vendor_camera_prop)
+
+r_dir_file(hal_sensors_default, mnt_vendor_file)
