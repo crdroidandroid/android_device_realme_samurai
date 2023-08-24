@@ -128,6 +128,7 @@ ro.vendor.gsi.build.flavor=none
 debug.egl.hw=0
 debug.mdpcomp.logs=0
 debug.sf.hw=0
+persist.log.tag.OpenGLRenderer=S
 persist.sys.sf.color_saturation=1.0
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.msmnile.api30
 ro.hardware.egl=adreno
