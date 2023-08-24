@@ -1,0 +1,5 @@
+service vendor.oplus_syshelper /vendor/bin/hw/vendor.oplus.hardware.syshelper.service
+    class hal
+    user system
+    group system
+    onrestart restart als_correction_service

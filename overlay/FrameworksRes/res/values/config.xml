@@ -41,9 +41,6 @@
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">300.0%</fraction>
 
-    <!-- Auto-brightness sensor type string -->
-    <string name="config_displayLightSensorType">"qti.sensor.wise_light"</string>
-
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N 1 zones as follows:
 

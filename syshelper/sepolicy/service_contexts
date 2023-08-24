@@ -1,0 +1,2 @@
+# bind an AIDL service name to the selinux type
+vendor.oplus.hardware.syshelper.IALSHelper/default   u:object_r:hal_syshelper_service:s0

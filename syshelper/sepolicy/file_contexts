@@ -1,0 +1,2 @@
+# System Helper Service
+/(vendor|system/vendor)/bin/hw/vendor.oplus.hardware.syshelper.service            u:object_r:hal_syshelper_default_exec:s0

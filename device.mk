@@ -430,9 +430,11 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    als_correction_service.samurai \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.1-service.multihal \
-    libsensorndkbridge
+    libsensorndkbridge \
+    vendor.oplus.hardware.syshelper.service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
