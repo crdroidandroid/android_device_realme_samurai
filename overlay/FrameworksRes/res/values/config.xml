@@ -34,13 +34,6 @@
     <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
 
-    <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
-    <integer name="config_autoBrightnessLightSensorRate">500</integer>
-
-    <!-- The maximum range of gamma adjustment possible using the screen
-         auto-brightness adjustment setting. -->
-    <fraction name="config_autoBrightnessAdjustmentMaxGamma">300.0%</fraction>
-
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N 1 zones as follows:
 
@@ -108,6 +101,14 @@
         <item>476.141854366</item> <!-- 5000 - 10000 -->
         <item>610.667755086</item> <!-- 10000+ -->
     </array>
+
+    <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
+         For this time after the screen turns on, the Power Manager
+         will not debounce light sensor readings -->
+    <integer name="config_lightSensorWarmupTime">200</integer>
+
+    <!-- Fast brightness animation ramp rate in brightness units per second-->
+    <integer translatable="false" name="config_brightness_ramp_rate_fast">400</integer>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
