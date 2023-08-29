@@ -991,15 +991,16 @@ odm/etc/libnfc-nxp-pnscr.conf:odm/etc/libnfc-nxp.conf
 odm/lib/libsn100u_fw.so
 vendor/etc/libnfc-nci.conf
 
-# OPLUS - biometrics
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service
-odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
-odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc
-odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
-odm/lib64/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so
-odm/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so
-odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
+# OPLUS - biometrics - from OP4A89 SKQ1.211113.001
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|0d4b6d5644e206add7c96e4710f57af746f11ea1
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service|09d7ffd295c65c5c93a80dd12ff3cd49cc20f29c
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|e4dc71dbcf48df8e4a5fbf9a14048698046cbe0b
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc|e7bb0cc44ea7922619af274eec7c7833f82d81ec
+odm/lib64/libifaa_factory.so|9bfcd953360fba1cc45db6bc7d7555d6b3072a90
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so|0237d849b88ef3c6232f547cfac560041636b196
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so|403794f5aa711bbaec67c319e9fad5579df6fa27
+odm/lib64/vendor.oplus.hardware.commondcs@1.0.so|df560b924181bd96ec8927c9d4076a4028cf7dde
+odm/lib64/vendor.oplus.hardware.performance@1.0.so|0602bd258e2efca1d72e6d16ac54eaed986c011c
 
 # OPLUS - Keybox
 odm/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service

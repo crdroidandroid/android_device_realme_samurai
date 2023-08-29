@@ -35,10 +35,9 @@ ro.oppo.market.name                 u:object_r:vendor_camera_prop:s0
 vendor.oppo.camera.                 u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
-oppo.fingerprint.                   u:object_r:oppo_fp_prop:s0
-oppo.optical.goodix.fp              u:object_r:oppo_fp_prop:s0
+oplus.fingerprint.                  u:object_r:oppo_fp_prop:s0
+oplus.optical.goodix.fp             u:object_r:oppo_fp_prop:s0
 persist.vendor.fingerprint.         u:object_r:oppo_fp_prop:s0
-sys.oppo_ftm_mode                   u:object_r:oppo_fp_prop:s0
 vendor.fingerprint.optical.goodix.hal.retry u:object_r:oppo_fp_prop:s0
 vendor.fingerprint.cali             u:object_r:oppo_fp_prop:s0
 vendor.flash.locked                 u:object_r:oppo_fp_prop:s0
