@@ -317,7 +317,7 @@ void AlsCorrection::process(Event& event) {
         ScreenShotInfo screenshot = ScreenShotInfo();
 
         if (!mOplusALSHelper->takeScreenShot(&screenshot).isOk()) {
-            ALOGE("OplusALSHelper: takeScreenShot failed, using raw value directly");
+            ALOGV("OplusALSHelper: takeScreenShot failed, using raw value directly");
             return;
         }
 
