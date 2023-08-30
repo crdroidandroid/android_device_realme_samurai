@@ -40,9 +40,6 @@
 # Oppo Display
 /sys/kernel/oppo_display(/.*)?                                                                          u:object_r:sysfs_oppo_display:s0
 
-# Oplus ORMS
-/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.orms\.ormsHalService@1\.0-service                     u:object_r:hal_orms_default_exec:s0
-
 # Oplus engsensor
 /mnt/vendor/persist/engineermode(/.*)?                                                                  u:object_r:vendor_persist_sensors_file:s0
 /(odm|vendor/odm)/bin/hw/vendor.oplus.hardware.engsensor@1.0-service                                  u:object_r:hal_engsensor_default_exec:s0

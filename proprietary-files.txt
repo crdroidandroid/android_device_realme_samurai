@@ -1017,14 +1017,9 @@ odm/vendor/firmware/cryptoeng.b06
 odm/vendor/firmware/cryptoeng.b07
 odm/vendor/firmware/cryptoeng.mdt
 
-# OPLUS - ormsHalService
-odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service
-odm/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc
--odm/etc/vintf/manifest/manifest_oplus_orms.xml
-odm/lib64/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-impl.so
-odm/lib64/libormshalclient.so
-odm/lib64/vendor.oplus.hardware.orms.ormsHalService@1.0.so
-odm/lib64/vendor.oplus.hardware.orms@1.0.so
+# OPLUS - orms - from OP4A89 SKQ1.211113.001
+odm/lib64/libormshalclient.so|6789104204186cba5f78faa47067c9355c7f4ab5
+odm/lib64/vendor.oplus.hardware.orms@1.0.so|b2ca234e8094fe21d0b033dae36d204c6df7af69
 
 # Peripheral manager
 vendor/bin/pm-proxy
