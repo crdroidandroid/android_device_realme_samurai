@@ -31,8 +31,8 @@ persist.sys.log.ae                  u:object_r:vendor_camera_prop:s0
 persist.sys.log.af                  u:object_r:vendor_camera_prop:s0
 persist.sys.log.awb                 u:object_r:vendor_camera_prop:s0
 persist.watermark.dumpimg           u:object_r:vendor_camera_prop:s0
-ro.oppo.market.enname               u:object_r:vendor_camera_prop:s0
-ro.oppo.market.name                 u:object_r:vendor_camera_prop:s0
+ro.oppo.market.                     u:object_r:vendor_camera_prop:s0
+ro.oppo.version                     u:object_r:vendor_camera_prop:s0
 vendor.oppo.camera.                 u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
@@ -65,20 +65,11 @@ ro.hardware.chipname                u:object_r:exported_default_prop:s0
 ro.separate.soft                    u:object_r:exported_default_prop:s0
 
 # RIL
-oppo.device.imeicache               u:object_r:vendor_radio_prop:s0
 oppo.eng.factory.no                 u:object_r:vendor_radio_prop:s0
-persist.oppo.network.operator       u:object_r:vendor_radio_prop:s0
-persist.oppo.nw.region.lock         u:object_r:vendor_radio_prop:s0
-persist.sys.oppo.simlockoperator    u:object_r:vendor_radio_prop:s0
 ro.build.version.ota                u:object_r:vendor_radio_prop:s0
 ro.oppo.build.exp                   u:object_r:vendor_radio_prop:s0
-ro.oppo.euex.country                u:object_r:vendor_radio_prop:s0
 ro.oppo.network.                    u:object_r:vendor_radio_prop:s0
-ro.oppo.nw.singlecard               u:object_r:vendor_radio_prop:s0
-ro.oppo.operator                    u:object_r:vendor_radio_prop:s0
 ro.oppo.regionmark                  u:object_r:vendor_radio_prop:s0
-ro.oppo.version                     u:object_r:vendor_radio_prop:s0
 ro.rf_version                       u:object_r:vendor_radio_prop:s0
 ro.sys.reserve.integrate            u:object_r:vendor_radio_prop:s0
 sys.build.display.full_id           u:object_r:vendor_radio_prop:s0
-sys.oppo.network.rffeature          u:object_r:vendor_radio_prop:s0
