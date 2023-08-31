@@ -22,9 +22,6 @@
 # Health
 /vendor/bin/hw/android\.hardware\.health@2\.1-service\.samurai                                          u:object_r:hal_health_default_exec:s0
 
-# Light
-/vendor/bin/hw/android\.hardware\.lights-service\.samurai                                               u:object_r:hal_light_default_exec:s0
-
 # Modem reason
 /dev/mdmreason                                                                                          u:object_r:mdmreason_device:s0
 
