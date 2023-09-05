@@ -34,9 +34,6 @@
 /dev/block/platform/soc/1d84000.ufshc/by-name/reserve4                                                  u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/reserve5                                                  u:object_r:vendor_modem_efs_partition_device:s0
 
-# Oppo Display
-/sys/kernel/oppo_display(/.*)?                                                                          u:object_r:sysfs_oppo_display:s0
-
 # Oplus engsensor
 /mnt/vendor/persist/engineermode(/.*)?                                                                  u:object_r:vendor_persist_sensors_file:s0
 /(odm|vendor/odm)/bin/hw/vendor.oplus.hardware.engsensor@1.0-service                                  u:object_r:hal_engsensor_default_exec:s0

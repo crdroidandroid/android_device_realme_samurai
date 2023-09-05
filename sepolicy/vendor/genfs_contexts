@@ -11,6 +11,9 @@ genfscon proc /fp_id                                                       u:obj
 # Flash
 genfscon proc /qcom_flash                                                  u:object_r:cam_proc:s0
 
+# Oppo Display
+genfscon sysfs /kernel/oppo_display                                        u:object_r:sysfs_oppo_display:s0
+
 # Project version
 genfscon proc /oppoVersion                                                 u:object_r:oppo_ver_proc:s0
 
