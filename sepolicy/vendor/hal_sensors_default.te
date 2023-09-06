@@ -9,6 +9,8 @@ allow hal_sensors_default proc_touchpanel:file { read open };
 allow hal_sensors_default sysfs_oppo_display:dir { search };
 allow hal_sensors_default sysfs_oppo_display:file { read open };
 
+allow hal_sensors_default vendor_diag_device:chr_file rw_file_perms;
+
 allow hal_sensors_default vendor_persist_sensors_file:dir rw_dir_perms;
 allow hal_sensors_default vendor_persist_sensors_file:file rw_file_perms;
 
