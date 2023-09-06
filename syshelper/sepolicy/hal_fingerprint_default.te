@@ -1,2 +1,0 @@
-binder_use(hal_fingerprint_default)
-hal_client_domain(hal_fingerprint_default, hal_syshelper)

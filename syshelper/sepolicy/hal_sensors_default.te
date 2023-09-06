@@ -1,3 +1,0 @@
-binder_use(hal_sensors_default)
-binder_call(hal_syshelper_default, hal_sensors_default)
-hal_client_domain(hal_sensors_default, hal_syshelper)

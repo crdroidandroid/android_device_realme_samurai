@@ -1,3 +1,6 @@
+binder_call(hal_syshelper_default, hal_sensors_default)
+hal_client_domain(hal_sensors_default, hal_syshelper)
+
 dontaudit hal_sensors_default property_type:file { getattr open read map };
 
 allow hal_sensors_default proc_sensor:dir { search };

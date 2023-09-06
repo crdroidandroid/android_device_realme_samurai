@@ -48,6 +48,9 @@
 # sde
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps                       u:object_r:sysfs_fps:s0
 
+# System Helper Service
+/(vendor|system/vendor)/bin/hw/vendor.oplus.hardware.syshelper.service                                  u:object_r:hal_syshelper_default_exec:s0
+
 # Touch HAL
 /vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.samurai                                             u:object_r:hal_lineage_touch_default_exec:s0
 
