@@ -52,7 +52,7 @@ fi
 function blob_fixup() {
     case "${1}" in
         odm/lib64/libgf_hal_G3.so)
-            sed -i "s/ro.boot.flash.locked/vendor.flash.locked\x00/" "${2}"
+            sed -i "s|/sys/kernel/oplus_display/|/sys/kernel//oppo_display/|g" "${2}"
             ;;
         system_ext/etc/permissions/qcrilhook.xml)
             ;&
