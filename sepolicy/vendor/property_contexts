@@ -36,6 +36,7 @@ ro.oppo.version                     u:object_r:vendor_camera_prop:s0
 vendor.oppo.camera.                 u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
+gf.debug.dump_data                  u:object_r:oppo_fp_prop:s0
 oplus.fingerprint.                  u:object_r:oppo_fp_prop:s0
 oplus.optical.goodix.fp             u:object_r:oppo_fp_prop:s0
 persist.vendor.fingerprint.         u:object_r:oppo_fp_prop:s0
