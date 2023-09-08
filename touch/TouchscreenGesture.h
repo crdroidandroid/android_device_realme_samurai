@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,22 +29,60 @@ namespace implementation {
 
 using ::android::hardware::Return;
 using ::android::hardware::Void;
-using ::android::sp;
+using ::vendor::lineage::touch::V1_0::Gesture;
 
 class TouchscreenGesture : public ITouchscreenGesture {
   public:
     // Methods from ::vendor::lineage::touch::V1_0::ITouchscreenGesture follow.
     Return<void> getSupportedGestures(getSupportedGestures_cb resultCb) override;
-    Return<bool> setGestureEnabled(const ::vendor::lineage::touch::V1_0::Gesture& gesture,
-                                   bool enabled) override;
+    Return<bool> setGestureEnabled(const Gesture& gesture, bool enabled) override;
 
   private:
-    typedef struct {
-        int32_t keycode;
-        const char* name;
-        const char* path;
-    } GestureInfo;
-    static const std::map<int32_t, GestureInfo> kGestureInfoMap;  // id -> info
+    // See: drivers/input/touchscreen/oppo_touchscreen/touchpanel_common.h
+    static constexpr int kGestureStartKey = 246;
+    enum {
+        kGestureUnknown,
+        kGestureDoubleTap,
+        kGestureUpVee,
+        kGestureDownVee,
+        kGestureLeftVee,
+        kGestureRightVee,
+        kGestureCircle,
+        kGestureDoubleSwipe,
+        kGestureLeftToRight,
+        kGestureRightToLeft,
+        kGestureUpToDown,
+        kGestureDownToUp,
+        kGestureM,
+        kGestureW,
+        kGestureFingerprintDown,
+        kGestureFingerprintUp,
+    };
+
+    const std::map<int, std::string> kGestureNames = {
+            {kGestureUnknown, "Unknown"},
+            {kGestureDoubleTap, "Double tap"},
+            {kGestureUpVee, "Down arrow"},
+            {kGestureDownVee, "Up arrow"},
+            {kGestureLeftVee, "Right arrow"},
+            {kGestureRightVee, "Left arrow"},
+            {kGestureCircle, "Letter O"},
+            {kGestureDoubleSwipe, "Two fingers down swipe"},
+            {kGestureLeftToRight, "One finger right swipe"},
+            {kGestureRightToLeft, "One finger left swipe"},
+            {kGestureUpToDown, "One finger down swipe"},
+            {kGestureDownToUp, "One finger up swipe"},
+            {kGestureM, "Letter M"},
+            {kGestureW, "Letter W"},
+            {kGestureFingerprintDown, "Fingerprint down"},
+            {kGestureFingerprintUp, "Fingerprint up"},
+    };
+
+    template <typename H, typename... T>
+    static constexpr int makeBitField(H head, T... tail) {
+        return ((1 << head) | ... | (1 << tail));
+    }
+    static const int kSupportedGestures;
 };
 
 }  // namespace implementation
