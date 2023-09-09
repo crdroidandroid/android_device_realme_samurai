@@ -513,6 +513,31 @@ vendor/lib64/vendor.display.color@1.4.so|45ecd22ef8753543a92a853aaddc9bd43fa95c1
 vendor/lib64/vendor.display.color@1.5.so|4e6d3f0f86b991a19824228fe18c956b45392142
 vendor/lib64/vendor.display.postproc@1.0.so|86ef4e868f7abb95d555a4d086a8c4193920803f
 
+# Dolby
+odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service
+odm/etc/dolby/multimedia_dolby_dax_default.xml
+odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc
+odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml
+odm/etc/audio_effects.xml
+odm/lib/libstagefright_soft_ddpdec_v3_6.so:odm/lib/libstagefright_soft_ddpdec.so
+odm/lib/soundfx/libhwdap_v3_6.so
+odm/lib/soundfx/libswdap_v3_6.so
+odm/lib/libdapparamstorage_v3_6.so
+odm/lib/libdeccfg_v3_6.so
+odm/lib/libdlbdsservice_v3_6.so
+odm/lib/libqtigef.so
+odm/lib/libstagefrightdolby.so
+odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so
+odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so
+odm/lib64/soundfx/libhwdap_v3_6.so
+odm/lib64/soundfx/libswdap_v3_6.so
+odm/lib64/libdapparamstorage_v3_6.so
+odm/lib64/libdeccfg_v3_6.so
+odm/lib64/libdlbdsservice_v3_6.so
+odm/lib64/libqtigef.so
+odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so
+odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so
+
 # DPM system - from LA.QSSI.13.0.r1-05300-qssi.0
 system_ext/bin/dpmd|606bf68351189bb5cdbdf86630c018a209862e03
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
