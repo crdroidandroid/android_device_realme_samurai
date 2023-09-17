@@ -1,4 +1,11 @@
 on init
+    # Boot time cpusets
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/background/cpus 0-5
+    write /dev/cpuset/system-background/cpus 0-5
+    write /dev/cpuset/restricted/cpus 2-5
+
     # Drop write bit from cpu_(min/max)_freq so that libqti-perfd can't set it
     chmod 0444 /sys/module/msm_performance/parameters/cpu_min_freq
     chmod 0444 /sys/module/msm_performance/parameters/cpu_max_freq
