@@ -31,6 +31,7 @@
 #include <sysutils/FrameworkCommand.h>
 #include <sysutils/FrameworkListener.h>
 #include <ui/DisplayState.h>
+#include <ui/FenceResult.h>
 #include <unistd.h>
 #include <utils/Timers.h>
 
@@ -78,7 +79,7 @@ class AlsCorrection {
 
         if (ScreenshotClient::captureDisplay(captureArgs, captureListener) == NO_ERROR) {
             captureResults = captureListener->waitForResults();
-            if (captureResults.result == NO_ERROR) outBuffer = captureResults.buffer;
+            if (captureResults.fenceResult.ok()) outBuffer = captureResults.buffer;
         }
 
         uint8_t *out;
