@@ -63,7 +63,8 @@ class AlsCorrection {
 
         sp<SyncScreenCaptureListener> captureListener = new SyncScreenCaptureListener();
         gui::ScreenCaptureResults captureResults;
-        sp<IBinder> display = SurfaceComposerClient::getInternalDisplayToken();
+		const auto ids = SurfaceComposerClient::getPhysicalDisplayIds();
+		sp<IBinder> display = SurfaceComposerClient::getPhysicalDisplayToken(ids.front());
         DisplayCaptureArgs captureArgs = {};
         android::ui::DisplayState state = {};
         SurfaceComposerClient::getDisplayState(display, &state);
