@@ -42,9 +42,6 @@
          far break points. A sensor value less than this is considered "near". -->
     <item name="proximity_sensor_threshold" format="float" type="dimen">1</item>
 
-    <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">100</integer>
-
     <!-- Color of the FOD view -->
     <color name="config_udfpsColor">#00ffffff</color>
 
