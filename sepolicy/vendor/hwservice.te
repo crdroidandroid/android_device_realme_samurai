@@ -1,5 +1,6 @@
 type commondcs_hwservice, hwservice_manager_type;
 type hal_cryptoeng_hwservice, hwservice_manager_type;
+type hal_dms_hwservice, hwservice_manager_type;
 type hal_engsensor_hwservice, hwservice_manager_type;
 type hal_nxpnfc_hwservice, hwservice_manager_type;
 type hal_orms_hwservice, hwservice_manager_type;
