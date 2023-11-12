@@ -939,7 +939,6 @@ vendor/lib64/libavservices_minijail.so|04dc34b7efea9acafea429f9861d143f64fadedb
 vendor/lib64/libswvdec.so|439db421835705020c8c9ad02e5385922d917747
 
 # Media stagefright - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
-vendor/lib/vndk/libstagefright_foundation.so|fa8406a13e3d64fe0e0271f6b1fc944edf04746f
 vendor/lib/libstagefright_soft_qtiflacdec.so|d7a6b0b4942f223d82370f6da54be53cd54de89c
 vendor/lib64/libstagefright_soft_qtiflacdec.so|8531b262078659ec4f63f39a69c24605d4a0cd90
 
