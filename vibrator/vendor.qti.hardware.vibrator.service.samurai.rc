@@ -30,6 +30,7 @@ service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service.
     class hal
     user system
     group system input
+    task_profiles ServiceCapacityLow
 
 on boot
     # Reduce default vibrator gain from 0x80 to 0x55,

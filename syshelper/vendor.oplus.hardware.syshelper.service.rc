@@ -2,5 +2,6 @@ service vendor.oplus_syshelper /vendor/bin/hw/vendor.oplus.hardware.syshelper.se
     class hal
     user system
     group system
+    task_profiles ServiceCapacityLow
     onrestart restart als_correction_service
     onrestart restart vendor.fps_hal.samurai
