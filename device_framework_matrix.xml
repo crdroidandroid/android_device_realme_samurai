@@ -81,14 +81,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.bluetooth_audio</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOBluetoothAudio</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.cryptoeng</name>
         <version>1.0</version>
         <interface>
