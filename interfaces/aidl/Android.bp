@@ -4,6 +4,7 @@ aidl_interface {
         "vendor/oplus/hardware/syshelper/*.aidl",
     ],
     vendor_available: true,
+    owner: "oplus",
     system_ext_specific: true,
     local_include_dir: ".",
     stability: "vintf",
