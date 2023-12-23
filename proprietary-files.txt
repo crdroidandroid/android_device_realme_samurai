@@ -370,6 +370,13 @@ vendor/firmware/sem1215s_dvt4g.bin
 vendor/firmware/sem1215s_dvt5g.bin
 vendor/firmware/sem1215s_fixgyro.bin
 
+# Camera provider legacy - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|b9e72053aae1a0492db211b03404e4121a3801cc
+vendor/lib64/camera.device@1.0-impl.so|e9ef64c33c96bef35e4a6ba20dd29d7894cc24b5
+vendor/lib64/camera.device@3.2-impl.so|278207eda0bcf4efd26339719902e4129ab75cf5
+vendor/lib64/camera.device@3.4-impl.so|bf902128c5dc023d9b8f2f5ab5fe57bd02b3b996
+vendor/lib64/camera.device@3.5-impl.so|47493cac82a28811d559b06d544906729a5a3458
+
 # Camera provider
 vendor/lib64/camera.device@3.3-impl.so
 
