@@ -28,10 +28,5 @@
     <!-- Color of the FOD view -->
     <color name="config_fodColor">#00ffffff</color>
     <color name="config_fodColorBackground">#00ffffff</color>
-    
-    <!-- The position of the volume dialog on the screen.
-         See com.android.systemui.volume.VolumeDialogImpl.
-         Value 21 corresponds to RIGHT|CENTER_VERTICAL. -->
-    <integer name="volume_dialog_gravity">19</integer>
 
 </resources>
