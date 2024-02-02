@@ -1,4 +1,4 @@
-package co.aospa.settings.dolby;
+package com.aospa.dolbymanager;
 
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;

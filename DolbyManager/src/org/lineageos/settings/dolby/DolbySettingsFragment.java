@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.dolby;
+package com.aospa.dolbymanager;
 
 import android.media.AudioAttributes;
 import android.media.AudioDeviceAttributes;

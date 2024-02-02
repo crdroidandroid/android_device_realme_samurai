@@ -15,7 +15,7 @@
  * limitations under the License
  */
 
-package co.aospa.settings.dolby;
+package com.aospa.dolbymanager;
 
 import static com.android.settingslib.drawer.TileUtils.META_DATA_PREFERENCE_SUMMARY;
 
@@ -26,7 +26,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import com.android.settingslib.widget.R;
-import co.aospa.settings.dolby.DolbyUtils;
+import com.aospa.dolbymanager.DolbyUtils;
 
 /** Provide preference summary for injected items. */
 public class SummaryProvider extends ContentProvider {

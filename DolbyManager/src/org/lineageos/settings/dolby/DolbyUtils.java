@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.dolby;
+package com.aospa.dolbymanager;
 
-import static co.aospa.settings.dolby.DolbyAtmos.DsParam;
+import static com.aospa.dolbymanager.DolbyAtmos.DsParam;
 
 import android.content.Context;
 import android.util.Log;

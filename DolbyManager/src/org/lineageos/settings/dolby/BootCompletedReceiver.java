@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package co.aospa.settings.dolby;
+package com.aospa.dolbymanager;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
