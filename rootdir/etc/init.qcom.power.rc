@@ -43,7 +43,7 @@ on property:perf_profile=0
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq 825600
 
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1036800"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 120
+    write /sys/module/cpu_boost/parameters/input_boost_ms 200
 
     write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 257000000
     write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 675000000
